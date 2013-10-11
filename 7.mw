@@ -1,21 +1,21 @@
 '''DRAFT!'''
 
-* Release announcement for Whonix 6.
+* Release announcement for Whonix 7.
 * Must be plain text, because it will be posted on mailing lists.
 * Links must be changed to http://sourceforge.net/projects/whonix/ before announcing.
 
 <pre>
 Download links:
 
-* http://sourceforge.net/projects/whonixdevelopermetafiles/files/whonix-6/Whonix-Gateway-6.ova/download
+* http://sourceforge.net/projects/whonixdevelopermetafiles/files/whonix-7/Whonix-Gateway-7.ova/download
 
-* http://sourceforge.net/projects/whonixdevelopermetafiles/files/whonix-6/Whonix-Workstation-6.ova/download
+* http://sourceforge.net/projects/whonixdevelopermetafiles/files/whonix-7/Whonix-Workstation-7.ova/download
 
 OpenPGP signatures:
 
-* http://sourceforge.net/projects/whonixdevelopermetafiles/files/whonix-6/Whonix-Gateway-6.ova.asc/download
+* http://sourceforge.net/projects/whonixdevelopermetafiles/files/whonix-7/Whonix-Gateway-7.ova.asc/download
 
-* http://sourceforge.net/projects/whonixdevelopermetafiles/files/whonix-6/Whonix-Workstation-6.ova.asc/download
+* http://sourceforge.net/projects/whonixdevelopermetafiles/files/whonix-7/Whonix-Workstation-7.ova.asc/download
 
 Changelog:
 
@@ -80,6 +80,8 @@ enforce mode or added any useful profiles)
 
 * moved blog to wordpress.com, better than sourceforge, because
 wordpress.com supports SSL, closed #23
+
+* Tor Browser is now system default browser, when trying to open links it will ask for confirmation to avoid accidental linking (configurable).
 
 Cheers,
 adrelanos
