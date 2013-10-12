@@ -4,9 +4,25 @@
 * Must be plain text, because it will be posted on mailing lists.
 
 <pre>
+Whonix Anonymous Operating System Version 7 Released!
+</pre>
+
+<pre>
+Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network, Debian GNU/Linux and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP.
+
+Whonix consists of two parts: One solely runs Tor and acts as a gateway, which we call Whonix-Gateway. The other, which we call Whonix-Workstation, is on a completely isolated network. Only connections through Tor are possible.
+
 Download:
 
 https://www.whonix.org/wiki/Download
+
+Users of Whonix 0.5.6 and below:
+
+There is no upgrade path from Whonix 0.5.6 to Whonix 7, sorry.
+
+Call for Help:
+
+If you know shell scripting (/bin/bash) and linux sysadmin, please join us! There are plenty of ways to make Whonix safer. We are also looking for a https direct download mirror.
 
 Changelog:
 
