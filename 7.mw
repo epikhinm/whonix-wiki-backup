@@ -22,7 +22,7 @@ Whonix 7 Changelog:
 
 * Installed obfs3 by default. (for obfsproxy bridges)
 
-* Tor Button's New Identity button is now functional thanks to the Control Port Filter Proxy (#3).
+* New Identity button on Tor Browser is now functional thanks to the Control Port Filter Proxy (#3).
 
 * Tor Browser is now the system default browser (#86). In addition, when opening a link or an html file it will ask for confirmation to avoid accidental linking. (configurable)
 
