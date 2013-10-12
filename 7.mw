@@ -51,15 +51,13 @@ Changelog:
 
 * Time Sanity Check
 
-* Downloading Tor Browser and signature from http://idnxcnkne4qt76tg.onion/dist/torbrowser/linux instead from https://www.torproject.org/dist/torbrowser for better security when run
-inside Whonix. (Not sure if we can keep this, due to general scaling flaws in hidden services.)
+* Downloading Tor Browser and signature from http://idnxcnkne4qt76tg.onion/dist/torbrowser/linux instead from https://www.torproject.org/dist/torbrowser for better security when run inside Whonix. (Not sure if we can keep this, due to general scaling flaws in hidden services.)
 
 * Tor Button's New Identity button now functional. (Thanks to Control Port Filter Proxy.)
 
 * optional Time Privacy wrapper
 
-* enable "apparmor=1 security=apparmor" by default (but didn't enable
-enforce mode or added any useful profiles)
+* enable "apparmor=1 security=apparmor" by default (but didn't enable enforce mode or added any useful profiles)
 
 * moved blog to wordpress.com, better than sourceforge, because wordpress.com supports SSL, closed #23
 
