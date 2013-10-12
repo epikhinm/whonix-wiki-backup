@@ -16,17 +16,17 @@ Call for Help:
 
 If you know shell scripting (/bin/bash) and linux sysadmin, please join us! There are plenty of ways to make Whonix safer. We are also looking for an https direct download mirror.
 
-Changelog:
+Whonix 7 Changelog:
 
-* Updated Tor to 0.2.4
+* Updated Tor to 0.2.4.
 
 * Installed obfs3 by default. (for obfsproxy bridges)
 
-* Tor Button's New Identity button is now functional thanks to the Control Port Filter Proxy.
+* Tor Button's New Identity button is now functional thanks to the Control Port Filter Proxy (#3).
 
-* Tor Browser is now the system default browser. In addition, when opening a link or an html file it will ask for confirmation to avoid accidental linking. (configurable)
+* Tor Browser is now the system default browser (#86). In addition, when opening a link or an html file it will ask for confirmation to avoid accidental linking. (configurable)
 
-* Graphical Whonix-Gateway. Optional, if you reduce Whonix-Gateway RAM to below 500 MB, let's say to 128 MB, you automagically end up with the usual non-graphical Whonix-Gateway. (configurable)
+* Graphical Whonix-Gateway (#26). Optional, if you reduce Whonix-Gateway RAM to below 500 MB, let's say to 128 MB, you automagically end up with the usual non-graphical Whonix-Gateway. (configurable)
 
 * Whonix now includes an updater. It can not be promised that you will never have to download a new image for next stable releases, but we are on that way. Interested testers may have to download images of testing releases from time to time.
 
@@ -40,19 +40,21 @@ Changelog:
 
 * Higher console resolution: 1024x768 (without X).
 
+* Disabled the throw-keyids option on gpg.conf due to usability issues. Enable it manually if you need it.
+
 * Fixed uwt. To do certain tasks such as installing the Adobe Flash plugin or running update-command-not-found you no longer need to "chmod -x /usr/local/bin/curl".
 
-* Deactivate the kgpg tray icon by default (#10), not perfect, but less confusing, since it will now start in foreground by default and no longer as tray icon (which was automatically and confusingly hidden by default).
+* Deactivated the kgpg tray icon by default (#10), not perfect, but less confusing, since it will now start in foreground by default and no longer as tray icon (which was automatically and confusingly hidden by default).
 
 * Downloading Tor Browser and signature from idnxcnkne4qt76tg.onion instead of torproject.org for better security when run inside Whonix.
 
-* Time Privacy wrapper (optional)
+* Time Privacy wrapper (optional).
 
 * Enable "apparmor=1 security=apparmor" by default (didn't enable enforce mode or add any useful profiles yet).
 
-* Manpages for scripts, which come with Whonix.
+* Manpages for scripts which come with Whonix.
 
-* Flexible modular .d style configuration folders: /etc/whonix.d/, /etc/whonix_firewall.d/, /etc/controlportfilt.d
+* Flexible modular .d style configuration folders: /etc/whonix.d/, /etc/whonix_firewall.d/, /etc/controlportfilt.d/.
 
 * Moved blog to wordpress.com, better than sourceforge, because wordpress.com supports SSL, closed #23.
 
