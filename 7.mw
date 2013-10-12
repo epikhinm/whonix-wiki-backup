@@ -26,7 +26,7 @@ Whonix 7 Changelog:
 
 * Tor Browser is now the system default browser (#86). In addition, when opening a link or an html file it will ask for confirmation to avoid accidental linking. (configurable)
 
-* Graphical Whonix-Gateway (#26). Optional, if you reduce Whonix-Gateway RAM to below 500 MB, let's say to 128 MB, you automagically end up with the usual non-graphical Whonix-Gateway. (configurable)
+* Graphical Whonix-Gateway (#26). Optionally, if you reduce Whonix-Gateway RAM to below 500 MB, let's say to 128 MB, you automagically end up with the usual non-graphical Whonix-Gateway. (configurable)
 
 * Whonix now includes an updater. It can not be promised that you will never have to download a new image for next stable releases, but we are on that way. Interested testers may have to download images of testing releases from time to time.
 
