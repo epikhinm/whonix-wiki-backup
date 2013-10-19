@@ -1,6 +1,6 @@
 Here is log of all packets from clean non modified workstation:
 
-
+<pre>
 ii  acpi-support-base     0.140-5         all             scripts for handling base ACPI events such as th
 ii  acpid                 1:2.0.16-1      i386            Advanced Configuration and Power Interface event
 ii  adduser               3.113+nmu3      all             add and remove users and groups
@@ -845,3 +845,4 @@ ii  zenity                3.4.0-2         i386            Display graphical dial
 ii  zenity-common         3.4.0-2         all             Display graphical dialog boxes from shell script
 ii  zlib1g:i386           1:1.2.7.dfsg-13 i386            compression library - runtime
 ii  zsh                   4.3.17-1        i386            shell with lots of features
+</pre>
