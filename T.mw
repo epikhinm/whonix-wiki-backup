@@ -1,4 +1,7 @@
-
-<div class="toccolours mw-collapsible" style="width:400px">
-This text is collapsible.
-</div>
+{| class="mw-collapsible mw-collapsed wikitable"
+! The header || remains visible
+|-
+| This  content || is hidden
+|-
+| at first || load time
+|}
