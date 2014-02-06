@@ -1,26 +1,3 @@
-{| class="mw-collapsible mw-collapsed wikitable"
-! The header || remains visible
-|-
-| This  content || is hidden
-|-
-| at first || load time
-|}
+<rss number=10 title=off desc=off>https://www.whonix.org/blog/feed/rss2/</rss>
 
-<languages />
-<translate>
-<!--T:1-->
-Fréttinga is a small municipality in MungoLand, located on the BaMungo island.
-It hosts a population of about 400 people. It has some agriculture and fishing.
-Tourists like to visit it in the summer time. 
-It has marvelous beaches with a lot of seagulls.
-
-== Services == <!--T:2-->
-
-<!--T:3-->
-It doesn't have many services. There is a shop and car ferry visits the island
-from mainland once a day.
-
-<!--T:4-->
-In 2009 January the roof of the church in the island fell down. It was rebuilt
-collaboratively in the following summer.
-</translate>
+<rss number=10 title=off desc=off>https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10</rss>
