@@ -209,9 +209,8 @@ You should regularly check for operating system updates on your host operating s
 действиям по обновлению браузера, см. [[Tor Browser|Tor-браузер]]. Также имеет смысл
 подписаться на новости на сайте https://blog.torproject.org.
 
-== Whonix Version Check and Whonix News ==
-[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Whonix Version Check}} (first rectangle in black) and<br />{{Code|Whonix News}} <br />(second rectangle in green)]]
-Furthermore you will be automatically notified about new Whonix versions by {{Code|Whonix Version Check}} and about the most important occurrences<ref>Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use {{Code|Whonix News}} as rarely as possible.</ref> by {{Code|Whonix News}}, both of which are part of [[whonixcheck]].
+[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и<br />{{Code|Новости
+Whonix}} <br />(второй прямоугольник зелёного цвета)]] Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях <ref>, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.</ref> за счёт {{Code|Новостей Whonix}}, они являются частью [[whonixcheck|whonix-проверки]].
 
 == Social Media Profiles ==
 
