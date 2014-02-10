@@ -285,7 +285,12 @@ For problem and workaround see forum thread: [[Special:AWCforum/st/id282/vlc_vid
 
 == Minor ==
 === Whonix-Gateway: Err: http://deb.torproject.org tor-0.2.4.x-jessie/main i386 Packages 404 Not Found ===
-See [https://anonymousoperatingsystem.wordpress.com/2013/12/13/whonix-gateway-err-httpdeb-torproject-org-tor-0-2-4-x-jessiemain-i386-packages-404-not-found/ blog post].
+'''Short answer''': <br />
+Update and upgrade your underlying Debian system (Whonix is a derivative of Debian).
+<pre>
+sudo apt-get update
+sudo apt-get dist-upgrade
+</pre>
 
 See also [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]]. This bug will be fixed with next Whonix upgrade (will take some time). No other action strictly required for now.
 
