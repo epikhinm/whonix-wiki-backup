@@ -272,8 +272,10 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 </pre>
 
-You can then download enigmail from here: <br />
-https://addons.mozilla.org/en-us/thunderbird/addon/enigmail/
+You should then install enigmail as usual: <br />
+<pre>
+sudo apt-get install enigmail
+</pre>
 
 === Mounting (CD/DVD) Devices ===
 Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
