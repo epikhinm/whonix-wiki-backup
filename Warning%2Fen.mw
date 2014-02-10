@@ -38,7 +38,7 @@ Even though we're doing our best to offer you good tools to protect your privacy
 = License =
 
 <pre>Whonix Warning wiki page Copyright (C) Amnesia <amnesia at boum dot org>
-Whonix Warning wiki page Portions Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+Whonix Warning wiki page Copyright (C) 2012 -2014 Patrick Schleizer <adrelanos@riseup.net>
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -99,7 +99,7 @@ Usually, this is automatically done through [https://en.wikipedia.org/wiki/Trans
 
 The eff has a fantastic [https://www.eff.org/pages/tor-and-https interactive illustration] who can see what when (not) using Tor and when (not) using SSL.
 
-But on top of that the certificate authorities model of trust on Internet is susceptible to various methods of compromise.
+But on top of that, the certificate authorities model of trust on the Internet is susceptible to various methods of compromise.
 
 For example, on March 15, 2011, Comodo, one of the major SSL certificates company, reported that a user account with an affiliate registration authority had been compromised. It was then used to create a new user account that issued nine certificate signing requests for seven domains: mail.google.com, login.live.com, www.google.com, login.yahoo.com (three certificates), login.skype.com, addons.mozilla.org, and global trustee. <ref>Source: [http://blogs.comodo.com/it-security/data-security/the-recent-ra-compromise/ Comodo: The Recent RA Compromise] ([http://www.webcitation.org/6EUyeEwBE w])</ref>
 
@@ -107,11 +107,11 @@ Later in 2011, DigiNotar, a Dutch SSL certificate company, incorrectly issued ce
 
 '''This still leaves open the possibility of a man-in-the-middle attack even when your browser is trusting an HTTPS connection.'''
 
-There are alternatives to SSL, worth checking out if they may be useful for you. Unfortunately can not be used as a drop in replacement. Tools providing connection security include [http://web.monkeysphere.info/ Monkeysphere], [https://en.wikipedia.org/wiki/Convergence_%28SSL%29 Convergence], [http://perspectives-project.org/ Perspectives Project] and Tor hidden services<ref>[[Hidden Services]] are [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|automatically encrypted end-to-end]]. (More specific: Tor to Tor)</ref>.
+There are alternatives to SSL, worth checking out if they may be useful for you. Unfortunately, they cannot be used as a drop-in replacement. Tools providing connection security include [http://web.monkeysphere.info/ Monkeysphere], [https://en.wikipedia.org/wiki/Convergence_%28SSL%29 Convergence], [http://perspectives-project.org/ Perspectives Project] and Tor hidden services<ref>[[Hidden Services]] are [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|automatically encrypted end-to-end]]. (More specific: Tor to Tor)</ref>.
 
-On one hand, by providing anonymity, Tor makes it more difficult to perform a man-in-the-middle attack targeted at '''one specific person''' with the blessing of a rogue SSL certificate. But on the other end, Tor makes it easier for people or organizations running exit relays to perform large scale MitM attempts, or attacks targeted at '''a specific server''', and especially those among its users who happen to use Tor.
+On the one hand, by providing anonymity, Tor makes it more difficult to perform a man-in-the-middle attack targeted at '''one specific person''' with the blessing of a rogue SSL certificate. But on the other hand, Tor makes it easier for people or organizations running exit relays to perform large scale MitM attempts, or attacks targeted at '''a specific server''', and especially those among its users who happen to use Tor.
 
-In all cases, you are advised to use additional message encryption for encrypting your mails, chats and so on. Tools such as encrypted messengers (Covered on [[Chat]] page.), GPG [https://en.wikipedia.org/wiki/GNU_Privacy_Guard (wikipedia)], [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | KGpg]] and [[E-Mail | Mozilla Thunderbird with TorBirdy]] and enigmail (gpg add-on) may be useful.
+In all cases, you are advised to use additional message encryption for encrypting your mails, chats and so on. Tools such as encrypted messengers (Covered on the [[Chat]] page.), GPG [https://en.wikipedia.org/wiki/GNU_Privacy_Guard (wikipedia)], [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | KGpg]] and [[E-Mail | Mozilla Thunderbird with TorBirdy]] and enigmail (gpg add-on) may be useful.
 
 <ref> Quoted from [https://en.wikipedia.org/wiki/Man-in-the-middle_attack wikipedia Man-in-the-middle_attack] ([http://www.webcitation.org/6EUyk0IKX w]) and [https://blog.torproject.org/blog/detecting-certificate-authority-compromises-and-web-browser-collusion Tor Project: Detecting Certificate Authority compromises and web browser collusion] ([http://www.webcitation.org/6EUykcmES w]). </ref>
 
@@ -147,9 +147,9 @@ For more information on this topic, see also: [[FAQ#Is_there_a_substitute_for_Wh
 
 Numerous files format store hidden data or metadata inside of the files. Text processors or PDF files could store the name of the author, the date and time of creation of the file, and sometimes even parts of the editing history of the fileâ€¦ those hidden data depend on the file format and the software used.
 
-Images file formats, like TIFF of JPEG, probably take the prize in this field. Those files, created by digital cameras or mobile phones, contain a metadata format called EXIF which can include the date, time and sometimes the GPS coordinates of the picture, the brand and serial number of the device which took it as well as a thumbnail of the original image. Image processing software tend to keep those data intact. Internet is full of cropped or blurred images for which the EXIF thumbnail still contains the full original picture.
+Images file formats, like TIFF of JPEG, probably take the prize in this field. Those files, created by digital cameras or mobile phones, contain a metadata format called EXIF which can include the date, time and sometimes the GPS coordinates of the picture, the brand and serial number of the device which took it as well as a thumbnail of the original image. Image processing software tend to keep those data intact. The internet is full of cropped or blurred images for which the EXIF thumbnail still contains the full original picture.
 
-'''Whonix doesn't clear the metadata of your files for you'''. Yet. Still it's in Whonix' design goal to help you do that. For example, Whonix already comes with [[Metadata |  MAT]], which is a Metadata Anonymisation Toolkit.
+'''Whonix doesn't clear the metadata of your files for you'''. Yet, it's still within the Whonix' design goal to help you do that. For example, Whonix already comes with [[Metadata |  MAT]], which is a Metadata Anonymisation Toolkit.
 
 = Whonix doesn't encrypt the Subject: and other headers of your encrypted e-mail messages =
 
@@ -191,7 +191,7 @@ Whonix can only be as secure as the host is. Of course you can simply use Whonix
 
 Easy: All anonymous activity should only happen inside Whonix-Workstation. Nowhere else.
 
-Explanation: The host operating system (the operating system running VirtualBox, the system you used before ever downloading Whonix) will NOT be torified. Do never do any anonymous tasks on your host.
+Explanation: The host operating system (the operating system running VirtualBox, the system you used before ever downloading Whonix) will NOT be torified. Never do any anonymous tasks on your host.
 
 The Whonix-Gateway's only purpose is running Tor and the firewall. In most cases there is no need to modify things on the Gateway. Minor modifications such as setting up bridges are documented.
 
@@ -201,13 +201,13 @@ Obviously, Whonix can't stop people from looking over your shoulder or stop (mob
 
 = Whonix doesn't prevent you from shooting your own feet =
 
-If you login into your personal Facebook account, which is bound to you real name, you are obviously not anonymous and other things.
+If you login to your personal Facebook account, which is bound to your real name, you are obviously not anonymous!
 
 This will be substantiated on the later page [[DoNot | Non technical steps staying anonymous]].
 
 = Whonix doesn't defeat Stylometry =
 
-Whonix does not obfuscate you writing style.
+Whonix does not obfuscate your writing style.
 
 This will be substantiated on the later page [[Surfing_Posting_Blogging | Anonymous Surfing, Posting and Blogging]].
 
@@ -230,8 +230,8 @@ Whonix in its current form does not:
 * Protect against global network adversaries.
 * Protect against hardware or software backdoors.
 * Automatically protect against MAC address fingerprinting on public networks.
-* Protect against the more skilled software attack, unless you use [PhysicalIsolation].
-* By default, protect you if Tor is somehow broken. You can improve that to some extend and with caveats by chaining Tor with SSH, proxies or VPNs.
+* Protect against the more skilled software attacks, unless you use [PhysicalIsolation].
+* By default, protect you if Tor is somehow broken. You can improve that to some extent (with caveats) by chaining Tor with SSH, proxies or VPNs.
 * By default, hide the fact that you are using Tor, though there is an optional feature, [[Hide_Tor_and_Whonix_from_your_ISP | Hide the fact you are using Tor/Whonix]].
 * Use all the possible hardening options like full PIE and grsecurity. It doesn't use AppArmor profiles for everything.
 * Obfuscate your writing style, defeat Stylometry.
@@ -242,7 +242,7 @@ If you want to help us improve the security of Whonix, please join the discussio
 
 = Whonix is a work in progress =
 
-Whonix, as well as all the software it includes, are on continuous development and might contain programming errors or security holes. [[Download#Stay_tuned | Stay tuned]] to Whonix development. Do not rely on it for strong anonymity.
+Whonix, as well as all the software it includes, are under continuous development and might contain programming errors or security holes. [[Download#Stay_tuned | Stay tuned]] to Whonix development. Do not rely on it for strong anonymity.
 
 The basic functionality is ready. You can use Whonix to browse the web and [[Hidden Services | host hidden services]], use email, IRC, ssh, etc. Development is still ongoing and more features are being added to Whonix. If you want join the development process or want to see what issues are still open, see our [https://github.com/Whonix/Whonix/issues Whonix github issues tracker].
 
