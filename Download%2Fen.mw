@@ -202,7 +202,12 @@ You should regularly check for operating system updates on your host operating s
 
 [[Image:whonixcheck_gui.png|[[whonixcheck]]|thumb]]
 
-There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
+Функция автоматического обновления Tor-браузера не внедрена.
+[[whonixcheck|whonix-проверка]] будет уведомлять вас о наличии новых
+версий Tor-браузера. Встроенный в Tor-браузер механизм проверки наличия
+новых версий работает и в Whonix. Для получения информации по конкретным
+действиям по обновлению браузера, см. [[Tor Browser|Tor-браузер]]. Также имеет смысл
+подписаться на новости на сайте https://blog.torproject.org.
 
 == Whonix Version Check and Whonix News ==
 [[File:whonixcheck created by adrelanos.png|thumb|{{Code|Whonix Version Check}} (first rectangle in black) and<br />{{Code|Whonix News}} <br />(second rectangle in green)]]
