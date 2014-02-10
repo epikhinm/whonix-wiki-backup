@@ -50,8 +50,7 @@ Image:whonixcheck_gui.png|[[whonixcheck|whonix-проверка]]
 Image:timesync_gui.png|[[TimeSync|Синхронизация времени]]
 Image:stream_isolation.1.0.jpg|[[Stream Isolation|Изоляция потоков]]
 Image:mat.png|MAT - Набор инструментов анонимизации [[Metadata|Метаданных]]
-Image:flash_leak_test.png|[[Browser Plugins|Флэш]] Проверка утечек
-через SocksPort и TransPort
+Image:flash_leak_test.png|[[Browser Plugins|Флэш]] Проверка утечек через SocksPort и TransPort
 Image:Thunderbird_17.0.png|Mozilla Thunderbird (именуемая "Icedove" в ОС
 Debian) с TorBirdy, см. [[E-Mail]]
 Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], Чат-клиент IRC
