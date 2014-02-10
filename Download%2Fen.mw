@@ -213,8 +213,8 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 
 = Known bugs =
 == Normal ==
-=== Tor Browser Updater (Whonix) ===
-Currently broken due to changes by torproject.org. You have to [[Manually Updating Tor Browser|manually update Tor Browser]] in meanwhile.
+=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
+When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
 
 Open /etc/default/tor.
 
