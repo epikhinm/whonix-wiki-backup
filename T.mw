@@ -1,9 +1,17 @@
-<seo
+
+<metakey>
+<keywords content="something" />
+/>
+
+
+= a = 
+
+
 title="word1,word2"
 metakeywords="word3,word4"
 metadescription="word5,word6"
 test="word7,word8"
-/>
+
 
 = y =
 og&#58;type="website"
