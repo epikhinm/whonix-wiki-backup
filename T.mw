@@ -1,8 +1,8 @@
 {{#seo:
- |title={{#if: {{{page_title|}}} | {{{page_title}}} | Welcome to WikiSEO}}
- |titlemode={{{title_mode|}}}
- |keywords={{{keywords|}}}
- |description={{{description|}}}
+ |title={{#if: {{{page_title|}}} | {{{page_title}}} | Test Title}}
+ |titlemode=append
+ |keywords=anonymity
+ |description=test page
 }}
 
 <rss number=10 title=off desc=off>https://www.whonix.org/blog/feed/rss2/</rss>
