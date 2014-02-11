@@ -1,9 +1,4 @@
-{{#seo:
- |title={{#if: {{{page_title|}}} | {{{page_title}}} | Test Title}}
- |titlemode=append
- |keywords=anonymity
- |description=test page
-}}
+<seo title="word1,word2" metakeywords="word3,word4" metadescription="word5,word6" />
 
 <rss number=10 title=off desc=off>https://www.whonix.org/blog/feed/rss2/</rss>
 
