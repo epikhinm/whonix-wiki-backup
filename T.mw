@@ -1,3 +1,10 @@
+{{#seo:
+ |title={{#if: {{{page_title|}}} | {{{page_title}}} | Welcome to WikiSEO}}
+ |titlemode={{{title_mode|}}}
+ |keywords={{{keywords|}}}
+ |description={{{description|}}}
+}}
+
 <rss number=10 title=off desc=off>https://www.whonix.org/blog/feed/rss2/</rss>
 
 <rss number=10 title=off desc=off>https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10</rss>
