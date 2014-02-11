@@ -2,7 +2,7 @@
 title="word1,word2"
 metakeywords="word3,word4"
 metadescription="word5,word6"
-og:type="website"
+og&#58;type="website"
 article:publisher="https://www.facebook.com/Whonix"
 article:author="https://www.facebook.com/patrick.schleizer"
 og:image="https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png"
