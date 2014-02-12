@@ -3,7 +3,6 @@
 <!--[if !(lt IE 8)]><!-->
         <script type="text/javascript">
       var tdwfb_config = {
-        debug: true,
         localAssets: true,
         overrideLocation: "international" // Can be either "usa", "international", or none (default)
       };
