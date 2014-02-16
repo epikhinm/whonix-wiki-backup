@@ -279,7 +279,8 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
 проблемы в связке Debian/Virtual Box, а не в Whonix). (Информация о
 проблеме уже была направлена соответствующим людям пользователем ОС Debian.)
 
-Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
+Существующие способы обхода, дополнительная информация и др. изложены в
+Форуме помощи пользователю Whonix в ветке:
 [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]
 
 === Enigmail Encryption ===
