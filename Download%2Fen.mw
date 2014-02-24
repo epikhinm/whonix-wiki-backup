@@ -284,10 +284,8 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
 /home/user/tor-browser_en-US/start-tor-browser
 </pre>
 
-=== Проблемы с использованием Общих папок в VirtualBox ===
-С последним ядром Linux функция "Общие папки" не работает. (Корень
-проблемы в связке Debian/Virtual Box, а не в Whonix). (Информация о
-проблеме уже была направлена соответствующим людям пользователем ОС Debian.)
+=== Virtual Box Shared Folder Issues ===
+Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)
 
 Существующие способы обхода, дополнительная информация и др. изложены в
 Форуме помощи пользователю Whonix в ветке:
