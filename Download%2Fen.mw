@@ -286,8 +286,7 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
 === Virtual Box Shared Folder Issues ===
 Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)
 
-Существующие способы обхода, дополнительная информация и др. изложены в
-Форуме помощи пользователю Whonix в ветке:
+Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
 [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]
 
 === Enigmail Encryption ===
