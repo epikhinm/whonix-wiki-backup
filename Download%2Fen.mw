@@ -234,6 +234,21 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 === Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
 When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
 
+<pre>
+sudo rm -fR /var/lib/apt/lists/*
+</pre>
+
+Then run.
+
+<pre>
+sudo apt-get update
+</pre>
+
+(Source <ref>http://askubuntu.com/questions/41605/trouble-downloading-updates-due-to-hash-sum-mismatch-error</ref>)
+
+=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
+When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
+
 Open /etc/default/tor.
 
 <pre>
@@ -319,6 +334,27 @@ See also [[Security_Guide#Recommendation_to_install_latest_security_updates_on_a
 This is because torproject deprecated that repository. That was to be expected. The repository we're using now is already preconfigured (in /etc/apt/sources.list.d/torproject.list).
 
 Taking action isn't important at this stage. You can comment it out (by putting a # in front of it) in /etc/apt/sources.list.d/torproject.list if you want. ({{Code|kdesudo kate /etc/apt/sources.list.d/torproject.list}} for graphical Whonix-Gateway or {{Code|sudo nano /etc/apt/sources.list.d/torproject.list}} for terminal-only Whonix-Gateway) If you don't do it, it will be auto fixed with next upgrade of Whonix.
+
+=== There is no public key available for the following key IDs ===
+The message "{{Code2|There is no public key available for the following key IDs}}" is not necessarily an error. It might be just a warning/information.
+
+<pre>
+sudo apt-get update
+...
+Reading package lists... Done
+...
+W: There is no public key available for the following key IDs:
+9C131AD3713AAEEF
+</pre>
+
+Check the exit code of apt-get.
+
+<pre>
+echo $?
+0
+</pre>
+
+When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.
 
 === Defunct Desktop Shortcuts ===
 The desktop shortcuts Tor Browser, Contribute, Forum, Documentation, Donate won't work until there is an upgrade of Whonix. Please manually visit these pages. How to start Tor Browser has already been explained above.
