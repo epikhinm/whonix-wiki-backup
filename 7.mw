@@ -1,3 +1,5 @@
+{{Header}}
+
 <pre>
 Whonix Anonymous Operating System Version 7 Released!
 </pre>
@@ -59,3 +61,5 @@ Whonix 7 Changelog:
 * Moved blog to wordpress.com, better than sourceforge, because wordpress.com supports SSL, closed #23.
 
 * Lots of other improvements and bug fixes which can be found under the git log.
+
+{{Footer}}
