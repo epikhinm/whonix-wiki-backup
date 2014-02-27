@@ -36,18 +36,22 @@ This wiki page is a fork of the Tails Download page, from this exact source <htt
 }}
 = First time user? =
 {{Anchor|Landing}}
+{{Anchor|Landing}}
+
 
 {{mbox
-
 | type       = notice
 | image      = [[File:Ambox_notice.png|40px|alt=Info]]
-| text       = '''The default username is:''' '''''user''''' <br />
+| text       =
+'''The default username is:''' '''''user''''' <br />
 '''The default password is:''' '''''changeme'''''
-
 }}
 
 {{mbox
 
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = 
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
 | text       = 
@@ -58,9 +62,9 @@ Warning:
 * If you have no idea about how Whonix works.
 
 Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
-
 }}
 
+<!--T:6-->
 {{anchor|Download Whonix virtual machine images}}
 
 = Download Whonix =
@@ -72,7 +76,8 @@ It is important to check the integrity of the virtual machine images you downloa
 {{mbox
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
-| text       = Warning:
+| text       =
+Warning:
 
 Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity.
 
