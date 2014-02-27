@@ -1,6 +1,8 @@
 {{Header}}
 __FORCETOC__
-
+{{#seo:
+|description=List of installed packages on Whonix 7
+}}
 Here is log of packets from clean machine:
 
 = Short =
