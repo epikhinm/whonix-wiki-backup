@@ -1,4 +1,7 @@
 {{Header}}
+{{#seo:
+|description=Archived Whonix 7 Release Announcement
+}}
 
 <pre>
 Whonix Anonymous Operating System Version 7 Released!
