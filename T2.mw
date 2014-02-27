@@ -9,10 +9,12 @@
 | '''Priority E-Mail Support'''
 | '''Instant Messenger Support'''
 | '''Voice Over IP Support'''
+| '''Remote Administration Support'''
 | '''Real Life Coaching <ref>Within Germany and eventually other European Counties as well.</ref>'''
 |-
 | style="height: 27px;background-color: #f9f9f9"| Support Level 1
 | {{Yes}}
+| {{No}}
 | {{No}}
 | {{No}}
 | {{No}}
@@ -22,9 +24,11 @@
 | {{No}}
 | {{No}}
 | {{No}}
+| {{No}}
 |-
 | style="height: 27px;background-color: #f9f9f9"| Support Level 5
 | {{Yes}}
+| {{No}}
 | {{No}}
 | {{No}}
 | {{No}}
@@ -34,9 +38,11 @@
 | {{No}}
 | {{No}}
 | {{No}}
+| {{No}}
 |-
 | style="height: 27px;background-color: #f9f9f9"| Support Level 20
 | {{Yes}}
+| {{No}}
 | {{No}}
 | {{No}}
 | {{No}}
@@ -46,14 +52,17 @@
 | {{Yes}}
 | {{No}}
 | {{No}}
+| {{No}}
 |-
 | style="height: 27px;background-color: #f9f9f9"| Support Level 100
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
 | {{No}}
+| {{No}}
 |-
 | style="height: 27px;background-color: #f9f9f9"| Support Level 500
+| {{Yes}}
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
@@ -64,8 +73,10 @@
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
+| {{Yes}}
 |-
 | style="height: 27px;background-color: #f9f9f9"| Support Level 2000
+| {{Yes}}
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
