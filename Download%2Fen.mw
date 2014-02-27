@@ -149,6 +149,8 @@ If you won't get into trouble by letting others learn about Whonix, feel free to
 
 In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to_code_changes|subscribe to code changes]].
 
+= Known bugs =
+== Normal ==
 === Mounting (CD/DVD) Devices ===
 Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
 
