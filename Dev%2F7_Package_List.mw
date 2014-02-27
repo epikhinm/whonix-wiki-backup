@@ -1,3 +1,6 @@
+{{Header}}
+__FORCETOC__
+
 Here is log of packets from clean machine:
 
 = Short =
@@ -2005,5 +2008,7 @@ ii  zlib1g:i386           1:1.2.8.dfsg-1  i386            compression library - 
 ii  zsh                   5.0.2-4         i386            shell with lots of features
 ii  zsh-common            5.0.2-4         all             architecture independent files for Zsh
 </pre>
+
+{{Footer}}
 
 [[Category:Development]]
