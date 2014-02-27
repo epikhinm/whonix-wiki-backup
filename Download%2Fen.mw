@@ -68,10 +68,10 @@ It is important to check the integrity of the virtual machine images you downloa
 {{mbox
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
-| text       = 
-Warning:
+| text       = Warning:
 
 Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity.
+
 }}
 
 Whonix virtual machine images are cryptographically signed using OpenPGP<ref>OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.</ref> by Whonix developer Patrick Schleizer.
