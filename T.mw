@@ -1,24 +1,3 @@
-
-= a = 
-
-
-title="word1,word2"
-metakeywords="word3,word4"
-metadescription="word5,word6"
-test="word7,word8"
-
-
-= y =
-og&#58;type="website"
-article:publisher="https://www.facebook.com/Whonix"
-article:author="https://www.facebook.com/patrick.schleizer"
-og:image="https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png"
-
-= x =
-<html>
-test &#58;
-</html>
-
 <rss number=10 title=off desc=off>https://www.whonix.org/blog/feed/rss2/</rss>
 
 <rss number=10 title=off desc=off>https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10</rss>
