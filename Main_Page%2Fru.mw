@@ -8,25 +8,26 @@
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
-| caption                = Whonix-Workstation with KDE Desktop
-| developer              = none / Whonix developers
-| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
-| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
-| working_state          = active
-| released               = 29 Feb 2012
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE|200px]]
+| caption                = Whonix-Workstation 0.5.6 с рабочим столом KDE
+| developer              = нет / Разработчики Whonix
+| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-подобная], на основе [https://en.wikipedia.org/wiki/Debian Debian]
+| source_model           = [https://en.wikipedia.org/wiki/Open_source
+Открытый исходный код]
+| working_state          = разрабатывается
+| released               = 29 февраля 2012
 | latest_release_version = [[Download|{{Version}}]]
-| latest_release_date    = {{Start date and age|2014|02|27|df=yes}}
-| latest_test_version    = none at the moment
+| latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
+| latest_test_version    = 7.7.2
 | latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = Anonymity; Privacy; Security; Personal computing; [[Hosting Location Hidden Services|Location Hidden Servers]]
-| kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
+| marketing target       = marketing target       = Анонимность; Конфиденциальность; Безопасность; Приватность; [[Hosting Location Hidden Services|Location Hidden Servers]]
+| kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Монолитное] ([https://en.wikipedia.org/wiki/Linux_kernel Ядро Linux])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
-| license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses<ref>{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}</ref>
-| website                = [https://www.whonix.org https]; <html><a class="link-https" style="color: #3366BB" href="http://kkkkkkkkkk63ava6.onion" rel="nofollow">.onion</a></html>
-| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)
+| license                = [https://en.wikipedia.org/wiki/Free_software Свободное ПО], главным образом [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], и другие лицензии <ref>{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}</ref>
+| website                = [https://www.whonix.org https]; <html><a class="link-https" style="color: #3366BB" href="http://zo7fksnun4b4v4jv.onion" rel="nofollow">.onion</a></html>
+| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (имеется несколько программ для обновления)
 | preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]<ref>http://www.webcitation.org/6IA21tFaM</ref>; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]<ref>http://www.webcitation.org/6IA20bIq5</ref>
-| supported_platforms    = x86 compatible and/or VirtualBox + <ref>[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).</ref>
+| supported_platforms    = x86 compatible and/or VirtualBox + <ref>[[Other Operating Systems|Workstation-собственной-сборки]]: собственные сборки могут работать на любом реальном или виртуальном аппаратном обеспечении при условии, что они соединяются с Интернетом через Whonix-Gateway (Whonix-шлюз). Уже скомпилированные запускаемые файлы предлагаются только для ограниченного числа платформ (Windows, Linux, BSD, Mac).</ref>
 }}
 
 [[Image:whonix.jpg|center|Замысел Whonix|400px]]
@@ -39,20 +40,20 @@ Whonix состоит из двух частей: первая обеспечи�
 
 [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Загрузить Whonix]]
 
-= Скриншоты =
+= Screenshots =
 <gallery>
-Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE
-Image:whonixcheck_gui.png|[[whonixcheck|whonix-проверка]]
-Image:timesync_gui.png|[[TimeSync|Синхронизация времени]]
-Image:stream_isolation.1.0.jpg|[[Stream Isolation|Изоляция потоков]]
-Image:mat.png|MAT - Набор инструментов анонимизации [[Metadata|Метаданных]]
-Image:flash_leak_test.png|[[Browser Plugins|Флэш]] Проверка утечек через SocksPort и TransPort
-Image:Thunderbird_17.0.png|Mozilla Thunderbird (именуемая "Icedove" в ОС Debian) с TorBirdy, см. [[E-Mail]]
-Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], Чат-клиент IRC
-Image:torbrowser.png|[[Tor Browser|Tor-браузер]], приватность за счёт конструкции. Борьба c отпечатками пальцев и распознаванием корреляцией.
-Image:shield_badge.png|Whonix состоит в [http://internetdefenseleague.org Лиге защиты в Интернете].
-Image:OIN_logo_200px.png|Whonix является [http://www.openinventionnetwork.com/licensees.php лицензиатом] [https://en.wikipedia.org/wiki/Open_Invention_Network Сети открытых изобретений].
-Image:donate.png|link=Donate|[[Donate|Финансово поддержать Whonix!]]
+Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop
+Image:whonixcheck_gui.png|[[whonixcheck]]
+Image:timesync_gui.png|[[TimeSync]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation]]
+Image:mat.png|MAT - [[Metadata]] Anonymisation Toolkit
+Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], IRC Chat Client
+Image:torbrowser.png|[[Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
+Image:shield_badge.png|Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].
+Image:OIN_logo_200px.png|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
+Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
 </gallery>
 
 = Сноски =
