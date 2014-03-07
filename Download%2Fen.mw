@@ -60,12 +60,12 @@ Warning:
 Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
 }}
 
-<!--T:6-->
 {{anchor|Download Whonix virtual machine images}}
 
 = Download Whonix =
 {{DownloadTableNew}}
 
+= Verify the Whonix images =
 = Verify the Whonix images =
 It is important to check the integrity of the virtual machine images you downloaded to make sure no man-in-the-middle attack or file corruption happened. (See [[Download Security]].)
 
@@ -76,7 +76,6 @@ It is important to check the integrity of the virtual machine images you downloa
 Warning:
 
 Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity.
-
 }}
 
 Whonix virtual machine images are cryptographically signed using OpenPGP<ref>OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.</ref> by Whonix developer Patrick Schleizer.
@@ -114,36 +113,31 @@ If you still need help, please go to the [[Special:AWCforum|User Help Forum]].
 Read and apply the [[Post Install Advice]].
 
 = Stay tuned =
-
 == Introduction ==
-
 Reading the latest news is important to stay on top of latest developments. Should security vulnerabilities ever be found in Whonix or should an improved version be released, you should be informed.
 
 == Whonix News Blogs ==
-[[File:Whonix News Blog opened offline created by adrelanos.png|thumb|{{Code|Whonix News Blogs}}]]
+[[File:Whonix News Blog opened offline created by adrelanos.png|thumb|Whonix News Blogs]]
 There are two ways to get news. Choose at your preference.
 
 # [https://anonymousoperatingsystem.wordpress.com/category/important/ {{Code|Whonix Important Blog}}] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
 # [https://anonymousoperatingsystem.wordpress.com/ {{Code|Whonix Feature Blog}}] - Includes everything from {{Code|Whonix Important Blog}}. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.
 
-When you start '''Tor Browser Recommended''', there is a shortcut on the desktop, see [[Image:important.png|r]], it will open both {{Code|Whonix News Blogs}} in a privacy friendly way. It's recommended at least to read {{Code|Whonix Important Blog}} if you are in a hurry. Have a look into {{Code|Whonix Feature Blog}} if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.
+When you start '''Tor Browser Recommended''', there is a shortcut on the desktop, see [[Image:important.png|r]], it will open both {{Code|Whonix News Blogs}} in a privacy friendly way. It's recommended at least to read {{Code|Whonix Important Blog}} if you are in a hurry. Have a look into {{Code|Whonix Feature Blog}} if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix. [[Image:important.png|r]] , it will open both Whonix News Blogs in a privacy friendly way. It's recommended at least to read Whonix Important Blog if you are in a hurry. Have a look into Whonix Feature Blog if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.
 
 == Operating System Updates ==
-
 You should regularly check for operating system updates on your host operating system, on Whonix-Workstation and on Whonix-Gateway as highly recommended in the [[Security Guide]].
 
 == Tor Browser ==
-
-[[Image:whonixcheck_gui.png|[[whonixcheck]]|thumb]]
+[[Image:whonixcheck_gui.png|[[whonixcheck|whonixcheck]]|thumb]]
 
 There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
 
 == Whonix Version Check and Whonix News ==
-[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Whonix Version Check}} (first rectangle in black) and<br />{{Code|Whonix News}} <br />(second rectangle in green)]]
-Furthermore you will be automatically notified about new Whonix versions by {{Code|Whonix Version Check}} and about the most important occurrences<ref>Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use {{Code|Whonix News}} as rarely as possible.</ref> by {{Code|Whonix News}}, both of which are part of [[whonixcheck]].
+[[File:whonixcheck created by adrelanos.png|thumb|Whonix Version Check (first rectangle in black) and<br />Whonix News <br />(second rectangle in green)]]
+Furthermore you will be automatically notified about new Whonix versions by Whonix Version Check and about the most important occurrences<ref>Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use Whonix News as rarely as possible.</ref> by Whonix News, both of which are part of [[whonixcheck|whonixcheck]].
 
 == Social Media Profiles ==
-
 There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
 
 Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
@@ -151,39 +145,38 @@ Because some people will do so even though it is not recommended, messages from 
 If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
 
 == Source Code ==
-
 In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to_code_changes|subscribe to code changes]].
 
 = Known bugs =
 == Normal ==
 === Mounting (CD/DVD) Devices ===
-Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
+You can use the following workaround.
+
+<pre>
+sudo mkdir /mnt/cdrom
+</pre>
+
+<pre>
+sudo mount /dev/cdrom /mnt/cdrom/
+</pre>
+
+The following message.
+
+<pre>
+mount: block device /dev/sr0 is write-protected, mounting read-only
+</pre>
+
+Is expected. (It's normal that CD/DVD's are mounted read-only.)
+
+Help fixing this bug is welcome!
 
 === VLC / Video Player Crash ===
-For problem and workaround see forum thread: [[Special:AWCforum/st/id282/vlc_video_crash.html]].
+You can use this workaround.
+<pre>
+VLC -> Tools -> Preferences -> Video -> Output -> X11 -> Save
+</pre>
 
 == Minor ==
-=== There is no public key available for the following key IDs ===
-The message "{{Code2|There is no public key available for the following key IDs}}" is not necessarily an error. It might be just a warning/information.
-
-<pre>
-sudo apt-get update
-...
-Reading package lists... Done
-...
-W: There is no public key available for the following key IDs:
-9C131AD3713AAEEF
-</pre>
-
-Check the exit code of apt-get.
-
-<pre>
-echo $?
-0
-</pre>
-
-When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.
-
 === "apt-get source package" will show "dpkg-source: warning: failed to verify signature" ===
 More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).
 
@@ -217,7 +210,7 @@ This is free software, and you are welcome to redistribute it
 under certain conditions; see the wiki source code for details.
 </pre>
 
-Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties]] for details.
+Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 
 {{Footer}}
 
