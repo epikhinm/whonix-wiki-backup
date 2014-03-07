@@ -147,7 +147,7 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 
 = Known bugs =
 
-Normal
+== Normal ==
 
 === Mounting (CD/DVD) Devices ===
 You can use the following workaround.
@@ -170,7 +170,7 @@ Is expected. (It's normal that CD/DVD's are mounted read-only.)
 
 Help fixing this bug is welcome!
 
-VLC / Video Player Crash
+=== VLC / Video Player Crash ===
 
 You can use this workaround.
 <pre>
