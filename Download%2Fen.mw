@@ -77,7 +77,7 @@ Do not continue if verification failed! You risk using infected or erroneous fil
 
 Whonix virtual machine images are cryptographically signed using OpenPGP<ref>OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.</ref> by Whonix developer Patrick Schleizer.
 
-If you know how to use an OpenPGP key, download the [[Whonix Signing Key]] and the [[#Download Whonix|Whonix signatures]] straight away.
+If you know how to use an OpenPGP key, download the [[Whonix Signing Key|Whonix Signing Key]] and the [[#Download Whonix|Whonix signatures]] straight away.
 
 Otherwise, follow the instructions:
 
