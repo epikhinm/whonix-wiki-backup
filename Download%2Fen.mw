@@ -64,7 +64,7 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 {{DownloadTableNew}}
 
 = Verify the Whonix images =
-It is important to check the integrity of the virtual machine images you downloaded to make sure no man-in-the-middle attack or file corruption happened. (See [[Download Security]].)
+It is important to check the integrity of the virtual machine images you downloaded to make sure no man-in-the-middle attack or file corruption happened. (See [[Download Security|Download Security]].)
 
 {{mbox
 | type       = critical
@@ -200,7 +200,7 @@ sudo unlink /etc/dpkg/origins/default
 sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
 </pre>
 
-Footnotes
+= Footnotes =
 <references />
 License
 <pre>
