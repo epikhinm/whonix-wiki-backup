@@ -99,8 +99,9 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
 Благодарим за скриншот публичного домена MAT к
 [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
 <!--- <a href="https://plus.google.com/108150429836421683225" rel="publisher">Google+</a> --->
-<!---
-<a href="https://plus.google.com/108150429836421683225" rel="publisher">Google+</a>
---->
+
+<html>
+<a href="https://plus.google.com/u/0/112678569435063398972?rel=author">Google</a>
+</html>
 {{Footer}}
 [[Category:Documentation]]
