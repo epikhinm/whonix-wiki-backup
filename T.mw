@@ -1,5 +1,11 @@
+{{#seo:
+|publisher=https://plus.google.com/108150429836421683225
+}}
+
 <rss number=10 title=off desc=off>https://www.whonix.org/blog/feed/rss2/</rss>
 
 <rss number=10 title=off desc=off>https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10</rss>
 
 <rss number=10 title=off desc=off>https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10;sa=news</rss>
+
+{{Footer}}
