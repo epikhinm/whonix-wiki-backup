@@ -1,9 +1,10 @@
 {{Header}}
 
-{{#seo:
-|publisher=https://plus.google.com/108150429836421683225
-|author=https://plus.google.com/112678569435063398972
-}}
+
+<html>
+<a href="https://plus.google.com/u/0/112678569435063398972?rel=author">G+</a>
+<a href="https://plus.google.com/108150429836421683225" rel="publisher" />
+</html>
 
 <rss number=10 title=off desc=off>https://www.whonix.org/blog/feed/rss2/</rss>
 
