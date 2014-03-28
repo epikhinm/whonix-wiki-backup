@@ -1,2 +1,56 @@
-__NOINDEX__
-test
+<html>
+<style type="text/css">
+
+#banner {
+ position: relative;
+ overflow: hidden;
+ background-image:url('/w/images/0/0d/Gray-gradient1.png') bottom repeat-x;
+ margin-bottom: 0.5em !important;
+ margin-top: 0.5em !important;
+ background-color:#EEEEEE;
+ border: solid 1px #aaaaaa; 
+ height:66px;
+}
+
+#banner a.cn-full-banner-click {
+ display:block;
+ height:100%;
+ width:100%;
+ cursor: pointer;
+}
+
+
+#banner-logo {
+ position: absolute;
+ top: 8px;
+ left: 15px;
+ background-image: url(/w/images/d/d0/Donate50.png);
+ height: 50px;
+ width: 100%;
+ background-repeat: no-repeat;
+}
+
+#banner #black-text {
+ font-size: 1.1em;
+ color: black;
+ padding: 0.5em 40px 0.4em 60px;
+ line-height: 1.3em;
+ text-align: center;
+ font-weight:bold;
+}
+</style>
+
+<div id="banner">
+
+  <a class="cn-full-banner-click" href="/wiki/Donate" title="">
+<div id="banner-logo"></div>
+    <div id="black-text">
+   <translate><!--T:1-->
+Whonix fundraising campaign.</translate> <br /> <translate><!--T:2-->
+Please consider a recurring donation!</translate>
+     </div>
+  </a>
+
+
+</div>
+</html>
