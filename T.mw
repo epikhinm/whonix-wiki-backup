@@ -4,6 +4,9 @@
 
 {{CONTENTLANG}}
 
+<languages />
+<translate>
 test
+</translate>
 
 {{Footer}}
