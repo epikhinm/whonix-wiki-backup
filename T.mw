@@ -4,12 +4,6 @@
 
 {{CONTENTLANG}}
 
-Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] (<html><a href="/patrick.asc">gpg</a></html>) (<html><a href="https://plus.google.com/u/0/112678569435063398972?rel=author">g+</a>)</html> (<html><a href="https://plus.google.com/108150429836421683225" rel="publisher" />g+</a></html>) and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
-
-<rss number=10 title=off desc=off>https://www.whonix.org/blog/feed/rss2/</rss>
-
-<rss number=10 title=off desc=off>https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10</rss>
-
-<rss number=10 title=off desc=off>https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10;sa=news</rss>
+test
 
 {{Footer}}
