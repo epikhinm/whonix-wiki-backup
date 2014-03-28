@@ -4,6 +4,8 @@
 
 {{CONTENTLANG}}
 
+{{#language}}
+
 {{#language:language code}}
 
 {{#language:ar}}
