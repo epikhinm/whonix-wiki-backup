@@ -1,5 +1,7 @@
 {{Header}}
 
+<languages />
+
 {{CONTENTLANGUAGE}}
 
 {{CONTENTLANG}}
@@ -16,7 +18,12 @@
 
 {{#languagename:ar}}
 
-<languages />
+{{DIRECTIONMARK}}
+
+{{NAMESPAC}}
+
+{{NAMESPACEE}}
+
 <translate>
 <!--T:5-->
 test
