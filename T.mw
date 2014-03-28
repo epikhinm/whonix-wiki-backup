@@ -4,6 +4,14 @@
 
 {{CONTENTLANG}}
 
+{{#language:language code}}
+
+{{#language:ar}}
+
+{{#language:language code|target language code}}
+
+{{#language:ar|en}}
+
 <languages />
 <translate>
 <!--T:5-->
