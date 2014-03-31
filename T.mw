@@ -1,6 +1,6 @@
 {{#seo:
-|title=test title
-|title_mode=replace
+|title=a b c d
+|title_mode=append
 |keywords=one,two,three
 |description=test descr
 |google-site-verification=xyz
