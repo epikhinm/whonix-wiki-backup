@@ -1,32 +1,14 @@
-{{Header}}
+{{#seo:
+|title=test title
+|'title_mode=prepend
+|keywords=one,two,three
+|description=test descr
+|google-site-verification=xyz
+}}
 
-<languages />
-
-{{CONTENTLANGUAGE}}
-
-{{CONTENTLANG}}
-
-{{#language}}
-
-{{#language:language code}}
-
-{{#language:ar}}
-
-{{#language:language code|target language code}}
-
-{{#language:ar|en}}
-
-{{#languagename:ar}}
-
-DIRECTIONMARK
-
-NAMESPAC
-
-NAMESPACEE
-
-<translate>
-<!--T:5-->
-test
-</translate>
-
-{{Footer}}
+'metakeywords'=>'keywords',
+'metak'=>'keywords',
+'metadescription'=>'description',
+'metad'=>'description',
+'titlemode'=>'title_mode',
+'title mode'=>'title_mode'
