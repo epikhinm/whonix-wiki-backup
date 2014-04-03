@@ -1,5 +1,7 @@
 {{Header}}
 
+<code>
 {{#github:whonix_shared/usr/bin/whonixcheck|Whonix/Whonix|master}}
+</code>
 
 {{Footer}}
