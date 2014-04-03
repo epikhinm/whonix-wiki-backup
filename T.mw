@@ -1,14 +1,5 @@
-{{#seo:
-|title=a b c d
-|title_mode=append
-|keywords=one,two,three
-|description=test descr
-|google-site-verification=xyz
-}}
+{{Header}}
 
-'metakeywords'=>'keywords',
-'metak'=>'keywords',
-'metadescription'=>'description',
-'metad'=>'description',
-'titlemode'=>'title_mode',
-'title mode'=>'title_mode'
+{{#github:whonix_shared/usr/bin/whonixcheck|Whonix/Whonix|master}}
+
+{{Footer}}
