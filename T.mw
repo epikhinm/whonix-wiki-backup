@@ -1,7 +1,7 @@
 {{Header}}
 
 <code>
-{{#github:whonix_shared/usr/bin/whonixcheck|Whonix/Whonix|master}}
+{{#github:home.user.tor-browser_en-US.Browser.firefox|Whonix/apparmor-profile-torbrowser|master}}
 </code>
 
 {{Footer}}
