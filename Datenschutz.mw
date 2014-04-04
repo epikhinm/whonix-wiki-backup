@@ -436,6 +436,83 @@ http://www.quantcast.com/opt-out. Sollten Sie alle Cookies auf Ihrem Rechner
 löschen, müssen Sie das Opt-Out-Cookie erneut setzen.
 
 <html><p><a href="http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/" ><strong>Datenschutz-Muster von Rechtsanwalt Thomas Schwenke - I LAW it</strong></a></p></html>
+-->
+
+= Technical Information =
+The website whonix.org, takes your privacy seriously and collects as little as information as possible. IP logs are disabled, we are using apache mod-removeip <ref>https://we.riseup.net/debian/apache#mod_removeip</ref>. If it becomes necessary (such as spamming or abuse), we may need to re-enable IP logging. 
+
+In any case, we recommend visiting this website using the Tor Browser in Whonix or using the Tor Browser Bundle. Although we rent this server from a reputable server provider, but can't audit their logging policy.
+
+A written privacy policy isn't worth much anyway, since its only privacy by policy. That is why anonymity preserving tools such as Whonix and Tor Browser have been created in the first place. They offer privacy by design.
+
+{| class="wikitable"
+|-
+|Valid SSL certificate
+|{{Yes}}, from startssl.com. <ref>https://startssl.com/</ref>
+|-
+|HTTPS Everywhere <ref>https://www.eff.org/https-everywhere</ref> inclusion
+|{{Yes}} <ref>https://trac.torproject.org/projects/tor/ticket/9143</ref>
+|-
+|OpenPGP signed fingerprint of whonix.org's SSL certificate
+|{{Yes}} <ref name=fingerprint />
+|-
+|Passed Qualys SSL LABS <ref>https://www.ssllabs.com/</ref> SSL Server Test <ref>https://www.ssllabs.com/ssltest/index.html</ref>:
+|{{Yes}}, A rating. <ref>https://www.ssllabs.com/ssltest/analyze.html?d=whonix.org</ref>
+|-
+|HSTS <ref>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</ref>
+|{{Yes}} <ref><pre>curl -i https://whonix.org</pre></ref>
+|-
+|HSTS Preloading List <ref>http://blog.chromium.org/2011/06/new-chromium-security-features-june.html</ref> <ref>http://blog.stalkr.net/2011/08/hsts-preloading-public-key-pinning-and.html</ref> <ref>http://www.chromium.org/sts</ref> <ref>https://blog.mozilla.org/security/2012/11/01/preloading-hsts/</ref> <ref>https://bugzilla.mozilla.org/show_bug.cgi?id=861960</ref>
+| {{Yes}} <ref>Requested. Will propagate to Chrome, Firefox and Tor Browser.</ref> <ref>https://github.com/Whonix/Whonix/issues/34</ref> <ref>http://src.chromium.org/viewvc/chrome?revision=209444&view=revision</ref>
+|-
+|Flagged Revisions <ref>https://www.mediawiki.org/wiki/Extension:FlaggedRevs/</ref>
+|{{Yes}}, admins must verify changes before they become the default version.
+|-
+|Secondary .onion domain <ref>Optional Tor hidden service (.onion domain); alternative end-to-end encrypted/authenticated connection; in this use case, not for location privacy; backup in case DNS is not functional</ref>
+|{{Yes}} <ref>http://kkkkkkkkkk63ava6.onion.</ref> <ref>See also [[Forcing_.onion_on_Whonix.org|Forcing .onion on Whonix.org]].</ref>
+|-
+|}
+
+If you have further suggestions, please make them.
+
+= Footnotes =
+<ref name=fingerprint>
+<pre>
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+openssl x509 -in ssl.crt -sha1 -noout -fingerprint
+SHA1 Fingerprint=88:B4:F5:26:9C:C6:16:C6:7D:6C:A7:66:BE:07:D5:23:9F:D2:71:42
+
+openssl x509 -in ssl.crt -md5 -noout -fingerprint
+MD5 Fingerprint=E8:BC:47:AD:74:73:D8:90:5B:53:2E:E3:89:67:0C:E0
+
+openssl x509 -in ssl.crt -sha256 -noout -fingerprint
+SHA256 Fingerprint=34:A1:48:8A:C2:DD:55:73:5A:4D:1C:78:6C:94:CF:00:71:E8:49:4B:6E:50:6B:F1:51:7C:91:55:04:E0:F4:3F
+
+openssl x509 -in ssl.crt -sha512 -noout -fingerprint
+SHA512 Fingerprint=28:8E:8E:67:F4:94:41:C5:BC:8A:7F:72:0D:05:38:45:BD:54:04:07:00:B4:A1:B4:F1:C3:4F:09:3F:14:D9:EF:97:FB:DD:A3:76:5B:42:92:43:$
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIcBAEBCgAGBQJR1um2AAoJEJwTGtNxOq7vK0gQAJqt5VAeDPlompcQcwBF3LCU
+X3RjjI2fXGnNAoV4dIPCtM+Ftx00YZan83Y3FW4gG/0vnu5E0YQgrRH06kAchmIn
+wwTpGw+Ast87uOBGNUSifguso06ZXcQMJCs/m/A77cKhHrdvi9XjaPfEe+0vkkzC
+pX6txIW4zKMHgRqoyzEgIQKPPPck9IOR3awtVyhfJ2/IV5nB5Y6FrZozN9dFWBxQ
+fyyY9Qs+T0uz8tHVXeOyTZEjLq/Ry5aBw0Cwd9B5xQjMJfiXt5PK3lQLcSIjNAgY
+LrFvR77fhG5YtHl9GFKRNz4ipiGY0fed/2SxifPF9u61wo7i4ac/3Hb/8pqDtaTi
+M3igMY/QVvmNofdwDVFYW/QFefusGPiy8oowEN4lPHX8C+lyA3LMnfYd8nK6vgPE
+c/EItN1jjPPAqrdW2+npJrV018CCN7v6Z5Er0uH+8kICDtSSQHfy4ey/iafAIY5U
+HdAMgs0bLWEi/fkPveaZ/tomrXANzSevzgP/mDWLBshsSr7YFrfU4EUlNQdLwFvq
+rD4sGRJ9a/C1sYB3cF2K+EEnevliJ00UcqOHRkUwOIejcFrErdnLk8sJWhI4thSW
+NXlVWCmvlfgfdRKQD9V6GAf38XQUJsIbkAGuJNyQQXzW5EUxVQS2l+kFPL/QB37s
+AyCDWXR3yKGMWHkJqfLu
+=otoO
+-----END PGP SIGNATURE-----
+</pre>
+</ref>
+
+<references/>
 
 <!--
 NOTE TO WIKI EDITORS:
