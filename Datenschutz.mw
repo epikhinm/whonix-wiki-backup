@@ -448,7 +448,7 @@ A written privacy policy isn't worth much anyway, since its only privacy by poli
 {| class="wikitable"
 |-
 |Valid SSL certificate
-|{{Yes}}, from startssl.com. <ref>https://startssl.com/</ref>
+|{{Yes}}
 |-
 |HTTPS Everywhere <ref>https://www.eff.org/https-everywhere</ref> inclusion
 |{{Yes}} <ref>https://trac.torproject.org/projects/tor/ticket/9143</ref>
