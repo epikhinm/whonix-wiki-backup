@@ -1,7 +1,11 @@
 {{Header}}
 
-<code>
-{{#github:home.user.tor-browser_en-US.Browser.firefox|Whonix/apparmor-profile-torbrowser|master}}
-</code>
+<random>
+Text 1
+@@@
+Text 2
+@@@
+Text 3
+</random>
 
 {{Footer}}
