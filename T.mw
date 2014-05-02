@@ -1,7 +1,6 @@
 {{Header}}
 
 Random News:
-<html><span style="background-color:#FBFBFB"></html>
 <random>
 Bored? Want to chat with other Whonix users? Join us in [url=http://irc://irc.oftc.net/whonix]IRC[/url] chat ([url=https://webirc.oftc.net:8443/?channels=Whonix]Webchat[/url]).
 @@@
@@ -41,5 +40,5 @@ Please [url=https://www.whonix.org/wiki/Contribute]contribute[/url] by [url=http
 @@@
 [url=https://www.whonix.org/blog/translations-coordinator]Whonix Project looking for Translations Coordinator![/url]
 </random>
-<html></span></html>
+
 {{Footer}}
