@@ -61,7 +61,7 @@ To learn more about security and anonymity under Whonix, please continue to the 
 <rss number=10 title=off desc=off>https://www.whonix.org/blog/feed/rss2/</rss>
 
 |-
-! <h3 style="margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;">Latest [https://www.whonix.org/forum Forum] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]</h3>
+! <h3 style="margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;">Publicaciones recientes en el [https://www.whonix.org/forum foro] [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]</h3>
 |-
 |style="color:#000;"| 
 <rss number=10 title=off desc=off>https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10</rss>
