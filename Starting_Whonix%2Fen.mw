@@ -42,7 +42,6 @@ If you see this error message.
 
 VT-x is disabled in the BIOS.
 (VERR_VMX_MSR_VMXON_DISABLED).
-(VERR_VMX_MSR_VMXON_DISABLED).
 </pre>
 
 Then please enable VT-x in BIOS.
