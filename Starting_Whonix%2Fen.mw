@@ -29,7 +29,7 @@ Repeat that for Whonix-Workstation as well.
 
 Read the [[#Boot Options|Boot Options]] chapter and use the 486 kernel.
 
-== VERR_SSM_FIELD_NOT_CONSECUTIVE ==
+== VERR_SSM_FIELD_NOT_CONSECUTIVE == 
 If you see "{{Code2|Failed to load unit 'PATM' (VERR_SSM_FIELD_NOT_CONSECUTIVE).}}", please enable VT-x in BIOS.
 
 == Kernel Panic ==
@@ -41,6 +41,7 @@ If you see this error message.
 <pre>Failed to open a session for the virtual machine Whonix-Gateway.
 
 VT-x is disabled in the BIOS.
+(VERR_VMX_MSR_VMXON_DISABLED).
 (VERR_VMX_MSR_VMXON_DISABLED).
 </pre>
 
