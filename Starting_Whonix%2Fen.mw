@@ -66,7 +66,7 @@ In the grub boot menu you can choose for two seconds. Two kernels are installed 
 
 '''If Whonix works out of the box, you do not need to change anything''' and you can stick to the default 686-pae kernel.
 
-In case you need to [[<tvar| >#PAE_crash|</>disable PAE]], use the 486 kernel.
+In case you need to [[#PAE_crash|disable PAE]], use the 486 kernel.
 
 {{Footer}}
 
