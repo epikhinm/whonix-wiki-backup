@@ -1,101 +1,98 @@
-{{Header}}
 {{#seo:
-|description=<translate><!--T:1-->
-How to Start Whonix and Troubleshooting Whonix Startup Issues</translate> 
+|description=Various Ways to get Help with Whonix. Free and Professional Support available.
 }}
+{{Header}}
 <languages />
-<translate>
-= Starting Whonix = <!--T:2--></translate>
-
-[[Image:11_click_start.png|<translate><!--T:3-->
-Showing VirtualBox with correctly imported Whonix Virtual Machines. RAM setting may differ.</translate>|thumb]]
 
 <translate>
-<!--T:4-->
-Starting Whonix is simple. Start VirtualBox -> double click on the Whonix-Gateway and Whonix-Workstation.</translate>
+= Professional Support = <!--T:1--></translate>
 
-<translate><!--T:5-->
-If you need more help with starting, there are [[<tvar|A>Videos|</> Video Tutorials]]</translate>
+<translate>
+<!--T:2-->
+Consulting / support for anonymity, privacy, security, data security, Whonix & system administration services.
 
-<translate><!--T:33-->
-(which explains installing and starting).</translate>
+<!--T:3-->
+Contact the lead Whonix Developer <tvar|A>[mailto:adrelanos@riseup.net Patrick Schleizer]</> for a price quote.</translate>
 
-<font size="-3">([[Videos#Video_Help| 
-<translate><!--T:6-->
-Video Help</translate>
-]])</font>
+* '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
+* gpg: <html><a class="link-https" download  href="/patrick.asc">patrick.asc</a></html> <br />
 
-<translate><!--T:7-->
-If you still need help, please go to the [<tvar|A>https://www.whonix.org/forum</> Whonix User Help Forum].</translate>
+<translate>
+= Free Support = <!--T:4--></translate>
 
-<translate><!--T:8-->
-'''The default username is:''' '''''user'''''
+<translate>
+<!--T:5-->
+* When the Tor Browser download script is failing, use the [<tvar|A>https://www.whonix.org/forum/</> Whonix User Forum]. Since many users are affected when it breaks, there is probably already an existing topic.</translate>
 
+<translate>
+<!--T:6-->
+* Linux/Debian related questions, are welcomed<ref><tvar|A>http://meta.unix.stackexchange.com/questions/1461/would-you-be-happy-to-welcome-whonix-gnu-linux-users-on-unix-se</></ref> on http://unix.stackexchange.com. Add the {{<tvar|A>Code2|whonix</>}} tag<ref><tvar|A>http://tor.stackexchange.com/questions/tagged/whonix</></ref>, which will alert Whonix developers and followers.</translate>
+
+<translate>
+<!--T:7-->
+* For general Tor questions not directly related to Whonix (e.g. "What are end-to-end correlation attacks?"), use http://tor.stackexchange.com; the [https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-talk tor-talk mailing list]; or [<tvar|A>irc://irc.oftc.net/tor</> IRC] ([<tvar|A>https://webirc.oftc.net:8443/?channels=Whonix</> Webchat])</translate>
+
+<translate>
+<!--T:8-->
+* General questions about computer security can be discussed at http://security.stackexchange.com.</translate>
+
+<translate>
 <!--T:9-->
-'''The default password is:''' '''''changeme'''''</translate>
+* Whonix specific Tor questions are welcomed<ref>http://meta.tor.stackexchange.com/questions/119/would-you-be-happy-to-welcome-whonix-gnu-linux-users-on-tor-se</ref> on http://tor.stackexchange.com. Add the {{Code2|whonix}} tag<ref>http://unix.stackexchange.com/questions/tagged/whonix</ref>, which will alert Whonix developers and followers.</translate>
 
-<translate>= Whonix does not start? = <!--T:10--></translate>
-
-<translate>== PAE crash == <!--T:11--></translate>
-
-<translate><!--T:12-->
-If Whonix does not start because PAE is missing:
-Virtual Box -> Right Click on Whonix-Gateway -> Settings -> Processor -> Disable the ''Enable PAE/NX'' Box -> OK.</translate>
-
-<translate><!--T:13-->
-Repeat that for Whonix-Workstation as well.</translate>
-
-<translate><!--T:14-->
-Read the [[<tvar|A>#Boot Options|</> Boot Options]] chapter and use the 486 kernel.</translate>
-
-== VERR_SSM_FIELD_NOT_CONSECUTIVE == 
 <translate>
+<!--T:10-->
+* For Whonix specific questions not suitable for the stackexchange Q/A format, use the [<tvar|A>https://www.whonix.org/forum</> Whonix User Forum]. Or, use the <html><a href="/cgi-bin/mailman/listinfo/whonix-users">Whonix Users Mailing List</a></html>. </translate>
+
+* [<tvar|A>irc://irc.oftc.net/whonix</> #Whonix on irc.oftc.net] ([<tvar|A>https://webirc.oftc.net:8443/?channels=Whonix</> Webchat])
+
+<translate>
+<!--T:11-->
+* Help others, [[<tvar|A>Contribute#Answer_Questions|</> subscribe]] to Whonix's support channels.</translate>
+
+<translate>
+= Safety Advice = <!--T:12--></translate>
+
+<translate>
+<!--T:13-->
+Be careful what you say! Especially in public places that are archived! What you say may reveal information about you: 
+
+<!--T:14-->
+* Location / IP Address
+* Personality
+* Skills, Aims, Goals
+* Personal Details
+* Etc.
+
+<!--T:15-->
+To keep your IP address hidden, visit these places anonymously over Tor, using either the Whonix-Workstation or the [<tvar|A>https://www.torproject.org/projects/torbrowser.html.en</> Tor Browser Bundle] from The Tor Project.
+
 <!--T:16-->
-If you see "{{Code2|Failed to load unit 'PATM' (VERR_SSM_FIELD_NOT_CONSECUTIVE).}}", please enable VT-x in BIOS.</translate>
+To not link your questions to an existing email or OpenID, use a separate e-mail address, OpenID, and user names just for this purpose.
 
-== Kernel Panic == 
-<translate>
+<!--T:17-->
+Be careful with the advice you are getting in public places. Get a second opinion, and do not run commands or perform steps which you do not understand.
+
 <!--T:18-->
-This probably similar to PAE crash and VERR_SSM_FIELD_NOT_CONSECUTIVE issues above. If you can, enable VT-x in BIOS. If you cannot, then disable PAE/NX in VirtualBox (see PAE crash above for instructions on how to do so) and then read the [[<tvar|A>#Boot Options|</> Boot Options]] chapter and use the 486 kernel.</translate>
+Never post any custom code that pertains to your system or Hidden Service specifically.
 
-<translate>== VT-x is disabled in the BIOS. == <!--T:19--></translate>
-<translate>
-<!--T:20-->
-If you see this error message.</translate>
-
-<pre>
-Failed to open a session for the virtual machine Whonix-Gateway.
-
-VT-x is disabled in the BIOS.
-(VERR_VMX_MSR_VMXON_DISABLED).
-</pre>
+<!--T:19-->
+In Whonix forum [<tvar|A>https://www.whonix.org/forum/index.php?action=profile;area=account</> account settings] uncheck the "Show others my online status" option and hit the "change profile" button to store. <ref>https://www.whonix.org/forum/index.php/topic,155.0.html</ref></translate>
 
 <translate>
-<!--T:23-->
-Then please enable VT-x in BIOS.</translate>
+= General Advice = <!--T:20--></translate>
 
-<translate>== Other reasons == <!--T:24--></translate>
 <translate>
-<!--T:25-->
-Please have a look at the [[Download]] page. It contains instructions on how to properly download and verify the Whonix virtual machine images. There is also help available in form of screenshot or video instructions.
+<!--T:21-->
+* [<tvar|A>http://www.catb.org/esr/faqs/smart-questions.html</> How to Ask Smart Questions]
+* [<tvar|A>http://www.chiark.greenend.org.uk/~sgtatham/bugs.html</> How to Report Bugs Effectively]
+* [<tvar|A>http://mywiki.wooledge.org/XyProblem</> XyProblem]
+</translate>
 
-<!--T:26-->
-If you still need help, please go to the [<tvar|A>https://www.whonix.org/forum</> Whonix User Help Forum].</translate>
+<translate>
+= Footnotes = <!--T:22--></translate>
 
-<translate>= Boot Options = <!--T:27--></translate>
-
-<translate><!--T:28-->
-In the grub boot menu you can choose for two seconds. Two kernels are installed by default.
-
-<!--T:29-->
-* The default 686-pae kernel.
-* A 486 kernel for compatibility.
-
-<!--T:30-->
-'''If Whonix works out of the box, you do not need to change anything''' and you can stick to the default 686-pae kernel.
-
-<!--T:31-->
-In case you need to [[<tvar|A>#PAE_crash|</> disable PAE]], use the 486 kernel.</translate>
+<references />
 
 {{Footer}}
 
