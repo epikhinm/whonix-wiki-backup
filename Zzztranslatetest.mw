@@ -1,5 +1,6 @@
 {{#seo:
 |description=<translate>
+<!--T:171-->
 Whonix Developer Portal, Hacking Whonix, Developing Whonix</translate>
 }}
 __NOTOC__
@@ -7,6 +8,7 @@ __NOTOC__
 {{forkme}}
 
 <translate>
+<!--T:172-->
 '''Link to Source Code'''</translate>
 
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
@@ -16,11 +18,13 @@ __NOTOC__
 </div>
 <br/>
 <translate>
+<!--T:173-->
 '''How to build Whonix from Source Code?'''</translate>
 
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
 * <translate>
+<!--T:174-->
 See [[<tvar|A>Dev/Build</> Documentation]].</translate>
 
 </small>
@@ -28,12 +32,14 @@ See [[<tvar|A>Dev/Build</> Documentation]].</translate>
 <br/>
 
 <translate>
+<!--T:175-->
 '''Developing / Hacking Whonix'''</translate>
 
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
 
 <translate>
+<!--T:176-->
 * [[<tvar|A>Contribute|</> Contribute]]
 * [<tvar|A>https://www.whonix.org/forum/index.php?board=5.0</> Development Forum]
 * <html><tvar|A><a href="/cgi-bin/mailman/listinfo/whonix-devel"></> Developer Mailing List</a></html>
