@@ -6,7 +6,7 @@ Whonix Developer Portal, Hacking Whonix, Developing Whonix</translate>
 __NOTOC__
 {{Header}}
 {{forkme}}
-
+<languages />
 <translate>
 <!--T:172-->
 '''Link to Source Code'''</translate>
@@ -25,7 +25,7 @@ __NOTOC__
 <small>
 * <translate>
 <!--T:174-->
-See [[<tvar|A>Dev/Build</> Documentation]].</translate>
+See [<tvar|A>https://www.whonix.org/wiki/Dev/Build_Documentation Dev/Build</> Documentation].</translate>
 
 </small>
 </div>
