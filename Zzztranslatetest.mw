@@ -18,6 +18,7 @@ __NOTOC__
 </div>
 <br/>
 <translate>
+<!--T:179-->
 '''How to build Whonix from Source Code?'''</translate>
 
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
@@ -62,12 +63,14 @@ See [<tvar|A>https://www.whonix.org/wiki/Dev/Build_Documentation Dev/Build</> Do
 <br/>
 
 <translate>
-= ptest =
+= ptest = <!--T:180-->
 </translate>
 <translate>
+<!--T:181-->
 [[<tvar|A>About|</> About]]</translate>
 
 <translate>
+<!--T:182-->
 [[<tvar|A>Dev/Build_Documentation|</> Build Documentation]]</translate>
 
 {{Footer}}
