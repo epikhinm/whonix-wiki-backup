@@ -8,14 +8,6 @@ __NOTOC__
 {{forkme}}
 <languages />
 <translate>
-<!--T:171-->
-[[<tvar|A>About|</> About]]</translate>
-
-<translate>
-<!--T:172-->
-[[<tvar|A>Dev/Build_Documentation|</> Build Documentation]]</translate>
-
-<translate>
 <!--T:173-->
 '''Link to Source Code'''</translate>
 
@@ -69,6 +61,15 @@ See [<tvar|A>https://www.whonix.org/wiki/Dev/Build_Documentation Dev/Build</> Do
 
 </div>
 <br/>
+
+<translate>
+= ptest =
+</translate>
+<translate>
+[[<tvar|A>About|</> About]]</translate>
+
+<translate>
+[[<tvar|A>Dev/Build_Documentation|</> Build Documentation]]</translate>
 
 {{Footer}}
 
