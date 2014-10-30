@@ -1,6 +1,6 @@
 {{#seo:
 |description=<translate>
-<!--T:171-->
+<!--T:170-->
 Whonix Developer Portal, Hacking Whonix, Developing Whonix</translate>
 }}
 __NOTOC__
@@ -8,15 +8,15 @@ __NOTOC__
 {{forkme}}
 <languages />
 <translate>
-<!--T:177-->
+<!--T:171-->
 [[<tvar|A>About|</> About]]</translate>
 
 <translate>
-<!--T:178-->
+<!--T:172-->
 [[<tvar|A>Dev/Build_Documentation|</> Build Documentation]]</translate>
 
 <translate>
-<!--T:172-->
+<!--T:173-->
 '''Link to Source Code'''</translate>
 
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
