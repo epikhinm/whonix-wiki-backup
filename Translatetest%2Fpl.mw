@@ -11,10 +11,14 @@
 
 // bug reproduction
 
-[https://www.whonix.org/blog Lorem Ipsum]
+[https://www.whonix.org/blog Lorem Ipsum] - working
 
-[https://github.com/Whonix/Whonix/issues Lorem Ipsum]
+[https://github.com/Whonix/Whonix/issues Lorem Ipsum] - working
 
-[[Dev/Build Documentation]]
+[[Dev/Build Documentation]] - not working
 
-[https://www.whonix.org/wiki/Dev/Build_Documentation Dev/Build Lorem Ipsum]
+[https://www.whonix.org/wiki/Dev/Build_Documentation Dev/Build Lorem Ipsum] - working
+
+// suggested syntax
+
+[[Dev/Build_Documentation | Lorem Ipsum]]
