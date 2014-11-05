@@ -6,4 +6,15 @@
 * [[Dev/Source Code Intro| Introduction into Whonix Source Code]]
 * [[Dev/git| Introduction into Whonix's simple git branch model]]
 * [[Dev/git#subscribe_to_code_changes| Options to stay up to date on Whonix Source Code Changes]]
-* [[Dev/Build_Documentation|Build Documentation]]
+* [[<tvar|A>Dev/Build_Documentation|</>Build Documentation]]
+
+
+// bug reproduction
+
+[https://www.whonix.org/blogLorem Ipsum]
+
+[https://github.com/Whonix/Whonix/issues Lorem Ipsum]
+
+[[Dev/Build Documentation]]
+
+[https://www.whonix.org/wiki/Dev/Build_Documentation Dev/Build Lorem Ipsum]
