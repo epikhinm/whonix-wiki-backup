@@ -82,17 +82,18 @@ Anonymity is a complex problem without an easy solution, and security is only as
 
 '''First steps with Whonix'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
-* <small> [[<tvar|A>Post Install Advice|</> Security Advice after Installing Whonix]]</small>
-* <small> [[<tvar|A>Starting Whonix#Starting Whonix|</> Starting Whonix]]</small>
-* <small> [[<tvar|A>Starting Whonix#Boot Options|</> Startup Options]]</small>
-* <small> [[<tvar|A>Bridges|</> Tor Bridge Mode, using (private) (obfuscated) bridges]]</small>
-* <small> [[<tvar|A>Download#Stay tuned|</> Stay tuned]]</small>
-* <small> [[<tvar|A>Language|</> Change the system language]]</small>
-* <small> [[<tvar|A>Keyboard Layout|</> Change the keyboard layout]]</small>
-* <small> [[<tvar|A>Desktop|</> KDE/Whonix Desktop Tips]]</small>
-* <small> [[<tvar|A>Higher_Screen_Resolution|</> Higher Screen Resolution without installing VirtualBox guest additions]]</small>
-* <small> [[<tvar|A>Security Guide|</> Security Guide]]</small>
-* <small> [[<tvar|A>Install Software|</> Install additional software]]</small>
+<small>
+* [[Post Install Advice| Security Advice after Installing Whonix]]
+* [[Starting Whonix#Starting Whonix| Starting Whonix]]
+* [[Starting Whonix#Boot Options| Startup Options]]
+* [[Bridges| Tor Bridge Mode, using (private) (obfuscated) bridges]]
+* [[Download#Stay tuned| Stay tuned]]
+* [[Language| Change the system language]]
+* [[Keyboard Layout| Change the keyboard layout]]
+* [[Desktop| KDE/Whonix Desktop Tips]]
+* [[Higher_Screen_Resolution| Higher Screen Resolution without installing VirtualBox guest additions]]
+* [[Security Guide| Security Guide]]
+* [[Install Software| Install additional software]]</small>
 </div>
 
 '''Bugs'''
@@ -180,16 +181,17 @@ Anonymity is a complex problem without an easy solution, and security is only as
 
 '''Misc'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
-* <small> [[<tvar|A>FAQ|</> FAQ - Frequently Asked Questions]]</small>
-* <small> [[<tvar|A>Authorship|</> Authors/Changelog, sources, credits and license]]</small>
-* <small> [[<tvar|A>Dev/Changelog|</> Changelog]]</small>
-* <small> [[<tvar|A>History|</> History of Whonix]]</small>
-* <small> [[<tvar|A>Whonix:General_disclaimer|</> DISCLAIMER]]</small>
-* <small> [[<tvar|A>Special:AllPages|</> List of all Whonix pages (Index)]]</small>
-* <small> [[<tvar|A>Contribute|</> Contribute]]</small>
-* <small> [[<tvar|A>Donate|</> Donate]]</small>
-* <small> [[<tvar|A>Official Whonix Online Profiles|</> Official Whonix Online Profiles (also Social Media)]]</small>
-* <small> [[<tvar|A>Contact|</> Contacting Whonix developers, Feedback, Questions]]</small>
+<small>
+* [[FAQ| FAQ - Frequently Asked Questions]]
+* [[Authorship| Authors/Changelog, sources, credits and license]]
+* [[Dev/Changelog| Changelog]]
+* [[History| History of Whonix]]
+* [[Whonix:General_disclaimer| DISCLAIMER]]
+* [[Special:AllPages| List of all Whonix pages (Index)]]
+* [[Contribute| Contribute]]
+* [[Donate| Donate]]
+* [[Official Whonix Online Profiles| Official Whonix Online Profiles (also Social Media)]]
+* [[Contact| Contacting Whonix developers, Feedback, Questions]]</small>
 </div>
 
 '''Unfinished'''
