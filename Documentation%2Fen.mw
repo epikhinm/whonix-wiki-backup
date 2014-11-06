@@ -42,28 +42,29 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''General information'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 
-* <small>[[<tvar|A>Main Page|</> Very brief introduction and summary on Whonix Homepage]]</small>
-* <small>  [[<tvar|A>Anonymity|</> Why do you need anonymity?]]</small>
-* <small>[[<tvar|A>The World Wide Web And Your Privacy|</> The World Wide Web and your privacy]]</small>
-* <small> [[<tvar|A>Surveillance Capabilities|</> Surveillance Capabilities]]</small>
-* <small> [[<tvar|A>Data Collection Techniques|</> Data Collection Techniques]]</small>
-* <small> [[<tvar|A>Why_does_Whonix_use_Tor|</> Why does Whonix use Tor?]]</small>
-* <small> [[<tvar|A>Why is Tor slow|</> Why is Tor slow?]]</small>
-* <small> [[<tvar|A>About|</> More About Whonix]]</small>
-* <small> [[<tvar|A>Features|</> Features]]</small>
-* <small> [[<tvar|A>System Requirements|</> System requirements]]</small>
-* <small> [[<tvar|A>Warning|</> Warnings!]]</small>
-* <small> [[<tvar|A>DoNot|</> Non-technical steps for staying anonymous]]</small>
-* <small> [[<tvar|A>Security in Real World|</> Whonix Security in Real World]]</small>
-* <small> [[<tvar|A>Whonix:Privacy_policy|</> Whonix.org Site Security]]</small>
-* <small> [[<tvar|A>Comparison with Others|</> Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]</small>
-* <small> [[<tvar|A>Comparison of different Whonix variants|</> Comparison of different Whonix variants]]</small>
-* <small> [[<tvar|A>Screenshots|</> Screenshots]]</small>
-* <small> [[<tvar|A>Trust|</> Trusting Whonix]]</small>
-* <small> [[<tvar|A>Fingerprint|</> Fingerprint]]</small>
-* <small> [<tvar|A>https://github.com/Whonix/Whonix/blob/master/COPYING</> License]</small>
-* <small> [[<tvar|A>Download#Known_bugs|</> Known bugs]]</small>
-* <small> [[<tvar|A>Why_Whonix_is_Free_Software|</> Why Whonix is free in price as well is in freedom?]]</small>
+<small>
+* [[Main Page| Very brief introduction and summary on Whonix Homepage]]
+* [[Anonymity| Why do you need anonymity?]]
+* [[The World Wide Web And Your Privacy| The World Wide Web and your privacy]]
+* [[Surveillance Capabilities| Surveillance Capabilities]]
+* [[Data Collection Techniques| Data Collection Techniques]]
+* [[Why_does_Whonix_use_Tor| Why does Whonix use Tor?]]
+* [[Why is Tor slow| Why is Tor slow?]]
+* [[About| More About Whonix]]
+* [[Features| Features]]
+* [[System Requirements| System requirements]]
+* [[Warning| Warnings!]]
+* [[DoNot| Non-technical steps for staying anonymous]]
+* [[Security in Real World| Whonix Security in Real World]]
+* [[Whonix:Privacy_policy| Whonix.org Site Security]]
+* [[Comparison with Others| Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]
+* [[Comparison of different Whonix variants| Comparison of different Whonix variants]]
+* [[Screenshots| Screenshots]]
+* [[Trust| Trusting Whonix]]
+* [[Fingerprint| Fingerprint]]
+* [https://github.com/Whonix/Whonix/blob/master/COPYING License]
+* [[Download#Known_bugs| Known bugs]]
+* [[Why_Whonix_is_Free_Software| Why Whonix is free in price as well is in freedom?]]</small>
 </div>
 
 '''Get Whonix'''
@@ -156,12 +157,13 @@ Anonymity is a complex problem without an easy solution, and security is only as
 
 '''Work on sensitive documents'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
-* <small> [[<tvar|A>Software#Office Suite|</> Office suite]]</small>
-* <small> [[<tvar|A>Software#Image Editing|</> Graphics]]</small>
-* <small> [[<tvar|A>Software#Video Editing|</> Video]]</small>
-* <small> [[<tvar|A>Software#Publishing|</> Publishing]]</small>
-* <small> [[<tvar|A>Software#Audio Editing|</> Audio]]</small>
-* <small> [[<tvar|A>Software#Printing and Scanning|</> Printing and scanning]]</small>
+<small>
+* [[Software#Office Suite| Office suite]]
+* [[Software#Image Editing| Graphics]]
+* [[Software#Video Editing| Video]]
+* [[Software#Publishing| Publishing]]
+* [[Software#Audio Editing| Audio]]
+* [[Software#Printing and Scanning| Printing and scanning]]</small>
 </div>
 
 '''Tunnel Support / Chaining Support'''
