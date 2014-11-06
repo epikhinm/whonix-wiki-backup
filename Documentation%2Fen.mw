@@ -100,9 +100,10 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''Bugs'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 
-* <small> [[<tvar|A>Reporting Bugs|</> Reporting Bugs]]</small>
-* <small> [[<tvar|A>Test|</> Troubeshooting]]</small>
-* <small> [[<tvar|A>Starting Whonix#PAE crash|</> Whonix does not start]]</small>
+<small>
+* [[Reporting Bugs| Reporting Bugs]]
+* [[Test| Troubeshooting]]
+* [[Starting Whonix#PAE crash| Whonix does not start]]</small>
 </div>
 
 '''Connect to the Internet anonymously'''
