@@ -43,28 +43,28 @@ Anonymity is a complex problem without an easy solution, and security is only as
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 
 <small>
-* [[Main Page| Very brief introduction and summary on Whonix Homepage]]
-* [[Anonymity| Why do you need anonymity?]]
-* [[The World Wide Web And Your Privacy| The World Wide Web and your privacy]]
-* [[Surveillance Capabilities| Surveillance Capabilities]]
-* [[Data Collection Techniques| Data Collection Techniques]]
-* [[Why_does_Whonix_use_Tor| Why does Whonix use Tor?]]
-* [[Why is Tor slow| Why is Tor slow?]]
-* [[About| More About Whonix]]
-* [[Features| Features]]
-* [[System Requirements| System requirements]]
-* [[Warning| Warnings!]]
-* [[DoNot| Non-technical steps for staying anonymous]]
-* [[Security in Real World| Whonix Security in Real World]]
-* [[Whonix:Privacy_policy| Whonix.org Site Security]]
-* [[Comparison with Others| Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]
-* [[Comparison of different Whonix variants| Comparison of different Whonix variants]]
-* [[Screenshots| Screenshots]]
-* [[Trust| Trusting Whonix]]
-* [[Fingerprint| Fingerprint]]
-* [https://github.com/Whonix/Whonix/blob/master/COPYING License]
-* [[Download#Known_bugs| Known bugs]]
-* [[Why_Whonix_is_Free_Software| Why Whonix is free in price as well is in freedom?]]</small>
+* [[<tvar|A>Main Page|</> Very brief introduction and summary on Whonix Homepage]]
+* [[<tvar|A>Anonymity|</> Why do you need anonymity?]]
+* [[<tvar|A>The World Wide Web And Your Privacy|</> The World Wide Web and your privacy]]
+* [[<tvar|A>Surveillance Capabilities|</> Surveillance Capabilities]]
+* [[<tvar|A>Data Collection Techniques|</> Data Collection Techniques]]
+* [[<tvar|A>Why_does_Whonix_use_Tor|</> Why does Whonix use Tor?]]
+* [[<tvar|A>Why is Tor slow|</> Why is Tor slow?]]
+* [[<tvar|A>About|</> More About Whonix]]
+* [[<tvar|A>Features|</> Features]]
+* [[<tvar|A>System Requirements|</> System requirements]]
+* [[<tvar|A>Warning|</> Warnings!]]
+* [[<tvar|A>DoNot|</> Non-technical steps for staying anonymous]]
+* [[<tvar|A>Security in Real World|</> Whonix Security in Real World]]
+* [[<tvar|A>Whonix:Privacy_policy|</> Whonix.org Site Security]]
+* [[<tvar|A>Comparison with Others|</> Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]
+* [[<tvar|A>Comparison of different Whonix variants|</> Comparison of different Whonix variants]]
+* [[<tvar|A>Screenshots|</> Screenshots]]
+* [[<tvar|A>Trust|</> Trusting Whonix]]
+* [[<tvar|A>Fingerprint|</> Fingerprint]]
+* [<tvar|A>https://github.com/Whonix/Whonix/blob/master/COPYING</> License]
+* [[<tvar|A>Download#Known_bugs|</> Known bugs]]
+* [[<tvar|A>Why_Whonix_is_Free_Software|</> Why Whonix is free in price as well is in freedom?]]</small>
 </div>
 
 
@@ -72,16 +72,15 @@ Anonymity is a complex problem without an easy solution, and security is only as
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 
 <small> 
-* [[<tvar|A>Download#First_time_user.3F|</> First time user?]]
-* [[<tvar|A>Download#Download_Whonix|</> Download Whonix]]
-* [[<tvar|A>Whonix Signing Key|</> Download Whonix signing key]]
-* [[<tvar|A>Download#Verify_the_Whonix_images|</> Verify the Whonix images]]
-** [[<tvar|A>Verify_the_virtual_machine_images_using_Linux|</> For Linux: Ubuntu, Debian, Whonix, etc. using kgpg]]
-** [[<tvar|A>Verify_the_virtual_machine_images_using_the_command_line|</> For Linux with the command line]]
-** [[<tvar|A>Verify_the_virtual_machine_images_using_other_operating_systems|</> For Windows or Mac]]
-*  [[<tvar|A>Pre Install Advice|</> Security Advice before installing Whonix]]
-*  [[<tvar|A>Download#Install_Whonix|</> Install Whonix]]</small>
-</div>
+* [[Download#First_time_user.3F| First time user?]]
+* [[Download#Download_Whonix| Download Whonix]]
+* [[Whonix Signing Key| Download Whonix signing key]]
+* [[Download#Verify_the_Whonix_images| Verify the Whonix images]]
+** [[Verify_the_virtual_machine_images_using_Linux| For Linux: Ubuntu, Debian, Whonix, etc. using kgpg]]
+** [[Verify_the_virtual_machine_images_using_the_command_line| For Linux with the command line]]
+** [[Verify_the_virtual_machine_images_using_other_operating_systems| For Windows or Mac]]
+*  [[Pre Install Advice| Security Advice before installing Whonix]]
+*  [[Download#Install_Whonix| Install Whonix]]</small>
 </div>
 
 
@@ -265,30 +264,29 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** [[File_Transfer#Adding_USB_device_to_VirtualBox| Adding USB device to VirtualBox]]
 ** [[File Transfer#Shared Folder| Shared Folder]]</small>
 <small> 
-** [[<tvar|A>File Transfer#SSH into Whonix-Gateway|</> sshfs (or ssh) into Whonix-Gateway]]
-** [[<tvar|A>File_Transfer#SSH_into_Whonix-Workstation|</> sshfs (or ssh) into Whonix-Workstation]]
-** [[<tvar|A>Sshfs_into_Whonix-Workstation|</> sshfs into Whonix-Workstation standalone instructions]]
-** [[<tvar|A>File Transfer#Mount and inspect images|</> Mount and inspect images, IMG, VDI]]
-* [[<tvar|A>Tuning|</> Tuning]]
-** [[<tvar|A>Tuning|</> Introduction]]
-** [[<tvar|A>Tuning|</> Increase Virtual Machine RAM]]
-** [[<tvar|A>Tuning|</> More CPU cores]]
-** [[<tvar|A>Tuning|</> Removing packages]]
-** [[<tvar|A>Tuning|</> Replacing desktop environment]]
-** [[<tvar|A>Tuning|</> Synthetic CPU]]
-** [[<tvar|A>Tuning|</> Nested paging and VPIDs]]
-** [[<tvar|A>Tuning|</> Guest Additions]]
-** [[<tvar|A>Tuning|</> Hardware-accelerated graphics]]
-** [[<tvar|A>Tuning|</> Memory ballooning, Page Fusion, Memory overcommitment]]
-** [[<tvar|A>Tuning|</> 64 bit architecture]]
-** [[<tvar|A>Tuning|</> Optimized builds]]
-** [[<tvar|A>Tuning|</> PCI Passthrough]]
-* [[<tvar|A>Manually_Creating_Whonix|</> Manually Creating Whonix]]
-* [[<tvar|A>Dev/Other Virtualization Platforms|</> Other Virtualization Platforms]]
-* [[<tvar|A>Skipping Whonix Postinst Scripts|</> How to skip/blacklist selected Whonix Postinst Scripts]]
-* [[<tvar|A>sparse_files|</> sparse files]]
-* [[<tvar|A>Nested Virtualization|</> Running VMs inside VMs (Nested Virtualization)]]</small>
-</div>
+** [[File Transfer#SSH into Whonix-Gateway| sshfs (or ssh) into Whonix-Gateway]]
+** [[File_Transfer#SSH_into_Whonix-Workstation| sshfs (or ssh) into Whonix-Workstation]]
+** [[Sshfs_into_Whonix-Workstation| sshfs into Whonix-Workstation standalone instructions]]
+** [[File Transfer#Mount and inspect images| Mount and inspect images, IMG, VDI]]
+* [[Tuning| Tuning]]
+** [[Tuning| Introduction]]
+** [[Tuning| Increase Virtual Machine RAM]]
+** [[Tuning| More CPU cores]]
+** [[Tuning| Removing packages]]
+** [[Tuning| Replacing desktop environment]]
+** [[Tuning| Synthetic CPU]]
+** [[Tuning| Nested paging and VPIDs]]
+** [[Tuning| Guest Additions]]
+** [[Tuning| Hardware-accelerated graphics]]
+** [[Tuning| Memory ballooning, Page Fusion, Memory overcommitment]]
+** [[Tuning| 64 bit architecture]]
+** [[Tuning| Optimized builds]]
+** [[Tuning| PCI Passthrough]]
+* [[Manually_Creating_Whonix| Manually Creating Whonix]]
+* [[Dev/Other Virtualization Platforms| Other Virtualization Platforms]]
+* [[Skipping Whonix Postinst Scripts| How to skip/blacklist selected Whonix Postinst Scripts]]
+* [[sparse_files| sparse files]]
+* [[Nested Virtualization| Running VMs inside VMs (Nested Virtualization)]]</small>
 </div>
 
 
