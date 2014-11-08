@@ -43,29 +43,28 @@ Anonymity is a complex problem without an easy solution, and security is only as
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 
 <small>
-* [[<tvar|A>Main Page|</> Very brief introduction and summary on Whonix Homepage]]
-* [[<tvar|A>Anonymity|</> Why do you need anonymity?]]
-* [[<tvar|A>The World Wide Web And Your Privacy|</> The World Wide Web and your privacy]]
-* [[<tvar|A>Surveillance Capabilities|</> Surveillance Capabilities]]
-* [[<tvar|A>Data Collection Techniques|</> Data Collection Techniques]]
-* [[<tvar|A>Why_does_Whonix_use_Tor|</> Why does Whonix use Tor?]]
-* [[<tvar|A>Why is Tor slow|</> Why is Tor slow?]]
-* [[<tvar|A>About|</> More About Whonix]]
-* [[<tvar|A>Features|</> Features]]
-* [[<tvar|A>System Requirements|</> System requirements]]
-* [[<tvar|A>Warning|</> Warnings!]]
-* [[<tvar|A>DoNot|</> Non-technical steps for staying anonymous]]
-* [[<tvar|A>Security in Real World|</> Whonix Security in Real World]]
-* [[<tvar|A>Whonix:Privacy_policy|</> Whonix.org Site Security]]
-* [[<tvar|A>Comparison with Others|</> Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]
-* [[<tvar|A>Comparison of different Whonix variants|</> Comparison of different Whonix variants]]
-* [[<tvar|A>Screenshots|</> Screenshots]]
-* [[<tvar|A>Trust|</> Trusting Whonix]]
-* [[<tvar|A>Fingerprint|</> Fingerprint]]
-* [<tvar|A>https://github.com/Whonix/Whonix/blob/master/COPYING</> License]
-* [[<tvar|A>Download#Known_bugs|</> Known bugs]]
-* [[<tvar|A>Why_Whonix_is_Free_Software|</> Why Whonix is free in price as well is in freedom?]]</small>
-</div>
+* [[Main Page| Very brief introduction and summary on Whonix Homepage]]
+* [[Anonymity| Why do you need anonymity?]]
+* [[The World Wide Web And Your Privacy| The World Wide Web and your privacy]]
+* [[Surveillance Capabilities| Surveillance Capabilities]]
+* [[Data Collection Techniques| Data Collection Techniques]]
+* [[Why_does_Whonix_use_Tor| Why does Whonix use Tor?]]
+* [[Why is Tor slow| Why is Tor slow?]]
+* [[About| More About Whonix]]
+* [[Features| Features]]
+* [[System Requirements| System requirements]]
+* [[Warning| Warnings!]]
+* [[DoNot| Non-technical steps for staying anonymous]]
+* [[Security in Real World| Whonix Security in Real World]]
+* [[Whonix:Privacy_policy| Whonix.org Site Security]]
+* [[Comparison with Others| Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]
+* [[Comparison of different Whonix variants| Comparison of different Whonix variants]]
+* [[Screenshots| Screenshots]]
+* [[Trust| Trusting Whonix]]
+* [[Fingerprint| Fingerprint]]
+* [https://github.com/Whonix/Whonix/blob/master/COPYING License]
+* [[Download#Known_bugs| Known bugs]]
+* [[Why_Whonix_is_Free_Software| Why Whonix is free in price as well is in freedom?]]</small>
 </div>
 
 
@@ -89,18 +88,17 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''First steps with Whonix'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[<tvar|A>Post Install Advice|</> Security Advice after Installing Whonix]]
-* [[<tvar|A>Starting Whonix#Starting Whonix|</> Starting Whonix]]
-* [[<tvar|A>Starting Whonix#Boot Options|</> Startup Options]]
-* [[<tvar|A>Bridges|</> Tor Bridge Mode, using (private) (obfuscated) bridges]]
-* [[<tvar|A>Download#Stay tuned|</> Stay tuned]]
-* [[<tvar|A>Language|</> Change the system language]]
-* [[<tvar|A>Keyboard Layout|</> Change the keyboard layout]]
-* [[<tvar|A>Desktop|</> KDE/Whonix Desktop Tips]]
-* [[<tvar|A>Higher_Screen_Resolution|</> Higher Screen Resolution without installing VirtualBox guest additions]]
-* [[<tvar|A>Security Guide|</> Security Guide]]
-* [[<tvar|A>Install Software|</> Install additional software]]</small>
-</div>
+* [[Post Install Advice| Security Advice after Installing Whonix]]
+* [[Starting Whonix#Starting Whonix| Starting Whonix]]
+* [[Starting Whonix#Boot Options| Startup Options]]
+* [[Bridges| Tor Bridge Mode, using (private) (obfuscated) bridges]]
+* [[Download#Stay tuned| Stay tuned]]
+* [[Language| Change the system language]]
+* [[Keyboard Layout| Change the keyboard layout]]
+* [[Desktop| KDE/Whonix Desktop Tips]]
+* [[Higher_Screen_Resolution| Higher Screen Resolution without installing VirtualBox guest additions]]
+* [[Security Guide| Security Guide]]
+* [[Install Software| Install additional software]]</small>
 </div>
 
 
@@ -108,44 +106,42 @@ Anonymity is a complex problem without an easy solution, and security is only as
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 
 <small>
-* [[<tvar|A>Reporting Bugs|</> Reporting Bugs]]
-* [[<tvar|A>Test|</> Troubeshooting]]
-* [[<tvar|A>Starting Whonix#PAE crash|</> Whonix does not start]]</small>
-</div>
+* [[Reporting Bugs| Reporting Bugs]]
+* [[Test| Troubeshooting]]
+* [[Starting Whonix#PAE crash| Whonix does not start]]</small>
 </div>
 
 
 '''Connect to the Internet anonymously'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[<tvar|A>Logging_in_to_captive_portals|</> Logging in to captive portals, Hotspot Wi-Fi registration]]
-* [[<tvar|A>Tor Controller|</> Controlling Tor]]
-* [[<tvar|A>Tor Browser|</> Browsing the web with Tor Browser]]
-** [[<tvar|A>Surfing_Posting_Blogging|</> Surfing, Posting, Blogging]]
-** [[<tvar|A>Browser Plugins|</> Using Browser Plugins, Adobe Flash]]
-* [[<tvar|A>Chat|</> Chatting]]
-** [[<tvar|A>Chat#General Safety Advice|</> General Safety Advice]]
-** [[<tvar|A>Chat#TorChat|</> TorChat]]
-** [[<tvar|A>Chat#RetroShare|</> RetroShare serverless encrypted instant messenger and more - experimental in Whonix]]
-** [[<tvar|A>Chat#Pidgin|</> Pidgin multi-protocol instant messenger]]
-** [[<tvar|A>Chat#OTR_encryption|</> Pidgin OTR end-to-end encryption]]
-** [[<tvar|A>XChat|</> Chatting on IRC with XChat]]
-* [[<tvar|A>Hosting Location Hidden Services|</> Hosting Location/IP Hidden Servers]]
-** [[<tvar|A>Hidden Services|</> Hosting Tor Hidden Services, ANY, Hidden Webserver]]
-** [[<tvar|A>Hosting|</> Third Party Hosting Services]]
-* [[<tvar|A>File Sharing|</> Filesharing, BitTorrent]]
-* [[<tvar|A>E-Mail|</> E-Mail: Introduction, Webmail, Mozilla Thunderbird with TorBirdy]]
-** [[<tvar|A>Remailer|</> Sending e-mails without registration through Webinterface, Introduction into Remailer]]
-** [[<tvar|A>Mixmaster|</> Mixmaster, a Remailer over Tor]]
-* [[<tvar|A>rss|</> rss reader (unfinished in Whonix - under development), subscribing to website and/or blog updates, rss to e-mail and rss to sms]]
-* [[<tvar|A>Money|</> Anonymous Money, anonymously pay and receive money, Bitcoin, BTC (DRAFT!)]]
-* [[<tvar|A>VoIP|</> Phone Calls, Voice over IP, VoIP (experimental!)]]
-* [[<tvar|A>Other Anonymizing Networks|</> Accessing Other Anonymizing Services over Tor]]
-** [[<tvar|A>i2p|</> i2p]]
-** [[<tvar|A>Freenet|</> Freenet (hack, advanced users only)]]
-** [[<tvar|A>JonDonym|</> JonDonym]]
-** [[<tvar|A>Chat#RetroShare|</> RetroShare (experimental in Whonix)]]</small>
-</div>
+* [[Logging_in_to_captive_portals| Logging in to captive portals, Hotspot Wi-Fi registration]]
+* [[Tor Controller| Controlling Tor]]
+* [[Tor Browser| Browsing the web with Tor Browser]]
+** [[Surfing_Posting_Blogging| Surfing, Posting, Blogging]]
+** [[Browser Plugins| Using Browser Plugins, Adobe Flash]]
+* [[Chat| Chatting]]
+** [[Chat#General Safety Advice| General Safety Advice]]
+** [[Chat#TorChat| TorChat]]
+** [[Chat#RetroShare| RetroShare serverless encrypted instant messenger and more - experimental in Whonix]]
+** [[Chat#Pidgin| Pidgin multi-protocol instant messenger]]
+** [[Chat#OTR_encryption| Pidgin OTR end-to-end encryption]]
+** [[XChat| Chatting on IRC with XChat]]
+* [[Hosting Location Hidden Services| Hosting Location/IP Hidden Servers]]
+** [[Hidden Services| Hosting Tor Hidden Services, ANY, Hidden Webserver]]
+** [[Hosting| Third Party Hosting Services]]
+* [[File Sharing| Filesharing, BitTorrent]]
+* [[E-Mail| E-Mail: Introduction, Webmail, Mozilla Thunderbird with TorBirdy]]
+** [[Remailer| Sending e-mails without registration through Webinterface, Introduction into Remailer]]
+** [[Mixmaster| Mixmaster, a Remailer over Tor]]
+* [[rss| rss reader (unfinished in Whonix - under development), subscribing to website and/or blog updates, rss to e-mail and rss to sms]]
+* [[Money| Anonymous Money, anonymously pay and receive money, Bitcoin, BTC (DRAFT!)]]
+* [[VoIP| Phone Calls, Voice over IP, VoIP (experimental!)]]
+* [[Other Anonymizing Networks| Accessing Other Anonymizing Services over Tor]]
+** [[i2p| i2p]]
+** [[Freenet| Freenet (hack, advanced users only)]]
+** [[JonDonym| JonDonym]]
+** [[Chat#RetroShare| RetroShare (experimental in Whonix)]]</small>
 </div>
 
 
@@ -188,35 +184,33 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''Tunnel Support / Chaining Support'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[<tvar|A>Features#VPN_.2F_Tunnel_support|</> Tunnel Support]]
-* [[<tvar|A>Tunnel_Tor_through_proxy_or_VPN_or_SSH|</> Tunnel Tor through proxy, VPN or SSH (proxy/VPN/SSH -> Tor)]]
-** [[<tvar|A>Tunnel_Tor_through_proxy_or_VPN_or_SSH|</> Tunnel Tor through proxy (proxy -> Tor)]]
-** [[<tvar|A>Tunnel_Tor_through_proxy_or_VPN_or_SSH|</> Tunnel Tor through SSH (SSH -> Tor)]]
-** [[<tvar|A>Tunnel_Tor_through_proxy_or_VPN_or_SSH|</> Tunnel Tor through VPN (VPN -> Tor)]]
-* [[<tvar|A>Tunnel_Proxy_or_SSH_or_VPN_through_Tor|</> Tunnel proxy/proxychains/SSH/VPN through Tor (Tor -> Proxy/SSH/VPN)]]
-** [[<tvar|A>Tunnel_Proxy_or_SSH_or_VPN_through_Tor|</> Tunnel proxy/proxychains through Tor (Tor -> proxy)]]
-** [[<tvar|A>Tunnel_Proxy_or_SSH_or_VPN_through_Tor|</> Tunnel SSH through Tor (Tor -> SSH)]]
-** [[<tvar|A>Tunnel_Proxy_or_SSH_or_VPN_through_Tor|</> Tunnel VPN through Tor (Tor -> VPN)]]
-* [[<tvar|A>TestVPN|</> Example VPNs working with Whonix for testing purposes]]
-* [[<tvar|A>Advanced_Security_Guide#Chaining_Anonymizing_Gateways|</> Chaining Anonymizing Gateways]]</small>
-</div>
+* [[Features#VPN_.2F_Tunnel_support| Tunnel Support]]
+* [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Tunnel Tor through proxy, VPN or SSH (proxy/VPN/SSH -> Tor)]]
+** [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Tunnel Tor through proxy (proxy -> Tor)]]
+** [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Tunnel Tor through SSH (SSH -> Tor)]]
+** [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Tunnel Tor through VPN (VPN -> Tor)]]
+* [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Tunnel proxy/proxychains/SSH/VPN through Tor (Tor -> Proxy/SSH/VPN)]]
+** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Tunnel proxy/proxychains through Tor (Tor -> proxy)]]
+** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Tunnel SSH through Tor (Tor -> SSH)]]
+** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Tunnel VPN through Tor (Tor -> VPN)]]
+* [[TestVPN| Example VPNs working with Whonix for testing purposes]]
+* [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways| Chaining Anonymizing Gateways]]</small>
 </div>
 
 
 '''Misc'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[<tvar|A>FAQ|</> FAQ - Frequently Asked Questions]]
-* [[<tvar|A>Authorship|</> Authors/Changelog, sources, credits and license]]
-* [[<tvar|A>Dev/Changelog|</> Changelog]]
-* [[<tvar|A>History|</> History of Whonix]]
-* [[<tvar|A>Whonix:General_disclaimer|</> DISCLAIMER]]
-* [[<tvar|A>Special:AllPages|</> List of all Whonix pages (Index)]]
-* [[<tvar|A>Contribute|</> Contribute]]
-* [[<tvar|A>Donate|</> Donate]]
-* [[<tvar|A>Official Whonix Online Profiles|</> Official Whonix Online Profiles (also Social Media)]]
-* [[<tvar|A>Contact|</> Contacting Whonix developers, Feedback, Questions]]</small>
-</div>
+* [[FAQ| FAQ - Frequently Asked Questions]]
+* [[Authorship| Authors/Changelog, sources, credits and license]]
+* [[Dev/Changelog| Changelog]]
+* [[History| History of Whonix]]
+* [[Whonix:General_disclaimer| DISCLAIMER]]
+* [[Special:AllPages| List of all Whonix pages (Index)]]
+* [[Contribute| Contribute]]
+* [[Donate| Donate]]
+* [[Official Whonix Online Profiles| Official Whonix Online Profiles (also Social Media)]]
+* [[Contact| Contacting Whonix developers, Feedback, Questions]]</small>
 </div>
 
 
@@ -315,31 +309,28 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''Other'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small> 
-* [[<tvar|A>Debian|</> Debian as Host Operating System Tips, Download, ISO gpg verification, Installation and Security]]
-* [[<tvar|A>Hosting_a_Whonix_Mirror|</> Hosting a Whonix Mirror]]
-* [[<tvar|A>Forcing_.onion_on_Whonix.org|</> Forcing .onion on Whonix.org]]</small>
-</div>
+* [[Debian| Debian as Host Operating System Tips, Download, ISO gpg verification, Installation and Security]]
+* [[Hosting_a_Whonix_Mirror| Hosting a Whonix Mirror]]
+* [[Forcing_.onion_on_Whonix.org| Forcing .onion on Whonix.org]]</small>
 </div>
 
 
 '''Esoteric Stuff (only for advanced users)'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[<tvar|A>Access Gateway Port From Host|</> Access Whonix-Gateway Ports From Host, make Tor accessible running inside Whonix-Gateway on the host]]
-* [[<tvar|A>Whonix-Gateways Own Traffic Transparent Proxy|</> Enable Transparent Proxying for Whonix-Gateway's own traffic]]
-* [[<tvar|A>Whonix-Gateway System DNS|</> Getting the global system DNS resolver working on Whonix-Gateway (usually recommended against and unnecessary)]]</small>
-</div>
+* [[Access Gateway Port From Host| Access Whonix-Gateway Ports From Host, make Tor accessible running inside Whonix-Gateway on the host]]
+* [[Whonix-Gateways Own Traffic Transparent Proxy| Enable Transparent Proxying for Whonix-Gateway's own traffic]]
+* [[Whonix-Gateway System DNS| Getting the global system DNS resolver working on Whonix-Gateway (usually recommended against and unnecessary)]]</small>
 </div>
 
 
 '''Appendix'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small> 
-* [[<tvar|A>Introduction|</> Introduction into Whonix Documentation]]
-* [<tvar|A>https://metrics.torproject.org/exonerator.html</>  ExoneraTor: a website that tells you whether a given IP address was a Tor relay]
-* [<tvar|A>https://metrics.torproject.org/Tor_Metrics_Portal|</> Tor Metrics Portal]
-* [<tvar|A>https://compass.torproject.org/Tor_Compass|</> Tor Compass]</small>
-</div>
+* [[Introduction| Introduction into Whonix Documentation]]
+* [https://metrics.torproject.org/exonerator.html  ExoneraTor: a website that tells you whether a given IP address was a Tor relay]
+* [https://metrics.torproject.org/Tor_Metrics_Portal| Tor Metrics Portal]
+* [https://compass.torproject.org/Tor_Compass| Tor Compass]</small>
 </div>
 
 
