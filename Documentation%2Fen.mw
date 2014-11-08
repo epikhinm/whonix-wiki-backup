@@ -170,13 +170,12 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''Work on sensitive documents'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[<tvar|A>Software#Office Suite|</> Office suite]]
-* [[<tvar|A>Software#Image Editing|</> Graphics]]
-* [[<tvar|A>Software#Video Editing|</> Video]]
-* [[<tvar|A>Software#Publishing|</> Publishing]]
-* [[<tvar|A>Software#Audio Editing|</> Audio]]
-* [[<tvar|A>Software#Printing and Scanning|</> Printing and scanning]]</small>
-</div>
+* [[Software#Office Suite| Office suite]]
+* [[Software#Image Editing| Graphics]]
+* [[Software#Video Editing| Video]]
+* [[Software#Publishing| Publishing]]
+* [[Software#Audio Editing| Audio]]
+* [[Software#Printing and Scanning| Printing and scanning]]</small>
 </div>
 
 
@@ -296,12 +295,11 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''Advanced Topics - Platform Support'''
 <div style="column-count:2;-moz-column-count:2;-webkit-column-count:2">
 <small> 
-* [[<tvar|A>Dev/Build_Documentation/Physical_Isolation|</> Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]] (stable)
-* [[<tvar|A>KVM|</> Whonix using KVM rather than VirtualBox]] (testers-only)
-* [[<tvar|A>QEMU|</> Whonix using QEMU rather than VirtualBox]] (testers-only)
-* [[<tvar|A>VMware|</> Whonix using VMware rather than VirtualBox]] (unmaintained)
-* [[<tvar|A>Qubes OS|</> Whonix using Qubes OS rather than VirtualBox]] (in development)</small>
-</div>
+* [[Dev/Build_Documentation/Physical_Isolation| Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]] (stable)
+* [[KVM| Whonix using KVM rather than VirtualBox]] (testers-only)
+* [[QEMU| Whonix using QEMU rather than VirtualBox]] (testers-only)
+* [[VMware| Whonix using VMware rather than VirtualBox]] (unmaintained)
+* [[Qubes OS| Whonix using Qubes OS rather than VirtualBox]] (in development)</small>
 </div>
 
 
