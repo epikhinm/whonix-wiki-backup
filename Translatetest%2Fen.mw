@@ -33,6 +33,7 @@ This wiki page contains material from the of the Tails Protection against cold b
 {{#seo:
 |description=Computer Security Guide for Whonix Linux for Advanced Users, Whonix Hardening
 }}
+
 = Basics =
 
 Please understand the basics first, read the [[Pre Install Advice]] first!
@@ -71,7 +72,7 @@ VBoxManage modifyvm "Whonix-Workstation" --biossystemtimeoffset +27931
 
 It is [https://github.com/Whonix/Whonix/issues/39 planned] to automate the above steps. Help welcome.
 
-Clock skew apart this small biossystemtimeoffset <ref>biossystemtimeoffset is being used, to unlink the initial clock synchronization of the VM by the Virtualizer from the host clock.</ref> <ref>Powering on a VM will initially synchronize the clock with the host clock until Whonix Timesync adjusts it.</ref> is always bad for privacy <ref>Can lead to linkability, thus would be [[DoNot#Do_not_confuse_Anonymity_with_Pseudonymity.|pseudonymous rather than anonymous]].</ref>.
+Clock skew apart this small biossystemtimeoffset <ref>biossystemtimeoffset is being used, to unlink the initial clock synchronization of the VM by the Virtualizer from the host clock.</ref> <ref>Powering on a VM will initially synchronize the clock with the host clock until Whonix Timesync adjusts it.</ref> is always bad for privacy <ref>Can lead to linkability, thus would be [[DoNot#Do_not_confuse_Anonymity_with_Pseudonymity.| pseudonymous rather than anonymous]].</ref>.
 
 When you suspend/save the state of a VM, clock will stop and continue after resume, thus lag behind. You shouldn't suspend/save the state of Whonix-Gateway. Rather power the Gateway off, if you no longer need it. <ref>Otherwise Tor can get confused if time is more than 1 hour in past or more than 3 hour in future and will only reconnect to the Tor network, if clock is manually fixed or powered off and powered on again.</ref> You can suspend/save the state of Whonix-Workstation, but then the clock will lag behind. To fix it run inside Whonix-Workstation Start Menu -> Applications -> System -> Whonix Timesync.
 
@@ -83,7 +84,7 @@ Another side effect of the host clock being too much off is, that downloading op
 
 Before you think, your ISP is tampering with NTP, ensure first, that not simply the host clock is defect due to an empty battery.
 
-If you should really ever catch your ISP tampering with NTP, you should probably disable it and manually update the host clock out of band, i.e. using a watch or atomic clock. In case it isn't a large scale attack, but a targeted attack, you most likely have already bigger problems to worry about than NTP. (See Warning page chapter [[Warning#Confirmation attacks|Confirmation attacks]].)
+If you should really ever catch your ISP tampering with NTP, you should probably disable it and manually update the host clock out of band, i.e. using a watch or atomic clock. In case it isn't a large scale attack, but a targeted attack, you most likely have already bigger problems to worry about than NTP. (See Warning page chapter [[Warning#Confirmation attacks| Confirmation attacks]].)
 
 You have also another option. You could disable NTP on your host and always manually adjust the clock out of band, i.e. using a watch or atomic clock. This might make your clearnet traffic more fingerprintable <ref>See [[Fingerprint]] page to find out what fingerprinting means in this case.</ref>, since it introduces a device issuing clearnet traffic (at least operating system updates, I hope), but not using NTP. I don't know how many people deactivated/broken/uninstalled/never installed NTP. Neither I know, how many people are using alternative time synchronization methods such as authenticated NTP, tails_htp, tlsdate or similar. Search engine research however suggests, that very few people care and do so.
 
@@ -110,7 +111,8 @@ Run.
 sudo update-rc.d sdwdate remove
 </pre>
 
-Create a file {{Code|/etc/sdwdate.d/50_sdwdate_user}}.
+Create a file 
+{{Code|/etc/sdwdate.d/50_sdwdate_user}}.
 
 <pre>
 kdesudo kwrite /etc/sdwdate.d/50_sdwdate_user
@@ -253,7 +255,7 @@ From time to time someone asks, which ports incoming/outgoing Whonix-Gateway req
 
 ==== Incoming ====
 
-Whonix-Gateway itself does not open any ports. Closing ports on the host is still advised. That was already covered in the [[Pre_Install_Advice#Host_Firewall|Pre Install Advice, chapter Host Firewall]].
+Whonix-Gateway itself does not open any ports. Closing ports on the host is still advised. That was already covered in the [[Pre_Install_Advice#Host_Firewall| Pre Install Advice, chapter Host Firewall]].
 
 ==== Outgoing ====
 '''Recommended against.''' Port based filtering of outgoing traffic isn't applicable (as in useful) in case of Whonix-Gateway.
@@ -262,7 +264,8 @@ Filtering outgoing ports is difficult, since Tor entry guards (or bridges) liste
 
 On Whonix-Gateway.
 
-Open your {{Code2|/etc/tor/torrc}}.
+Open your 
+{{Code2|/etc/tor/torrc}}.
 
 <pre>sudo nano /etc/tor/torrc</pre>
 
@@ -325,7 +328,7 @@ In both cases the RAM contents can be analyzed in a computer forensics laborator
 
 As far as the authors know, cold boot attacks are not standard procedure within law enforcements and similar organizations anywhere in the world yet, but it might still be good to be prepared and stay on the safe side.
 
-Wipe RAM on shutdown (e.g. using a kexec script) - or do not leave the computer unattended immediately after shutdown. Unfortunately there is not yet an upstream script, to implement wiping the RAM on shutdown. We can not provide a solution for this attack, this is solved nowhere but [https://tails.boum.org/bugs/sdmem_does_not_clear_all_memory/ partially] in Tails and Liberte Linux (not checked), waiting for upstream solution, see [[Dev#SECURITY_Wipe_RAM_panic_script_OPEN_NEEDS_RESEARCH_NEEDS_CODE|Dev#Wipe RAM panic script]]. It's up to you to implement a panic button which will wipe the RAM, please [[Contribute]]. The least you can do is [[Contribute#Vote|Vote]] at upstream for the feature.
+Wipe RAM on shutdown (e.g. using a kexec script) - or do not leave the computer unattended immediately after shutdown. Unfortunately there is not yet an upstream script, to implement wiping the RAM on shutdown. We can not provide a solution for this attack, this is solved nowhere but [https://tails.boum.org/bugs/sdmem_does_not_clear_all_memory/ partially] in Tails and Liberte Linux (not checked), waiting for upstream solution, see [[Dev#SECURITY_Wipe_RAM_panic_script_OPEN_NEEDS_RESEARCH_NEEDS_CODE| Dev#Wipe RAM panic script]]. It's up to you to implement a panic button which will wipe the RAM, please [[Contribute]]. The least you can do is [[Contribute#Vote| Vote]] at upstream for the feature.
 
 '''Hypothetical...''' So, what should you do when you hear an attacker knocking at your door? You could just press the hypothetical panic button on the host. It would start to wipe the contents of the RAM by filling it out with random junk, thus erasing everything that was stored there before, including the encryption key of the encrypted storage devices you might use and the traces of your session. Then you would wait, possibly trying to buy valuable time by barricading your door.
 
@@ -354,6 +357,7 @@ Experience has shown that "security through obscurity" does not work. Public dis
 allows for more rapid and better solutions to security problems. In that vein, this
 page addresses Debian's status with respect to various known security holes, which
 could potentially affect Debian.</pre>
+
 Consider also subscribing to the Debian security announcement mailing list.
 
 === Harden Debian ===
@@ -386,7 +390,7 @@ For Whonix-Workstation the benefits are even more doubtful. To be effective grse
 
 If you disagree with this assessment or have any suggestions how to improve the current situation please let us know.
 
-Experts only: There is also Hardened Gentoo based Whonix-Gateway. Outdated, needs maintainer. See [[Hardened Gentoo TG]].
+Experts only: There is also Hardened Gentoo based Whonix-Gateway. Outdated, needs maintainer. See [[Hardened Gentoo TG]] .
 
 Updates:
 * There's Alpine Linux, where Tor is in testing. [http://bugs.alpinelinux.org/issues/1067 Package Request: Tor].</ref>
@@ -401,17 +405,17 @@ Footnotes:
 The issue with:
 * Installer DVDs (including [https://www.debian.org Debian] and others)
 * Live DVDs (such as [https://tails.boum.org Tails] and others)
-* Readily [[Download|downloadable]] and importable VM images (Whonix and [http://virtualboxes.org/ others])
-* VM images that are built with frozen sources rather than [[Dev/Build_Documentation/9_full#CurrentSources_Builds_.28Optional.29|current sources]] (including Whonix)
-is that latest stable releases sometimes contain vulnerable, remotely exploitable applications that are very likely to be used over untrusted networks<ref>Such as Tor exit relays.</ref> that are in a position to run [[Warning#Man-in-the-middle_attacks|man-in-the-middle attacks]]. One example of this is [[https://lists.debian.org/debian-security-announce/2014/msg00219.html CVE-2014-6273]] in apt-get.
+* Readily [[Download| downloadable]] and importable VM images (Whonix and [http://virtualboxes.org/ others])
+* VM images that are built with frozen sources rather than [[Dev/Build_Documentation/9_full#CurrentSources_Builds_.28Optional.29| current sources]] (including Whonix)
+is that latest stable releases sometimes contain vulnerable, remotely exploitable applications that are very likely to be used over untrusted networks<ref>Such as Tor exit relays.</ref> that are in a position to run [[Warning#Man-in-the-middle_attacks| man-in-the-middle attacks]]. One example of this is [[https://lists.debian.org/debian-security-announce/2014/msg00219.html CVE-2014-6273]] in apt-get.
 
 Please help research and document sane and effective solutions. [https://www.whonix.org/forum/index.php/topic,565.0/topicseen.html Forum discussion].
 
 === Possible Solutions ===
 ==== apt-cache ====
-Whonix-Gateway (when using virtual machines) could be configured to use the host apt-cache. [[Physical Isolation|Physically isolated]] Whonix-Gateways could use an apt-cache running on a separate machine. [https://packages.debian.org/wheezy/apt-cacher-ng apt-cacher-ng] is an example implementation of such an apt-cache.
+Whonix-Gateway (when using virtual machines) could be configured to use the host apt-cache. [[Physical Isolation| Physically isolated]] Whonix-Gateways could use an apt-cache running on a separate machine. [https://packages.debian.org/wheezy/apt-cacher-ng  apt-cacher-ng] is an example implementation of such an apt-cache.
 
-[[Security_Guide#Updates|Operating system updates]] would not be anonymized by default, which would be a big disadvantage<ref>Leaks list of installed packages to ISP level adversaries and update servers. You usually don't want them to know that you installed a webserver and therefore likely host a hidden web service and so forth.</ref>. One would have to figure out how to configure apt-cacher-ng on the host to download through Tor.
+[[Security_Guide#Updates| Operating system updates]] would not be anonymized by default, which would be a big disadvantage<ref>Leaks list of installed packages to ISP level adversaries and update servers. You usually don't want them to know that you installed a webserver and therefore likely host a hidden web service and so forth.</ref>. One would have to figure out how to configure apt-cacher-ng on the host to download through Tor.
 
 Eventually Whonix-Workstation could use an apt-cache that is running on Whonix-Gateway. This would increase Whonix-Gateways's attack surface once Whonix-Workstation is compromised while decreasing Whonix-Workstation's attack surface when using a vulnerable apt-get to download through untrusted Tor exit relays.
 
@@ -419,10 +423,10 @@ Eventually Whonix-Workstation could use an apt-cache that is running on Whonix-G
 Somehow using [https://packages.debian.org/wheezy/apt-offline apt-offline] to do the initial updates of Whonix-Gateway and Whonix-Workstation.
 
 ==== Building from Source Code using Current Sources ====
-Self-created builds from source code using [[Dev/Build_Documentation/9_full#CurrentSources_Builds_.28Optional.29|current sources]] would solve this. However, frozen sources have been implemented for reasons explained in the "Current Sources" chapter. Using Current Sources comes with its own issues.
+Self-created builds from source code using [[Dev/Build_Documentation/9_full#CurrentSources_Builds_.28Optional.29| current sources]] would solve this. However, frozen sources have been implemented for reasons explained in the "Current Sources" chapter. Using Current Sources comes with its own issues.
 
 ==== Always Up to Date Builds ====
-A good solution for end users; however, the maintenance effort (building, testing, uploading) is beyond our current ability. We need help with [[Contribute#Testing|testing]] and with an automated test suite for Whonix.
+A good solution for end users; however, the maintenance effort (building, testing, uploading) is beyond our current ability. We need help with [[Contribute#Testing| testing]] and with an automated test suite for Whonix.
 
 = Virtualization Platform =
 
@@ -441,7 +445,7 @@ Related VirtualBox Links:
 
 See also:
 
-* [[Dev/Virtualization_Platform]]
+* [https://www.whonix.org/wiki/Dev/Virtualization_Platform| Virtualization_Platform]
 
 == Qubes OS ==
 
@@ -457,7 +461,7 @@ We must not end up with non-standard desktop resolution, as per [[Protocol-Leak-
 
 == Hardening ==
 === Introduction ===
-Whonix isn't a perfectly hardened system. Additional hardening would be very welcome. At the same time, hardening by default is very difficult. That's why this is outside the scope of the Whonix Anonymous Operating System project, unless the project gets serious amounts of help with it. Hardening is left to the upstream operating system. See [[Dev/Operating System]] for details.
+Whonix isn't a perfectly hardened system. Additional hardening would be very welcome. At the same time, hardening by default is very difficult. That's why this is outside the scope of the Whonix Anonymous Operating System project, unless the project gets serious amounts of help with it. Hardening is left to the upstream operating system. See [https://www.whonix.org/wiki/Dev/Virtualization_Platform| Operating System] for details.
 
 === AppArmor ===
 Learn about [http://wiki.apparmor.net AppArmor]. Check out Whonix's [[AppArmor]] profiles.
@@ -498,13 +502,13 @@ To check the status of SELinux run:
 == More than one Tor Browser in Whonix ==
 These instructions only work with TBB 3.x and above.
 
-As the [[Warning]] page stated, [[Warning#Whonix_doesn.27t_magically_separate_your_different_contextual_identities | Whonix doesn't magically separate your different contextual identities]] and since Tor Browser and Tor Button do not yet solve this, for further separation of identities you could use [[Multiple Whonix-Workstations]], which would be more secure.
+As the [[Warning]] page stated, [[Warning#Whonix_doesn.27t_magically_separate_your_different_contextual_identities| Whonix doesn't magically separate your different contextual identities]] and since Tor Browser and Tor Button do not yet solve this, for further separation of identities you could use [[Multiple Whonix-Workstations]], which would be more secure.
 
 Alternatively, less secure than Multiple Whonix-Workstations, you could start multiple instances of Tor Browser and run them through different SocksPorts. The instructions in the [[Manually Updating Tor Browser]] article need minimal changes.
 
 You need to extract Tor Browser into a different folder.
 
-You also have to use a different SocksPort, see [[Tor_Browser#Change.2FRemove_Proxy_Settings|Change/Remove Proxy Settings]]. (See [[Stream Isolation]] page for explanation why you should use different SocksPorts.)
+You also have to use a different SocksPort, see [[Tor_Browser#Change.2FRemove_Proxy_Settings| Change/Remove Proxy Settings]]. (See [[Stream Isolation]] page for explanation why you should use different SocksPorts.)
 
 == Using multiple Whonix-Workstations ==
 
@@ -523,12 +527,13 @@ Open ''/etc/network/interfaces'' [https://github.com/Whonix/Whonix/blob/stable/w
 
 == Disable Control Port Filter Proxy ==
 === Introduction ===
-Disabling [[Dev/CPFP|Control Port Filter Proxy]] (CPFP) can improve security while sacrificing usability. You will receive helpful notifications when Tor is not fully bootstrapped anymore by multiple tools that come with Whonix.
+Disabling [https://www.whonix.org/wiki/Dev/CPFP| Control Port Filter Proxy] (CPFP) can improve security while sacrificing usability. You will receive helpful notifications when Tor is not fully bootstrapped anymore by multiple tools that come with Whonix.
 
 === How ===
 ==== On Whonix-Gateway ====
 ===== Deactivate CPFP in Firewall =====
-Create a file {{Code2|/etc/whonix_firewall.d/50_user}}.
+Create a file 
+{{Code2|/etc/whonix_firewall.d/50_user}}.
 
 <pre>
 sudo nano /etc/whonix_firewall.d/50_user
@@ -572,7 +577,8 @@ If you see the following, then disabling didn't work.
 </pre>
 
 ===== Deactivate whonixcheck CPFP running test =====
-Create a file {{Code|/etc/whonix.d/50_whonixcheck_user}}.
+Create a file 
+{{Code|/etc/whonix.d/50_whonixcheck_user}}.
 
 <pre>
 sudo nano /etc/whonix.d/50_whonixcheck_user
@@ -588,7 +594,8 @@ whonixcheck_skip_functions+=" check_control_port_filter_running "
 ===== Deactivate [[whonixcheck]]'s Tor bootstrap test =====
 Because it relies on CPFP.
 
-Create a file {{Code|/etc/whonix.d/50_whonixcheck_user}}.
+Create a file 
+{{Code|/etc/whonix.d/50_whonixcheck_user}}.
 
 <pre>
 sudo nano /etc/whonix.d/50_whonixcheck_user
@@ -601,7 +608,8 @@ whonixcheck_skip_functions+=" check_tor_bootstrap "
 </pre>
 
 ===== Deactivate sdwdate-plugin-anon-shared-con-check =====
-Uninstall (TODO: currently a bit difficult, needs ticket and explanation) or currently easier, deactivate [https://github.com/Whonix/sdwdate-plugin-anon-shared-con-check sdwdate-plugin-anon-shared-con-check]. Create a file {{Code|/etc/sdwdate.d/50_anon_dist_con_check_plugin_user}}.
+Uninstall (TODO: currently a bit difficult, needs ticket and explanation) or currently easier, deactivate [https://github.com/Whonix/sdwdate-plugin-anon-shared-con-check sdwdate-plugin-anon-shared-con-check]. Create a file 
+{{Code|/etc/sdwdate.d/50_anon_dist_con_check_plugin_user}}.
 
 <pre>
 sudo nano /etc/sdwdate.d/50_anon_dist_con_check_plugin_user
@@ -624,7 +632,7 @@ sudo service sdwdate restart
 </pre>
 
 ===== Tor Browser Updater =====
-'''If''' you want to update [[Tor Browser]] using [[Tor_Browser#Update_Tor_Browser|Tor Browser Updater by Whonix developers]]... There is a bad and a good news. Bad news first. Unfortunately, there is not yet an option to skip function {{Code2|tb_connectivity_checks_tor}}, that relies on CPFP. (That function has been added in a to be released version. <ref>--no-tor-con-check / <code>TB_NO_TOR_CON_CHECK="1"</code> will come in tb-updater 0.8 / Whonix 10.</ref>) However, the good news is, you can use {{Code2|update-torbrowser}} in non-interactive mode using the {{Code2|--devbuildpassthrough}} switch. Note,
+'''If''' you want to update [[Tor Browser]] using [[Tor_Browser#Update_Tor_Browser| Tor Browser Updater by Whonix developers]]... There is a bad and a good news. Bad news first. Unfortunately, there is not yet an option to skip function {{Code2|tb_connectivity_checks_tor}}, that relies on CPFP. (That function has been added in a to be released version. <ref>--no-tor-con-check / <code>TB_NO_TOR_CON_CHECK="1"</code> will come in tb-updater 0.8 / Whonix 10.</ref>) However, the good news is, you can use {{Code2|update-torbrowser}} in non-interactive mode using the {{Code2|--devbuildpassthrough}} switch. Note,
 * that it will kill any eventually running instances of Tor Browser / firefox without asking, so close your browser sessions before attempting to update.
 * it will by default not use [[Stream Isolation]] (proxy settings), but by using its {{Code2|CURL_PROXY}} variable <ref>
 The {{Code|CURL_PROXY}} variable is a feature by {{Code|update-torbrowser}}, not {{Code|curl}}, in case you are wondering and found this page through a search engine.
@@ -645,7 +653,8 @@ On Whonix-Workstation.
 
 Deactivate TransPort Test for better [[Stream Isolation]].
 
-Create a file {{Code|/etc/whonix.d/50_whonixcheck_user}}.
+Create a file 
+{{Code|/etc/whonix.d/50_whonixcheck_user}}.
 
 <pre>
 sudo nano /etc/whonix.d/50_whonixcheck_user
@@ -662,7 +671,8 @@ On Whonix-Gateway and Whonix-Workstation.
 
 Deactivate SocksPort Test, TransPort Test and Tor Browser Update check.
 
-Create a file {{Code|/etc/whonix.d/50_whonixcheck_user}}.
+Create a file 
+ {{Code|/etc/whonix.d/50_whonixcheck_user}}.
 
 <pre>
 sudo nano /etc/whonix.d/50_whonixcheck_user
@@ -679,9 +689,10 @@ whonixcheck_skip_functions+=" check_torbrowser "
 == Prevent downloading Whonix News ==
 On Whonix-Gateway and Whonix-Workstation.
 
-Prevent downloading [[Download#Whonix_Version_Check_and_Whonix_News|Whonix News]].
+Prevent downloading [[Download#Whonix_Version_Check_and_Whonix_News| Whonix News]].
 
-Create a file {{Code|/etc/whonix.d/50_whonixcheck_user}}.
+Create a file 
+{{Code|/etc/whonix.d/50_whonixcheck_user}}.
 
 <pre>
 sudo nano /etc/whonix.d/50_whonixcheck_user
@@ -698,7 +709,8 @@ On Whonix-Gateway and Whonix-Workstation.
 
 Prevent downloading running apt-get by whonixcheck.
 
-Create a file {{Code|/etc/whonix.d/50_whonixcheck_user}}.
+Create a file 
+{{Code|/etc/whonix.d/50_whonixcheck_user}}.
 <pre>
 sudo nano /etc/whonix.d/50_whonixcheck_user
 </pre>
@@ -799,17 +811,18 @@ Legend:
 
 Recommended basic knowledge:
 
-* [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor]]
-* [[Tunnel_Tor_through_proxy_or_VPN_or_SSH]]
+* [https://www.whonix.org/wiki/Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Tunnel Proxy or SSH or VPN through Tor]
+* [https://www.whonix.org/wiki/Tunnel_Tor_through_proxy_or_VPN_or_SSH| Tunnel Tor through proxy or VPN or SSH]
 * [[Stream Isolation]]
 
-May be useful as well: [[Dev/Inspiration]].
+May be useful as well: [https://www.whonix.org/wiki/Dev/Inspiration| Inspiration].
 
 You must know, understand and edit /etc/network/interfaces on Whonix-Gateway and/or on Whonix-Workstation (and if not using physical isolation, the virtual internal network name in VirtualBox settings).
 
 It will be difficult, because there are no other Anonymizing Gateways (VPN/JonDo/i2p/Proxy/SSH/VPN) available for download besides Whonix-Gateway which uses Tor to anonymize traffic, which you already know about. You have to look for instructions (there are some for a pfSense based VPN-Gateway you can find using a search engine, but untested for leaks, which does not imply, that there are leaks) and/or build such a Anonymizing-Gateway yourself.
 
-For a VPN-Gateway, see also: <br />
+For a VPN-Gateway, see also: 
+<br />
 [https://www.ivpn.net/privacy-guides/advanced-privacy-and-anonymity-part-6 VPN-Gateway] ([http://www.webcitation.org/6RKpGv2y9 w])
 
 = Useful External Links =
@@ -826,13 +839,13 @@ For a VPN-Gateway, see also: <br />
 
 Last, but definitely not least.
 
-* Read [[Stream Isolation]].
-* Read [[Connections between Whonix-Gateway and Whonix-Workstation]].
-* Read [[Dev/Entropy]].
-* Restrict TransPort: Explained under [[Install_Software#Whonix-Workstation_is_firewalled|Whonix-Workstation is firewalled]].
-* MAC Address: If you are interested in the discussion about anonymizing MAC addresses, you could read the development discussion and draw conclusions from it, see [[Pre_Install_Advice#MAC_Address]].
-* Of course you should read all [[Documentation]] pages. (Although some stuff will not be of concern for you. For example, if you are not interested in TorChat, Remailers or Mixmaster, you obviously don't have to thoroughly study these pages.
-* Design: Still reading? Great! Please check the Technical [[Design]], it contains further recommendations on what is less than ideal and how it could possibly be improved.
+* Read [https://www.whonix.org/wiki/Stream Isolation| Stream Isolation]</>.
+* Read [https://www.whonix.org/wiki/Connections_between_Whonix-Gateway_and_Whonix-Workstation| Connections between Whonix-Gateway and Whonix-Workstation].
+* Read [https://www.whonix.org/wiki/Dev/Entropy| Entropy].
+* Restrict TransPort: Explained under [[Install_Software#Whonix-Workstation_is_firewalled| Whonix-Workstation is firewalled]].
+* MAC Address: If you are interested in the discussion about anonymizing MAC addresses, you could read the development discussion and draw conclusions from it, see [https://www.whonix.org/wiki/Pre_Install_Advice#MAC_Address| Pre Install Advice MAC Address]].
+* Of course you should read all [https://www.whonix.org/wiki/Documentation| Documenation] pages. (Although some stuff will not be of concern for you. For example, if you are not interested in TorChat, Remailers or Mixmaster, you obviously don't have to thoroughly study these pages.
+* Design: Still reading? Great! Please check the Technical [https://www.whonix.org/wiki/Design| Design], it contains further recommendations on what is less than ideal and how it could possibly be improved.
 
 = Footnotes =
 <references/>
