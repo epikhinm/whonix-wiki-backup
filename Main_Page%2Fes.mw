@@ -124,7 +124,7 @@ Método de actualización</td>
 <td>
 Plataformas soportadas</td>
 <td style=""text-align:left;">
-[stable: x86 compatible and/or [[VirtualBox]]] [experimental: [[KVM]], [[QEMU]], [[Qubes]]] + 
+[estable: compatible con x86 y/o [[VirtualBox]]] [experimental: [[KVM]], [[QEMU]], [[Qubes]]] + 
 <ref>
 [[Other Operating Systems| Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).</ref>
 </td>
