@@ -390,7 +390,7 @@ For Whonix-Workstation the benefits are even more doubtful. To be effective grse
 
 If you disagree with this assessment or have any suggestions how to improve the current situation please let us know.
 
-Experts only: There is also Hardened Gentoo based Whonix-Gateway. Outdated, needs maintainer. See <tvar|A>[[Hardened Gentoo TG]]</> .
+Experts only: There is also Hardened Gentoo based Whonix-Gateway. Outdated, needs maintainer. See [https://www.whonix.org/wiki/Hardened_Gentoo_TG| Hardened Gentoo TG] .
 
 Updates:
 * There's Alpine Linux, where Tor is in testing. [http://bugs.alpinelinux.org/issues/1067 Package Request: Tor].</ref>
