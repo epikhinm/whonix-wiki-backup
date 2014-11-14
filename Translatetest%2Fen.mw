@@ -176,7 +176,7 @@ You should see something like this.
 
 == Recommendation to use Whonix with Physical Isolation ==
 
-Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date. Unfortunately, it is difficult to setup. See [[Physical Isolation]].
+Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date. Unfortunately, it is difficult to setup. See [[<tvar|A>Physical Isolation</>]].
 
 == Hardening ==
 
@@ -328,7 +328,7 @@ In both cases the RAM contents can be analyzed in a computer forensics laborator
 
 As far as the authors know, cold boot attacks are not standard procedure within law enforcements and similar organizations anywhere in the world yet, but it might still be good to be prepared and stay on the safe side.
 
-Wipe RAM on shutdown (e.g. using a kexec script) - or do not leave the computer unattended immediately after shutdown. Unfortunately there is not yet an upstream script, to implement wiping the RAM on shutdown. We can not provide a solution for this attack, this is solved nowhere but [https://tails.boum.org/bugs/sdmem_does_not_clear_all_memory/ partially] in Tails and Liberte Linux (not checked), waiting for upstream solution, see [[Dev#SECURITY_Wipe_RAM_panic_script_OPEN_NEEDS_RESEARCH_NEEDS_CODE| Dev#Wipe RAM panic script]]. It's up to you to implement a panic button which will wipe the RAM, please [[Contribute]]. The least you can do is [[Contribute#Vote| Vote]] at upstream for the feature.
+Wipe RAM on shutdown (e.g. using a kexec script) - or do not leave the computer unattended immediately after shutdown. Unfortunately there is not yet an upstream script, to implement wiping the RAM on shutdown. We can not provide a solution for this attack, this is solved nowhere but [<tvar|A>https://tails.boum.org/bugs/sdmem_does_not_clear_all_memory/</> partially] in Tails and Liberte Linux (not checked), waiting for upstream solution, see [[<tvar|A>Dev#SECURITY_Wipe_RAM_panic_script_OPEN_NEEDS_RESEARCH_NEEDS_CODE|</> Dev#Wipe RAM panic script]]. It's up to you to implement a panic button which will wipe the RAM, please <tvar|A>[[Contribute]]</>. The least you can do is [[<tvar|A>Contribute#Vote|</> Vote]] at upstream for the feature.
 
 '''Hypothetical...''' So, what should you do when you hear an attacker knocking at your door? You could just press the hypothetical panic button on the host. It would start to wipe the contents of the RAM by filling it out with random junk, thus erasing everything that was stored there before, including the encryption key of the encrypted storage devices you might use and the traces of your session. Then you would wait, possibly trying to buy valuable time by barricading your door.
 
@@ -390,7 +390,7 @@ For Whonix-Workstation the benefits are even more doubtful. To be effective grse
 
 If you disagree with this assessment or have any suggestions how to improve the current situation please let us know.
 
-Experts only: There is also Hardened Gentoo based Whonix-Gateway. Outdated, needs maintainer. See [[Hardened Gentoo TG]] .
+Experts only: There is also Hardened Gentoo based Whonix-Gateway. Outdated, needs maintainer. See <tvar|A>[[Hardened Gentoo TG]]</> .
 
 Updates:
 * There's Alpine Linux, where Tor is in testing. [http://bugs.alpinelinux.org/issues/1067 Package Request: Tor].</ref>
