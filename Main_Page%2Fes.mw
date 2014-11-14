@@ -24,7 +24,7 @@ Descargar Whonix]]</h1></div>
 [[About| Acerca de]]</h1></div>
 [[Image:whonix_concept_refined.jpg|center|Whonix Concept|500px]] <!-- old version: http://www.webcitation.org/6TOSrrjYX -->
 
-Whonix es un sistema operativo enfocado en anonimato, privacidad y seguridad. Está basado en la red de anonimato  Tor <ref>https://en.wikipedia.org/wiki/Debian</ref>, Debian GNU/Linux<ref>https://en.wikipedia.org/wiki/Debian</ref> y seguridad por aislación. Es imposible que haya fugas de DNS, y ni siquiera el "malware" con privilegios de "root" puede encontrar la verdadera IP del usuario.
+Whonix es un sistema operativo enfocado en anonimato, privacidad y seguridad. Está basado en la red de anonimato  Tor <ref>https://en.wikipedia.org/wiki/Debian</ref>, Debian GNU/Linux<ref>https://en.wikipedia.org/wiki/Debian</ref> y seguridad por aislamiento. Es imposible que haya fugas de DNS, y ni siquiera el "malware" con privilegios de "root" puede encontrar la verdadera IP del usuario.
 
 Whonix consists of two parts: One solely runs Tor and acts as a gateway, which we call Whonix-Gateway. The other, which we call Whonix-Workstation, is on a completely isolated network. Only connections through Tor are possible.
 
