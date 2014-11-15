@@ -6,12 +6,13 @@
 = Introduction =
 The Whonix Framework<ref>[[Technical_Introduction#Whonix_Framework]]</ref> supports any operating system.
 
-'''''Using a Whonix-Download-Workstation is easier and provides more Security out of the box!''''' It's your responsibility to get the same security features for a Whonix-Custom-Workstation, see [[Other_Operating_Systems#Security_Comparison:_Whonix-Download-Workstation_vs._Whonix-Custom-Workstation|Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation]] at the bottom of the page for details.
+'''''Using a Whonix-Default/[[Download]]-Workstation is easier and provides more Security out of the box!''''' It's your responsibility to get the same security features for a Whonix-Custom-Workstation, see [[Other_Operating_Systems#Security_Comparison:_Whonix-Download-Workstation_vs._Whonix-Custom-Workstation|Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation]] at the bottom of the page for details.
 
-The Whonix-Gateway already supports torification of any operating system, including Microsoft Windows and others. As an transparent or isolating proxy, see below for more information.
+The Whonix-Gateway already supports torification of any operating system, including Microsoft Windows and others. As an transparent or isolating proxy<ref>https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/IsolatingProxy</ref>, see below for more information.
 
 = Windows-Whonix-Workstation =
-XP, Vista and Windows 7 are are known to work behind Whonix-Gateway. While it's possible, it's not recommended and only for advanced users. This is because, there are issues with Windows. Those are not Whonix issues. Whonix developers can not fix those issues. One issue is, that Windows is closed source. Rather, Windows is affected by [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks] and other issues. For more information and depending on your security requirements, read the following chapters.
+== Introduction ==
+XP, Vista and Windows 7 are are known to work behind Whonix-Gateway. While it's possible, it's not recommended and only for advanced users. This is because, there are issues with Windows. Those are not Whonix issues. Whonix developers can not fix those issues. One issue is, that Windows is closed source. Rather, Windows is affected by [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks] and [[Pre Install Advice#Windows Hosts|other issues]]. For more information and depending on your security requirements, read the following chapters.
 
 == Easy ==
 {{VM Settings Easy Common}}
@@ -21,10 +22,10 @@ XP, Vista and Windows 7 are are known to work behind Whonix-Gateway. While it's 
 For {{Code2|Windows}} 7 (similar in {{Code2|Windows}} XP): In Control Panel -> Network and Sharing Center: click on "Change adapter settings" Right-click on local area connection > properties In property window: double-click Internet Protocol Version 4, use the following settings:
 
 <pre>
-IP address 192.168.0.50
-Subnet netmask 255.255.255.0
-Default gateway 192.168.0.10
-Preferred DNS server 192.168.0.10
+IP address 10.152.152.50
+Subnet netmask 255.255.192.0
+Default gateway 10.152.152.10
+Preferred DNS server 10.152.152.10
 </pre>
 
 '''Download operating system updates.'''
@@ -55,11 +56,11 @@ auto eth0
 #iface eth0 inet dhcp
 iface eth0 inet static
 # increment last octet on additional workstations
-       address 192.168.0.12
-       netmask 255.255.255.0
-       #network 192.168.0.0
-       #broadcast 192.168.0.255
-       gateway 192.168.0.10
+       address 10.152.152.12
+       netmask 255.255.192.0
+       #network 10.152.152.0
+       #broadcast 10.152.152.255
+       gateway 10.152.152.10
 </pre>
 
 In your Custom-Workstation. Open {{Code|/etc/resolv.conf}}.
@@ -71,7 +72,7 @@ sudo nano /etc/resolv.conf
 and delete everything, then add
 
 <pre>
-nameserver 192.168.0.10
+nameserver 10.152.152.10
 </pre>
 
 '''Download operating system updates.'''
@@ -81,6 +82,56 @@ Debian based Linux, such as Ubuntu:
 <pre>
 sudo apt-get update && sudo apt-get dist-upgrade
 </pre>
+
+= Whonix-Android-Workstation =
+== Easy ==
+
+
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+'''Warning''':<br />
+The following instructions are user contributed, untested by Whonix maintainers, and require a DHCP server to be installed on Whonix-Gateway. Whonix maintainers have not researched yet, if there is any feature in DHCP servers that would be problematic in the use case of anonymity distributions that use a two machine isolation approach. Maybe there is such a feature, maybe not. If it exists, maybe it could be easily disabled, maybe not. What is the attack surface here: once an attacker has compromised Whonix-Workstation, an attempt to exploit the DHCP server on Whonix-Gateway could be tried. Worse, maybe DHCP has a feature such as "please tell me the IP address of your upstream router", and that would be your real external IP address and DHCP would answer. To find out if this is actually the case, one would have to read the whole [https://www.ietf.org/rfc/rfc2131.txt DHCP protocol]. [https://www.whonix.org/forum/index.php/topic,157.0.html Forum discussion]. If you are interested anyway, please click on expand on the right side.
+<div class="mw-collapsible-content">
+VM settings are the same: attach the network adapter to the internal network named '''Whonix'''
+
+Android x86 doesn't seem to support static IPs for Ethernet, so a DHCP server needs to be set up on Whonix Gateway.
+
+Install a DHCP server package:
+
+<pre>
+$ sudo apt-get install isc-dhcp-server
+</pre>
+
+Note that it won't start, because it's not configured yet
+
+Modify '''/etc/dhcp/dhcpd.conf''' to look like this:
+
+<pre>
+
+option domain-name "whonix";
+option domain-name-servers 10.152.152.10;
+subnet 10.152.128.0 netmask 255.255.192.0 {
+        range 10.152.152.12 10.152.152.15;
+        option subnet-mask 255.255.192.0;
+        option broadcast-address 10.152.191.255;
+        option routers 10.152.152.10;
+}
+default-lease-time 600;
+max-lease-time 7200;
+
+</pre>
+
+Run
+
+<pre>
+$ sudo dpkg-reconfigure isc-dhcp-server
+</pre>
+
+and choose '''eth1''' as interface for the DHCP server to run on.
+
+After this the DHCP server on workstation starts properly and the Whonix
+Gateway is ready to serve a dynamic IP to the Android x86 Whonix Workstation.
+</div>
+</div>
 
 = More security =
 
@@ -98,10 +149,9 @@ Recommendations:
 = Even more security =
 
 == General ==
-
 Recommendations:
 
-* Prevent [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks] by disabling Whonix-Gateway's Transparent Proxy feature. Instead use your Windows Whonix-Workstation behind an [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/IsolatingProxy Isolating Proxy]. See [[Stream Isolation]] for more information and instructions on how to disable the Transparent Proxy feature.
+* Prevent [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks] by disabling Whonix-Gateway's Transparent Proxy feature. Instead use your Windows Whonix-Workstation behind an [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/IsolatingProxy Isolating Proxy]. See [[Stream Isolation]] for more information and instructions on how to [[Stream Isolation#Better Protection|disable the Transparent Proxy feature]].
 * Check your host clock out of band (use a watch or atomic clock).
 * Set your host and your Workstation clock to show seconds as well. After booting the Whonix-Windows-Workstation, add a random skew to your clock, maybe +/- 1 to 30 seconds. Optimal values are still under investigation. For reference, see [[TimeSync|Whonix's Secure And Distributed Time Synchronization Mechanism]], it's Whonix-Example-Implementation-Workstation (based on Debian GNU/Linux) specific, but most information also applies to Windows. Since we are not aware of a tails_htp alternative for Windows, you have to do it manually.
 
@@ -152,71 +202,71 @@ Note: Whonix-BuildYourselfFromSource-Workstation is of course the same as Whonix
 | Any of your choice.
 |-
 | align="left" | Amnesic
-| No
-| No
+| {{No}}
+| {{No}}
 |-
 | align="left" | Protection against root exploits (Malware with root rights) on the Workstation <sup>18</sup>
-| Yes <sup>1</sup><sup>a</sup>
-| Yes <sup>1</sup><sup>a</sup>
+| {{Yes}} <sup>1</sup><sup>a</sup>
+| {{Yes}} <sup>1</sup><sup>a</sup>
 |-
 | align="left" | IP/DNS protocol leak protection
 | Full <sup>1</sup>
 | Full <sup>1</sup>
 |-
 | align="left" | Takes advantage of Entry Guards
-| Yes
-| Yes
+| {{Yes}}
+| {{Yes}}
 |-
 | align="left" | Operating System Updates persist once updated
-| Yes
+| {{Yes}}
 | Depends if gets installed or is a Live CD.
 |-
 | align="left" | Hides hardware serials from malicious software
-| Yes <sup>16</sup>
-| Yes <sup>16</sup>
+| {{Yes}} <sup>16</sup>
+| {{Yes}} <sup>16</sup>
 |-
 | align="left" | Collects (virtual) hardware serials
-| No
+| {{No}}
 | Depends on the custom operating system
 |-
 | align="left" | Includes Tor Browser
-| Yes
-| Your responsibility to install Tor Browser. <ref name=tb>For help using Tor Browser without Tor over Tor (recommended), see: https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers#UseTorBrowserwithoutbundledTorWindows</ref>
+| {{Yes}}
+| Your responsibility to install Tor Browser. <ref name=tb>For help using Tor Browser without Tor over Tor (recommended), see: https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers#UseTorBrowserwithoutbundledTorWindows</ref> <ref>For explanation of the about:tor "Something went wrong" error, please see this [https://www.whonix.org/forum/index.php/topic,368.0.html forum thread].</ref>
 |-
 | align="left" | Includes Firefox privacy patches <ref>https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers</ref> and Tor Button (=Tor Browser)
-| Yes, because it uses Tor Browser (without Tor/Vidalia).
+| {{Yes}}, because it uses Tor Browser (without Tor/Vidalia).
 | Your responsibility to install Tor Browser. <ref name=tb />
 |-
 | align="left" | Prevents [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor]] for Tor Browser
-| Yes
+| {{Yes}}
 |  Your responsibility to prevent Tor over Tor. <ref name=tb />
 |-
 | align="left" | Stream isolation to prevent identity correlation through circuit sharing
-| Yes
+| {{Yes}}
 | Your responsibility to use Stream Isolation.
 |-
 | align="left" | Stream isolation in Tor Browser
-| No <sup>14</sup>
-| No <sup>14</sup>
+| {{No}} <sup>14</sup>
+| {{No}} <sup>14</sup>
 |-
 | align="left" | Encryption
 | Should be applied on host.
 | Should be applied on host.
 |-
 | align="left" | Cold Boot Attack Protection <sup>8</sup>
-| No
-| No
+| {{No}}
+| {{No}}
 |-
 | align="left" | Secure Distributed Network Time Synchronization
-|  Yes
+| {{Yes}}
 | Your responsibility to install it.
 |-
 | align="left" | Hides your time zone (set to UTC)
-| Yes
+| {{Yes}}
 | Your responsibility to set clock to UTC.
 |-
 | align="left" | Hides your operating system account name
-| Yes, set to user.
+| {{Yes}}, set to user.
 | Your responsibility to set username to user.
 |-
 | align="left" | Hides your MAC address from websites
@@ -224,19 +274,19 @@ Note: Whonix-BuildYourselfFromSource-Workstation is of course the same as Whonix
 | Invalid <sup>19</sup>
 |-
 | align="left" | Secures your MAC address from local LAN (sometimes ISP) <sup>20</sup>
-| No, planned, see. <sup>21</sup>
+| {{No}}, planned, see. <sup>21</sup>
 | Your responsibility. <sup>20</sup>,<sup>21</sup>
 |-
 | align="left" | Hides your hosts MAC address from applications
-| Yes <sup>24</sup>
-| Yes <sup>24</sup>
+| {{Yes}} <sup>24</sup>
+| {{Yes}} <sup>24</sup>
 |-
 | align="left" | Secure gpg.conf
-| Yes
+| {{Yes}}
 | Your responsibility to use a secure gpg.conf.
 |-
 | align="left" | Privacy enhanced IRC client configuration.
-| Yes
+| {{Yes}}
 | Your responsibility to configure the IRC client for enhanced privacy.
 |}
 
