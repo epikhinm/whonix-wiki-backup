@@ -11,23 +11,23 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | style="height:30px"| || style="width:125px"| '''[[Main Page|Whonix]] || style="width:125px"| '''[https://tails.boum.org/ Tails]''' || style="width:125px"| '''[https://www.torproject.org/projects/torbrowser.html.en Tor Browser]''' || style="width:125px"| '''[http://qubes-os.org/trac/wiki/UserDoc/TorVM Qubes OS TorVM]''' || style="width:125px"| '''[https://github.com/rustybird/corridor corridor]''' ([https://lists.torproject.org/pipermail/tor-talk/2014-February/032152.html tor-talk])
 |-
 | style="height:35px;width:70px;background-color: #f9f9f9"| Compared Version <ref>At the time of last comparison.</ref>
-| style="background-color: {{Green}}"| 8
+| style="background-color: {{Green}}"| 9
 | style="background-color: {{Yellow}}"| 0.1.6
-| style="background-color: {{Green}}"| 3.5
+| style="background-color: {{Yellow}}"| 3.5
 | style="background-color: {{Green}}"| 0.1.3
 | style="background-color: {{Green}}"| (?)
 |-
 | style="height:35px;width:70px;background-color: #f9f9f9"| Latest Version <ref>Most recent version.</ref>
-| style="background-color: {{Green}}"| 8
-| style="background-color: {{Green}}"| 1.0
-| style="background-color: {{Green}}"| 3.5
+| style="background-color: {{Green}}"| 9
+| style="background-color: {{Green}}"| 1.1.2
+| style="background-color: {{Green}}"| 3.6.6
 | style="background-color: {{Green}}"| 0.1.3
 | style="background-color: {{Green}}"| (?)
 |-
 | Status
 | style="background-color: {{Green}}"| This wiki page is up to date.
 | style="background-color: {{Yellow}}"| There is a newer version. The information <u>on this page</u> could be outdated.
-| style="background-color: {{Green}}"| This wiki page is up to date.
+| style="background-color: {{Yellow}}"| There is a newer version. The information <u>on this page</u> could be outdated.
 | style="background-color: {{Green}}"| This wiki page is up to date.
 | style="background-color: {{Green}}"| This wiki page is up to date.
 |}
@@ -254,22 +254,15 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | {{Yes}} <ref>For details, see [[Stream Isolation]].</ref>
 | {{Yes}} <ref>[https://tails.boum.org/todo/separate_Tor_streams/ Tails separate Tor streams]</ref>
 | {{BlueBackground}} See <ref name=browser>[https://trac.torproject.org/projects/tor/ticket/3455 Tor Browser should set SOCKS username for a request based on referer]</ref><ref>Tor Browser comes with its own Tor instance. It's just a browser, not a live system or operating system.</ref>
-| Manually <ref>One has to configure it's applications manually to use stream isolation. In comparison, yes means that pre-installed applications (such as wget, ssh, curl, apt-get) are pre-configured to use stream isolation.</ref>
+| Manually <ref>Manual means, that one has to configure its applications manually to use stream isolation. In Whonix all default installed applications (curl, wget, ssh, tbb, torbirdy, etc.) are configured to use their own SocksPort. Tails does that as well, although not to that extend. Last time checked, QubesOS TorVM didn't do this. In comparison, yes means that pre-installed applications (such as wget, ssh, curl, apt-get) are pre-configured to use stream isolation.</ref>
 | {{Yes}} 
 |-
 | style="height: 27px;background-color: #f9f9f9"| Enforces Stream Isolation when one of X Workstations behind the same Gateway are compromised in default configuration <ref name=xworkstations>In case workstation x1, x2, ..., xn are behind the same gateway y.</ref>
-| {{No}}
+| style="background-color: {{Yellow}}"| Not by default, but capable. <ref>By using [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|Multiple Whonix-Gateways]] or by using [[Connections_between_Whonix-Gateway_and_Whonix-Workstation|encrypted and/or authenticated Connection Between Whonix-Gateway and Whonix-Workstation]].</ref>
 | {{BlueBackground}} Not a gateway.
 | {{BlueBackground}} Not a gateway.
-| {{No}}
+| {{Yes}} <ref>https://groups.google.com/d/msg/qubes-devel/le7-Rrq6yxY/k_fQdSTzvLAJ</ref>
 | {{Yes}} <ref name=uptotheclienttobuildtorcircuits>Since it's up to the clients behind corridor-Gateway to build their own Tor circuits.</ref>
-|-
-| style="height: 27px;background-color: #f9f9f9"| Can enforce Stream Isolation when one of X workstations are compromised with special configuration <ref name=xworkstations />
-| {{Yes}} <ref>By using [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|Multiple Whonix-Gateways]] or by using [[Connections_between_Whonix-Gateway_and_Whonix-Workstation|encrypted and/or authenticated Connection Between Whonix-Gateway and Whonix-Workstation]].</ref>
-| {{BlueBackground}} Not a gateway.
-| {{BlueBackground}} Not a gateway.
-| {{Yes}} <ref>By running multiple TorVMs.</ref>
-| {{Yes}} <ref>Enforces Stream Isolation when one of X Workstations behind the same Gateway are compromised in default configuration, see above.</ref>
 |-
 | style="height: 27px;background-color: #f9f9f9"| Stream isolation in Tor Browser
 | {{No}} <ref name=browser />
@@ -344,7 +337,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | style="background-color: {{Green}}"| Yes
 | style="background-color: {{Green}}"| Yes
 |-
-| style="height: 27px;background-color: #f9f9f9"| Hides your MAC address from websites
+| {{BlueBackground}} Hides your MAC address from websites
 | {{BlueBackground}} Invalid <ref name=invalid>It is in the nature of the MAC addresses that destination servers can not see them. Therefore yes, always hidden from destination servers.</ref>
 | {{BlueBackground}} Invalid <ref name=invalid />
 | {{BlueBackground}} Invalid <ref name=invalid />
@@ -436,7 +429,7 @@ http://www.whonix.org/wiki/Template:Verifiable_Builds_Comparsion_Table
 | {{Yes}}
 | {{No}}, because [https://tails.boum.org/todo/persistence_preset_-_tor/ not yet] supporting persistent {{Code2|Entry Guards}}<ref>https://www.torproject.org/docs/faq.html.en#EntryGuards</ref>.
 | {{Yes}}
-| (?)
+| {{Yes}}
 | {{Yes}}
 |-
 | style="height: 27px;background-color: #f9f9f9"| Clearnet traffic
