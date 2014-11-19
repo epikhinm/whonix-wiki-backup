@@ -4,16 +4,22 @@
 }}
 __FORCETOC__
 {{AppArmorProfileWarning}}
+<languages />
 
-
-Create a file /etc/apparmor.d/usr.bin.whonixcheck.
+<translate>
+=== Installation ===
+To install the profile, run:</translate>
 
 <pre>
-kdesudo kwrite /etc/apparmor.d/usr.bin.whonixcheck
+sudo apt-get install apparmor-profile-whonixcheck
 </pre>
 
-Paste the following content.
+<translate>
+=== Wiki updates ===
+Last update: September 22, 2014.</translate>
 
+<translate>
+=== Profile ===</translate>
 <pre>
 # Last modified: Mon Mar 24 22:07:48 UTC 2014
 #include <tunables/global>
@@ -180,14 +186,14 @@ Paste the following content.
 	/usr/bin/dirname rix,
 	/usr/bin/apt-get.whonix rix,
 	/usr/bin/uwt rix,
-	/usr/bin/curl.whonix-orig rix,
+	/usr/bin/curl.anondist-orig rix,
 	/usr/bin/torsocks rix,
 	/usr/bin/python2.7 rix,
-	/usr/bin/apt-get.whonix-orig rix,
+	/usr/bin/apt-get.anondist-orig rix,
 	/usr/bin/dpkg rix,
 	/usr/bin/gpg.whonix rix,
 	/usr/bin/getopt rix,
-	/usr/bin/gpg.whonix-orig rix,
+	/usr/bin/gpg.anondist-orig rix,
 	/usr/bin/head rix,
 	/usr/bin/apt-get.whonix rix,
 	/usr/bin/tar rix,
@@ -232,12 +238,19 @@ Paste the following content.
 }
 </pre>
 
-Run
+<translate>
+Run</translate>
+
 <pre>
 sudo apparmor_parser -r /etc/apparmor.d/usr.bin.whonixcheck
 </pre>
 
-[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
+<translate>
+[<tvar|A>https://www.whonix.org/forum/index.php?action=profile;u=24</> troubadour] created this profile. You can discuss it in this [<tvar|A>http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html</> forum thread].</translate>
+
+<translate>
+=== Debian Package ===</translate>
+https://github.com/Whonix/apparmor-profile-whonixcheck
 
 {{Footer}}
 
