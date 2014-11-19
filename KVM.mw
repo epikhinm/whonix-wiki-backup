@@ -3,6 +3,7 @@
 |description=Using Whonix with KVM instead of VirtualBox
 }}
 
+= General =
 == What is KVM? ==
 For an openly developed, FOSS GPL licensed hypervisor, it is recommended you use KVM [Kernel Virtual Machine] that comes with the GNU/Linux OS. KVM combined with the VirtualMachineManager front-end should provide a familiar and intuitive, easy to use GUI.
 
@@ -22,25 +23,589 @@ http://seclists.org/fulldisclosure/2012/Apr/343 << A 0day reported privately to 
 
 Furthermore VirtualBox contains significant functionality that is only available as a proprietary extension, such as USB and PCI passthrough and RDP connectivity. Seeing Oracle's unfriendly trackrecord with the free software community in the past; examples include OpenSolaris and OpenOffice, it would not be a stretch to imagine them charging money for the closed up features at some point in the future or simply abandoning the project if they cannot monetize it to their liking.
 
-== KVM Setup Instructions ==
+= KVM Setup Instructions =
+== Before installing == 
+Read and apply the [[Pre_Install_Advice|Security Advice]]. The instructions below assume you have verified the authenticity of the release before proceeding and that you have placed them in your home directory.
 
-It is highly recommended you read and apply the steps outlined in the README file that's included in the tar archive you downloaded. By applying a known and tested configuration, you will be better off in convenience and security.
+== Install KVM ==
+=== Debian stable ===
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+If you are using Debian {{Code2|stable}} (currently: {{Code2|wheezy}}), click on expand on the right.
+
+<div class="mw-collapsible-content">
+You need to enable {{Code2|wheezy-backports}} first, because we need a more recent version of kvm for security reasons. <ref>
+The one in {{Code2|wheezy}} does not support rng device. <br />
+Implemented in: http://fedoraproject.org/wiki/Features/Virtio_RNG
+</ref> This is not necessary if you are using Debian {{Code2|testing}} (currently: {{Code2|jessie}}).
+
+Open {{Code2|/etc/apt/sources.list}} with root rights.
+
+<pre>
+kdesudo kwrite /etc/apt/sources.list
+</pre>
+
+Add the following line.
+
+<pre>
+deb http://ftp.us.debian.org/debian/ wheezy-backports main
+</pre>
+
+Save.
+
+Update package lists.
+
+<pre>
+sudo apt-get update
+</pre>
+
+Install. <ref>
+Technically {{Code2|virt-manager}} gets installed from Debian {{Code2|stable}} (currently: {{Code2|wheezy}}), not Debian {{Code2|wheezy-backports}}. But that does not matter. Command works anyway. {{Code2|qemu-kvm}} and {{Code2|libvirt-bin}} get installed from {{Code2|wheezy-backports}} and  {{Code2|virt-manager}} gets installed from {{Code2|stable}}.
+</ref>
+
+<pre>
+sudo apt-get install -t wheezy-backports qemu-kvm libvirt-bin virt-manager
+</pre>
+
+Alternatively, if this does not work for you, see footnote. <ref>
+Try this.
+<pre>
+sudo apt-get install libvirt-bin=1.2.4-1~bpo70+1 qemu-kvm=2.0.0+dfsg-4~bpo70+1 virt-manager
+</pre>
+
+If it still doesn't work, try this.
+<pre>
+sudo apt-get install libvirt-bin=1.2.4-1~bpo70+1 qemu-kvm=2.0.0+dfsg-4~bpo70+1 virt-manager libvirt0=1.2.4-1~bpo70+1 qemu-system-x86=2.0.0+dfsg-4~bpo70+1 qemu-system-common python-libvirt=1.2.1-2~bpo70+1
+</pre>
+
+Maybe you need to update version numbers, see:
+https://packages.debian.org/wheezy-backports/libvirt-bin <br />
+https://packages.debian.org/wheezy-backports/qemu-kvm
+</ref>
+
+==== Check version numbers ====
+To make sure you have recent enough versions.
+
+<pre>
+dpkg-query --show --showformat='${Package} ${Version} \n' libvirt-bin qemu-kvm virt-manager
+</pre>
+
+Should show.
+
+<pre>
+libvirt-bin 1.2.4-1~bpo70+1 
+qemu-kvm 2.0.0+dfsg-4~bpo70+1 
+virt-manager 0.9.1-4
+</pre>
+
+(Higher version numbers would be okay as well.)
+</div>
+</div>
+
+=== Debian testing ===
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+If you are using Debian {{Code2|testing}} (currently: {{Code2|jessie}}), click on expand on the right.
+
+<div class="mw-collapsible-content">
+Update package lists.
+
+<pre>
+sudo apt-get update
+</pre>
+
+Install.
+
+<pre>
+sudo apt-get install qemu-kvm libvirt-bin virt-manager
+</pre>
+
+</div>
+</div>
+
+=== Other Distributions ===
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+If you are using a Linux distribution, that is not documented above, click on expand on the right.
+
+<div class="mw-collapsible-content">
+You need to have qemu-kvm and libvirt-bin. If you want to use a graphical user interface, which you most likely want, you also need virt-manager. Likely the required software can be installed using your usual distribution's package manager.
+
+If you get one of the following errors while later using {{Code|virsh define}}.
+
+<pre>
+error: Failed to define domain from Whonix-Gateway_kvm-8.6.2.8.xml
+error: internal error Unknown controller type 'pci
+</pre>
+
+<pre>
+Whonix-Gateway_kvm-8.6.2.8.xml:24: element pm: Relax-NG validity error : Element domain has extra content: pm
+Whonix-Gateway_kvm-8.6.2.8.xml fails to validate
+</pre>
+
+<pre>
+Relax-NG validity error : Extra element devices in interleave
+Whonix-Gateway_kvm-8.6.2.8.xml:24: element devices: Relax-NG validity error : Element domain failed to validate content
+Whonix-Gateway_kvm-8.6.2.8.xml fails to validate
+</pre>
+
+Then you most likely need a more recent version of libvirt and kvm.
+
+</div>
+</div>
+Please feel free to share detailed instructions for other distributions!
+
+== Addgroup ==
+In order to be able to manage virtual machines as regular (non-root) user, you need to add that user to the {{Code|libvirt}} and the {{Code|kvm}} group. Assuming the simple use case, that you wish to use KVM with the user you are currently logged in, and assuming you are using Debian, simply use the following command.
+
+<pre>
+sudo addgroup "$(whoami)" libvirt
+</pre>
+
+<pre>
+sudo addgroup "$(whoami)" kvm
+</pre>
+
+If you are using other distributions, have a look at your distribution's manual. (Such as [https://wiki.archlinux.org/index.php/libvirt Arch Linux's libvirt wiki page].)
+
+== Reboot ==
+After installation of kvm, reboot is required! After adding users to groups, reboot is required!
+
+<pre>
+sudo reboot
+</pre>
+
+== Download and Extract ==
+It is highly recommended you read and apply the steps outlined here. By applying a known and tested configuration, you will be better off in convenience and security.
 
 Make sure you use the qcow2 images that are provided by the Whonix project instead of rolling your own. <ref>As in, manually converting them from .ova to .qcow2 is no longer recommended, since you can download .qcow images from the Whonix project.</ref> They contain important performance optimizations. <ref>As per [https://github.com/Whonix/Whonix/blob/master/build-steps.d/2400_convert-img-to-qcow2 build-steps.d/2400_convert-img-to-qcow2], these are "-o cluster_size=2M" and "-o preallocation=metadata".</ref> (Unless you [[Dev/Build_Documentation|created them from source]]. <ref>Because then you have the same performance optimizations.</ref>)
 
-If you have issues with free disk space, using a file system supporting sparse files is recommended, also see [https://www.whonix.org/forum/index.php?topic=153 forum discussion].
+If you have issues with free disk space, using a file system supporting [[sparse files]] is recommended, also see [https://www.whonix.org/forum/index.php?topic=153 forum discussion].
 
+1. Already have existing Whonix libvirt images? Consider [[#Cleanup]] first.
 
-1. Make sure you verify the integrity of your download by using gpg to make sure that your downloads have not been tampered with. See here: https://www.whonix.org/wiki/Verify_the_virtual_machine_images_using_the_command_line
+2. For simplicity, so you can copy and paste the following commands without changes, download and store Whonix's images in your home folder ({{Code2|/home/<your user name>}}).
 
-2. Use tar or any graphical based file archiver to decompress the archive;
+3. Make sure you verify the integrity of your download by using gpg to make sure that your downloads have not been tampered with. See here: [[Download#Verify_the_Whonix_images]]
+
+4. Use {{Code2|tar}} to decompress the archive.
 
 <pre>
-sudo tar xvf Whonix-Gateway-X.X.qcow2.xz 
+tar -xvf ~/Whonix-Gateway-*.libvirt.xz
 </pre>
 
-Do not use unxz! Extract the images using tar
+<pre>
+tar -xvf ~/Whonix-Workstation-*.libvirt.xz
+</pre>
 
+Do not use {{Code2|unxz}}! Extract the images using {{Code2|tar}}.
+
+== XML Modification (OPTIONAL) ==
+Modifying a machine's XML file gives more fine grained control over its settings than what is exposed through the virt-manager GUI. Unless you know what you are doing, editing configuration defaults is neither recommended nor necessary.
+
+<pre>
+nano ~/Whonix-Gateway_kvm-*.xml
+</pre>
+
+<pre>
+nano ~/Whonix-Workstation_kvm-*.xml
+</pre>
+
+You could always edit the XML files later too, if needed as explained in the [[#Editing an imported Machine's XML Configuration]] chapter.
+
+== Importing Whonix VM Templates ==
+The supplied XML files serve as a description for libvirt, that tell it what properties a Whonix machine and networking it should have.
+
+1. First we will start with Whonix-Gateway:
+
+<pre>
+virsh -c qemu:///system define ~/Whonix-Gateway_kvm-*.xml
+</pre>
+
+2. Followed by the Whonix isolated internal network (XML also in the same folder as Whonix Gateway):
+
+<pre>
+virsh -c qemu:///system net-define ~/Whonix_network-*.xml
+</pre>
+
+<pre>
+virsh -c qemu:///system net-autostart Whonix
+</pre>
+
+<pre>
+virsh -c qemu:///system net-start Whonix
+</pre>
+
+3. Lastly the Whonix-Workstation:
+
+<pre>
+virsh -c qemu:///system define ~/Whonix-Workstation/Whonix-Workstation_kvm-*.xml
+</pre>
+
+== Alternative Configurations ==
+By default the templates distributed are for KVM, to run alternative configurations like qemu, import the corresponding file with {{Code2|virsh}}.
+
+== Moving Whonix Image Files ==
+The XML files are configured to point to the default storage location of: /var/lib/libvirt/images These steps will show how to move the images there in order for the machines to boot.
+
+Note: It is highly recommended you use this default path for storing the images to avoid any conflicts with AppArmor or SELinux, which will prevent the machines from booting.
+
+Whonix disk images are [[sparse files]], meaning they expand when filled rather than allocating their entire size, 100GB outright. These are known as sparse files and need special commands when copying them to ensure they don't lose this property, leading them to occupy all the actual space. We are copying to a privileged location in the system, so we have run with higher privileges (sudo). Copy the image files by running.
+
+<pre>
+sudo cp --sparse=always ~/Whonix-Gateway-*.qcow2 /var/lib/libvirt/images/Whonix-Gateway.qcow2
+</pre>
+
+<pre>
+sudo cp --sparse=always ~/Whonix-Workstation-*.qcow2 /var/lib/libvirt/images/Whonix-Workstation.qcow2
+</pre>
+
+Or alternatively, if you are running on low disk space, you could move the images instead of copying them.
+
+<pre>
+sudo mv ~/Whonix-Gateway-*.qcow2 /var/lib/libvirt/images/Whonix-Gateway.qcow2
+</pre>
+
+<pre>
+sudo mv ~/Whonix-Workstation-*.qcow2 /var/lib/libvirt/images/Whonix-Workstation.qcow2
+</pre>
+
+== ATTENTION: Disable Microphone Input ==
+Microphone input to guests, while a nice feature for [[VoIP]], is a very dangerous setting to have by default as its unexpected. This is a feature provided by SPICE. Its not currently possible to ship a configuration file with this setting because libvirt does not support this at the moment. However it can be accomplished through the Host's audio popup menu in the taskbar. The devices show up with the name "virt-manager: record" and can be set to mute as with any other device on the host.
+
+== Cleanup ==
+After importing Whonix, you are advised to delete the archives ({{Code2|.libvirt.xz}} files) and the temporarily extracted folders or to move them into a custom location. This is useful to avoid conflicts and confusion should you later download a new version of Whonix.
+
+To delete them.
+
+<pre>
+rm ~/Whonix-Gateway-*.libvirt.xz
+</pre>
+
+<pre>
+rm ~/Whonix-Workstation-*.libvirt.xz
+</pre>
+
+<pre>
+rm -r ~/Whonix-Gateway
+</pre>
+
+<pre>
+rm -r ~/Whonix-Workstation
+</pre>
+
+== Uninstall ==
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+If you want to remove Whonix KVM VMs, Whonix network and Whonix images, click on Expand on the right.
+
+<div class="mw-collapsible-content">
+1. Make sure you powered off the VM you want to shut down. You can also make sure you have shut down the VM using command line.
+
+<pre>
+virsh -c qemu:///system destroy Whonix-Gateway
+</pre>
+
+<pre>
+virsh -c qemu:///system destroy Whonix-Workstation
+</pre>
+
+2. Remove KVM VM settings.
+
+<pre>
+virsh -c qemu:///system undefine Whonix-Gateway
+</pre>
+
+<pre>
+virsh -c qemu:///system undefine Whonix-Workstation
+</pre>
+
+3. Shut down KVM Network {{Code2|Whonix}}.
+
+<pre>
+virsh -c qemu:///system net-destroy Whonix
+</pre>
+
+4. Remove Network {{Code2|Whonix}}.
+
+<pre>
+virsh -c qemu:///system net-undefine Whonix
+</pre>
+
+5. Delete the images. (All data will be lost unless you made a backup of your valued data.)
+
+<pre>
+sudo rm /var/lib/libvirt/images/Whonix-Gateway.qcow2
+</pre>
+
+<pre>
+sudo rm /var/lib/libvirt/images/Whonix-Workstation.qcow2
+</pre>
+
+</div>
+</div>
+
+= Extra =
+== KVM Shared Folders ==
+To move data between the guest and host follow these steps.
+
+On the host.
+
+Run the following command in terminal (Start Menu -> Applications -> System -> Terminal).
+
+<pre>
+sudo mkdir /mnt/shared
+</pre>
+
+Enable shared folders in VirtManager go to.
+
+<pre>
+VirtManager -> click once on virtual machine -> Edit -> Virtual Machine Details -> Details ->
+Add Hardware -> File System
+</pre>
+
+Set.
+
+Mode: Mapped <ref>The file sharing mode {{Code2|mapped}} is just an example, using squash or passthrough is possible by selecting them from the drop down menu.</ref>
+
+Driver: Default
+
+Source Path: {{Code|/mnt/shared}}
+
+Target Path: {{Code|shared}}
+
+Click finish. Done.
+
+In the VM.
+
+Run the following command in terminal (Start Menu -> Applications -> System -> Terminal).
+
+<pre>
+sudo mount -t 9p -o trans=virtio shared /mnt/shared -oversion=9p2000.L
+</pre>
+
+To automatically mount this every time at boot, open {{Code2|/etc/fstab}}.
+
+If you are using a graphical virtual machine.
+
+<pre>
+kdesudo kwrite /etc/fstab
+</pre>
+
+Or if you are using a terminal-only virtual machine.
+
+<pre>
+sudo nano /etc/fstab
+</pre>
+
+Add.
+
+<pre>
+shared /mnt/shared    9p  trans=virtio,version=9p2000.L,rw    0   0
+</pre>
+
+Save.
+
+
+Note: If your system is configured to use a Mandatory Access Control framework like AppArmor, you may need to configure an exception rule to allow the confined guests to communicate with the designated shared folder on the guest. Do NOT be tempted to disable AppArmor to get this working, as it removes a critical protection layer that protects your host. Be patient and read the documentation.
+By default Whonix can automount a shared folder on the host as long as you use set up virt-manager to use hostshare tag: shared
+If you are using commandline add this xml code to your configuration, this is an example and should be adapted for your usage:
+
+<pre>
+<filesystem type='mount' accessmode='mapped'>
+    <source dir='/mnt/shared'/>
+    <target dir='tag'/>
+</filesystem>
+</pre>
+
+== Editing an imported Machine's XML Configuration ==
+Eventually configure your faviorite editor to make changes. Set visual to your favorite editor (must be installed, examples are kwrite, leafpad, kate, vi, nano, vim, etc.).
+
+<pre>
+export VISUAL=kwrite
+</pre>
+
+Edit.
+
+<pre>
+virsh -c qemu:///system edit Whonix-Gateway
+</pre>
+
+== Enabling Clipboard Sharing ==
+SPICE allows accelerated graphics and clipboard sharing. The clipboard is disabled by default for security reasons <ref>So you don't accidentally copy for example a link to a website you visited anonymously to your non-anonymous host browser or vice versa.</ref> but could be enabled.
+
+When [[KVM#Editing_an_imported_Machine.27s_XML_Configuration|editing using xml]], search for.
+
+<pre>
+<clipboard copypaste='no'/>
+</pre>
+
+And change to.
+
+<pre>
+<clipboard copypaste='yes'/>
+</pre>
+
+== Creating Multiple Internal Networks ==
+Open Whonix's network XML file and change the name attribute to something different than the internal network you are currently running, for example 'Whonix2' 'Whonix3' and so on. The default name used is 'Whonix'.
+
+== Alternative Configurations ==
+Libvirt can support a variety of containment mechanisms. Currently supported ones are KVM on the x86_64 platform and QEMU. More configurations could be added at a later date. If you have hardware virtualization extensions, always use the KVM one.
+
+To use another configuration, import its XML file with virsh.
+
+==How to leave KVM when no X is running==
+
+Situation... User is in terminal in a VM... No X is running ("sudo service kdm stop"). User wants to switch back to the host... How to do this?
+
+The emulated tablet device handles this by not allowing the mouse to be captured by the guest. Its still possible though:
+
+<pre>press Ctrl_L & Alt_L</pre>
+
+== KSM ==
+KSM is a kernel feature that allows de-deuplication of anonymous memory pages belonging to multiple instances of the same process. Only software that is designed to explicitly take advantage of it can use it such as KVM. It is usually not enabled by default. KSM only kicks in when a certain low memory threshold is reached on the host.
+
+Depending on your use case, enabling KSM may have privacy implications as per this research <ref>https://staff.aist.go.jp/c.artho/papers/EuroSec2011-suzaki.pdf</ref>.
+
+The security assumptions about virtual environments is that each vm is a completely isolated instance that knows nothing about what's happening outside it. It posses a privacy problem for an isolated multi-workstation setup.
+
+In a single workstation-to-gateway scenario, KSM isn't problematic because technically, nothing going on, on the gateway, even if known would endanger privacy. However should someone run multiple workstation vms, each with the intent that they are all separated - each with its own internal network for isolation for example, then with KSM all similar activities or processes running in the other vms, would register to an attacker who has compromised one of them. For example, information that the same website has been visited in another vm too. This would allow cross-vm activity correlation.
+
+Its not really a weakness unique to KSM, but a common problem shared by using the equivalent feature on other hypervisors too (Xen's TPS - Transparent Page Sharing). <ref>http://docs.openstack.org/security-guide/content/hypervisor-selection.html</ref>
+
+Quote [https://staff.aist.go.jp/c.artho/papers/EuroSec2011-suzaki.pdf Memory Deduplication as a Threat to the Guest OS]:
+<blockquote>
+4.3 Detection of Downloaded Files
+</blockquote>
+<blockquote>
+The memory disclosure attack can also be applied to find an opened file on a victim’s VM. We have tried to detect a logo file when Firefox shows a home page.
+</blockquote>
+<blockquote>
+We confirmed that the Google logo file was detected if page caching is enabled on Firefox. When the page cache was set to 0, detection failed. If an attacker leads a victim to a malicious home page which includes an identifiable logo file, the attacker can detect the page view from the victim’s VM.
+</blockquote>
+<blockquote>
+This disclosure attack is dangerous because it detects a page view even if the network is encrypted by TLS/SSL. Especially in a multi-tenant data center, this attack is serious, because it does not violate any SLA statements on cloud computing.
+</blockquote>
+
+
+== Setting up gdb to work with qemu-kvm via libvirt ==
+
+If you want to be able to debug a Linux kernel that’s running as a KVM guest, you need to specify the ‘-s’ parameter for the command line of qemu-kvm. The problem is, there’s no (easy) way to do this when you’re using libvirt and virt-manager to manager your virtual machines, instead of using KVM directly. What you need to do is change the XML configuration of the virtual machine so that the ‘-s’ parameter is passed on to qemu-kvm
+
+
+$ virsh edit guestvm
+
+Here, guestvm is the name of the VM that is managed via virt-manager. This will bring up the XML configuration of the VM in your editor. The first line of the XML file should be:
+
+<domain type='kvm'>
+
+This has to be changed to
+
+<domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'>
+
+and you also need to add:
+
+<qemu:commandline>
+<qemu:arg value='-s'/>
+</qemu:commandline>
+
+under the <domain> level of the XML. After you save and quit the editor, the new configuration will come into effect. When you start the virtual machine, there will be a local TCP port (1234 by default) that can be used as a remote debugging port from gdb. You can connect to this port by using the command
+
+target remote localhost:1234
+
+from gdb running on the host machine.
+
+Source <ref>https://gymnasmata.wordpress.com/2010/12/02/setting-up-gdb-to-work-with-qemu-kvm-via-libvirt/</ref>
+
+== XML Settings ==
+TODO: Soon here xml settings will be explained here.
+
+= Troubleshooting =
+== Reboot? ==
+Did you reboot after installing KVM?
+
+Did you reboot after adding users to groups?
+
+Add this information should you make a support request.
+
+== Unable to connect to libvirt. ==
+If you are getting the following error.
+<pre>
+Unable to connect to libvirt.
+
+Verify that the 'libvirtd' daemon is running.
+
+Libvirt URI is: qemu:///system
+</pre>
+
+Make sure you [[KVM#Addgroup|added groups]] and [[KVM#Reboot|rebooted]].
+
+== Unable to open a connection to the libvirt management daemon. ==
+If you are getting the following error.
+
+<pre>
+Unable to open a connection to the libvirt management daemon.
+
+Libvirt URI is: qemu:///system
+
+Verify that:
+- The 'libvirtd' daemon has been started
+</pre>
+
+Check your KVM installation.
+
+<pre>
+sudo service qemu-system-x86 restart ; echo $? ; sudo service libvirt-bin restart ; echo $? ; sudo service libvirt-guests restart ; echo $?
+</pre>
+
+Should show.
+
+<pre>
+0
+[ ok ] Restarting libvirt management daemon: /usr/sbin/libvirtd.
+0
+
+Running guests on default URI: no running guests.
+0
+</pre>
+
+If you see that, it could be a permissions problem.
+
+== hda-duplex not supported in this QEMU binary ==
+Maybe you are a member of the {{Code|libvirt}} group, but not have the {{Code|lkvm}} group?
+
+Maybe changing
+
+<pre>
+    <sound model='ich6'>
+</pre>
+
+to
+
+<pre>
+    <sound model='ac97'>
+</pre>
+
+will help.
+
+== process exited while connecting to monitor: ioctl(KVM_CREATE_VM) failed ==
+If you get the following error.
+<pre>
+Error starting domain: internal error: process exited while connecting to monitor: ioctl(KVM_CREATE_VM) failed: 16 Device or resource busy
+failed to initialize KVM: Device or resource busy
+</pre>
+
+Maybe you have other non-KVM VMs, such as VirtualBox VMs already running? This is not possible. Running two hypervisors at the same time is not supported by KVM / VirtualBox.
+
+== Permissions ==
+<pre>
+ls -la /var/run/libvirt/libvirt-sock
+</pre>
+
+== Add Version Numbers to Support Request ==
+Having issues, make sure you add what versions of libvirt-bin, qemu-kvm and virt-manager you are using. If you are using Debian, you can use the following command to determine them.
+
+<pre>
+dpkg-query --show --showformat='${Package} ${Version} \n' libvirt-bin qemu-kvm virt-manager
+</pre>
+
+= Footnotes =
 <references/>
 
 {{Footer}}
