@@ -3,13 +3,16 @@
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
 __FORCETOC__
-Create a file /etc/apparmor.d/abstractions/whonix.
+<translate>
+Create a file /etc/apparmor.d/abstractions/whonix.</translate>
+<languages />
 
 <pre>
 kdesudo kwrite /etc/apparmor.d/abstractions/whonix
 </pre>
 
-Paste the following content.
+<translate>
+Paste the following content.</translate>
 
 <pre>
 @{HOME}/.whonix/* rwk,
@@ -21,7 +24,7 @@ Paste the following content.
 /etc/resolv.conf.whonix r,
 	
 /usr/bin/gpg.whonix rix,
-/usr/bin/gpg.whonix-orig rix,
+/usr/bin/gpg.anondist-orig rix,
 	
 /usr/lib/whonix/confirm_open rix,
 /usr/lib/whonix/uwtwrapper rix,
