@@ -63,7 +63,7 @@ Summary:
 * Tor can't connect if the host clock is too much off. In this case manually fix the host clock, power off Whonix-Gateway and power on Whonix-Gateway again.
 * Keep an eye on the host clock, ensure that it's always somewhat accurate.
 
-Even though it's a difficult topic, you are advised to read Technical Design chapter <tvar|A>[[Dev/TimeSync]].</>  
+Even though it's a difficult topic, you are advised to read Technical Design chapter [[Dev/TimeSync]].  
 
 Footnotes. Additional information, reasoning, design for interested users, developers and auditors.
 
