@@ -379,7 +379,7 @@ Please help research and document sane and effective solutions. [<tvar|A>https:/
 
 === Possible Solutions ===
 ==== apt-cache ====
-Whonix-Gateway (when using virtual machines) could be configured to use the host apt-cache. [[<tvar|A>Physical Isolation|</> Physically isolated]] Whonix-Gateways could use an apt-cache running on a separate machine. [<tvar|A>https://packages.debian.org/wheezy/apt-cacher-ng</>  apt-cacher-ng] is an example implementation of such an apt-cache.  
+Whonix-Gateway (when using virtual machines) could be configured to use the host apt-cache. [[Physical Isolation| Physically isolated]] Whonix-Gateways could use an apt-cache running on a separate machine. [https://packages.debian.org/wheezy/apt-cacher-ng  apt-cacher-ng] is an example implementation of such an apt-cache.  
 
 [[<tvar|A>Security_Guide#Updates|</> Operating system updates]] would not be anonymized by default, which would be a big disadvantage<ref>Leaks list of installed packages to ISP level adversaries and update servers. You usually don't want them to know that you installed a webserver and therefore likely host a hidden web service and so forth.</ref>. One would have to figure out how to configure apt-cacher-ng on the host to download through Tor. 
 
