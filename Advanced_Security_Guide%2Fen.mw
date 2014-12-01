@@ -781,7 +781,7 @@ Recommended basic knowledge:
 * [<tvar|A>https://www.whonix.org/wiki/Tunnel_Tor_through_proxy_or_VPN_or_SSH|</> Tunnel Tor through proxy or VPN or SSH]
 * [[Stream Isolation]]
 
-May be useful as well: [<tvar|A>https://www.whonix.org/wiki/Dev/Inspiration|</> Inspiration]. 
+May be useful as well: [https://www.whonix.org/wiki/Dev/Inspiration| Inspiration]. 
 
 You must know, understand and edit /etc/network/interfaces on Whonix-Gateway and/or on Whonix-Workstation (and if not using physical isolation, the virtual internal network name in VirtualBox settings).
 
