@@ -194,7 +194,7 @@ Should an incursion occur, it would prevent the adversary from exploring other s
 
 === Pre Install Advice ===
 
-Installing a host firewall has been already recommended in <tvar|A>[[Pre Install Advice#Host Firewall]]</>. 
+Installing a host firewall has been already recommended in [[Pre Install Advice#Host Firewall]]. 
 
 === Port Scan ===
 
