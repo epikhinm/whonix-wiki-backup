@@ -217,26 +217,26 @@ Anonymity is a complex problem without an easy solution, and security is only as
 
 '''Advanced Topics'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
-<small> 
-* [[<tvar|A>Whonix Configuration Files|</> Whonix modular flexible .d style configuration folders]]
-* [[<tvar|A>Other Operating Systems|</> Other Operating Systems such as Windows, Ubuntu, etc. torified by Whonix-Gateway]]
-* [[<tvar|A>Other_Desktop_Environments|</> Other Desktop Environments (Gnome, LXDE, Xfce, etc.)]]
-* [[<tvar|A>Backup_Whonix_VMs|</> Backup Whonix VMs]]
-* [[<tvar|A>Manually Create Whonix VM Settings|</> Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]]
-* [[<tvar|A>Manually Updating Tor Browser|</> Manually updating Tor Browser, temporary workaround, in case the torbrowser updater ever gets broken]]
-* [[<tvar|A>Dev/Build Documentation|</> Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]]
-* [[<tvar|A>Download Security|</> Download Security]]
-* [[<tvar|A>Tuning#Replacing Desktop Environment|</> Replacing desktop environment]]
-* [[<tvar|A>AppArmor|</> Hardening using Whonix's AppArmor Profiles]]
-** [[<tvar|A>AppArmor/VirtualBox|</> VirtualBox]]
-** [[<tvar|A>AppArmor/Tor_Browser_Bundle|</> Tor Browser Bundle (TBB)]]
-** [[<tvar|A>AppArmor/Icedove|</> Icedove (with Enigmail)]]
-** [[<tvar|A>AppArmor/Pidgin|</> Pidgin (with OTR)]]
-** [[<tvar|A>AppArmor/XChat|</> XChat]]
-** [[<tvar|A>AppArmor/sdwdate|</> Whonix sdwdate]]
-** [[<tvar|A>AppArmor/Timesync|</> Whonix timesync]]
-** [[<tvar|A>AppArmor/Whonixcheck|</> Whonix whonixcheck]]
-* [[<tvar|A>Advanced Security Guide|</> Advanced Security Guide]]</small> 
+<small>
+* [[Whonix Configuration Files| Whonix modular flexible .d style configuration folders]] 
+* [[Other Operating Systems| Other Operating Systems such as Windows, Ubuntu, etc. torified by Whonix-Gateway]] 
+* [[Other_Desktop_Environments| Other Desktop Environments (Gnome, LXDE, Xfce, etc.)]] 
+* [[Backup_Whonix_VMs| Backup Whonix VMs]] 
+* [[Manually Create Whonix VM Settings| Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]] 
+* [[Manually Updating Tor Browser| Manually updating Tor Browser, temporary workaround, in case the torbrowser updater ever gets broken]] 
+* [[Dev/Build Documentation| Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]] 
+* [[Download Security| Download Security]] 
+* [[Tuning#Replacing Desktop Environment| Replacing desktop environment]] 
+* [[AppArmor| Hardening using Whonix's AppArmor Profiles]] 
+** [[AppArmor/VirtualBox| VirtualBox]] 
+** [[AppArmor/Tor_Browser_Bundle| Tor Browser Bundle (TBB)]] 
+** [[AppArmor/Icedove| Icedove (with Enigmail)]] 
+** [[AppArmor/Pidgin| Pidgin (with OTR)]] 
+** [[AppArmor/XChat| XChat]] 
+** [[AppArmor/sdwdate| Whonix sdwdate]] 
+** [[AppArmor/Timesync| Whonix timesync]] 
+** [[AppArmor/Whonixcheck| Whonix whonixcheck]] 
+* [[Advanced Security Guide| Advanced Security Guide]]</small> 
 <small>
 * [[<tvar|A>Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix|</> Using Multiple instances of Tor Browser]]
 * [[<tvar|A>Multiple Whonix-Workstations|</> Using Multiple Whonix-Workstations]]
