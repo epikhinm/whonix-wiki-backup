@@ -392,7 +392,7 @@ Somehow using [https://packages.debian.org/wheezy/apt-offline apt-offline] to do
 Self-created builds from source code using [[<tvar|A>Dev/Build_Documentation/9_full#CurrentSources_Builds_.28Optional.29|</> current sources]] would solve this. However, frozen sources have been implemented for reasons explained in the "Current Sources" chapter. Using Current Sources comes with its own issues. 
 
 ==== Always Up to Date Builds ====
-A good solution for end users; however, the maintenance effort (building, testing, uploading) is beyond our current ability. We need help with [[<tvar|A>Contribute#Testing|</> testing]] and with an automated test suite for Whonix. 
+A good solution for end users; however, the maintenance effort (building, testing, uploading) is beyond our current ability. We need help with [[Contribute#Testing| testing]] and with an automated test suite for Whonix. 
 
 = Virtualization Platform =
 
