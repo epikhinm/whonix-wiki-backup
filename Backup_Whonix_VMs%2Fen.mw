@@ -7,7 +7,7 @@
 = Overview - Ways to Backup Whonix VMs =
 There isn't a great and simple way to make backups yet. Best you can do is either:
 
-* [<tvar|A>https://www.whonix.org/wiki/File_transfer|</> File Transfer]
+* [https://www.whonix.org/wiki/File_transfer| File Transfer]
 * and/or use the export feature of VirtualBox, that will create standalone .ova files which you should be able to easily import on any other machine and/or
 * Create a copy of your VM files. There is some important knowledge you have to be aware of, this is documented below.
 
