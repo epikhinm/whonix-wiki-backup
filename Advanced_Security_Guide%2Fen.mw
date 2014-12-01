@@ -493,7 +493,7 @@ Open ''/etc/network/interfaces'' [<tvar|A>https://github.com/Whonix/Whonix/blob/
 
 == Disable Control Port Filter Proxy ==
 === Introduction ===
-Disabling [<tvar|A>https://www.whonix.org/wiki/Dev/CPFP|</> Control Port Filter Proxy] (CPFP) can improve security while sacrificing usability. You will receive helpful notifications when Tor is not fully bootstrapped anymore by multiple tools that come with Whonix. 
+Disabling [https://www.whonix.org/wiki/Dev/CPFP| Control Port Filter Proxy] (CPFP) can improve security while sacrificing usability. You will receive helpful notifications when Tor is not fully bootstrapped anymore by multiple tools that come with Whonix. 
 
 === How ===
 ==== On Whonix-Gateway ====
