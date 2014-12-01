@@ -272,7 +272,7 @@ To protect against theft or robbery, power off your machine at times when this i
 
 == Side channel attacks ==
 
-Whonix does '''not''' defeat [https://en.wikipedia.org/wiki/Hardware_keylogger hardware keylogger], miniature cameras, [<tvar|A>https://en.wikipedia.org/wiki/Tempest_%28codename%29</> TEMPEST]. 
+Whonix does '''not''' defeat [https://en.wikipedia.org/wiki/Hardware_keylogger hardware keylogger], miniature cameras, [https://en.wikipedia.org/wiki/Tempest_%28codename%29 TEMPEST]. 
 
 Needless to say, that also FDE does not protect against these threats.
 
