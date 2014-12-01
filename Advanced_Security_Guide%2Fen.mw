@@ -381,7 +381,7 @@ Please help research and document sane and effective solutions. [https://www.who
 ==== apt-cache ====
 Whonix-Gateway (when using virtual machines) could be configured to use the host apt-cache. [[Physical Isolation| Physically isolated]] Whonix-Gateways could use an apt-cache running on a separate machine. [https://packages.debian.org/wheezy/apt-cacher-ng  apt-cacher-ng] is an example implementation of such an apt-cache.  
 
-[[<tvar|A>Security_Guide#Updates|</> Operating system updates]] would not be anonymized by default, which would be a big disadvantage<ref>Leaks list of installed packages to ISP level adversaries and update servers. You usually don't want them to know that you installed a webserver and therefore likely host a hidden web service and so forth.</ref>. One would have to figure out how to configure apt-cacher-ng on the host to download through Tor. 
+[[Security_Guide#Updates| Operating system updates]] would not be anonymized by default, which would be a big disadvantage<ref>Leaks list of installed packages to ISP level adversaries and update servers. You usually don't want them to know that you installed a webserver and therefore likely host a hidden web service and so forth.</ref>. One would have to figure out how to configure apt-cacher-ng on the host to download through Tor. 
 
 Eventually Whonix-Workstation could use an apt-cache that is running on Whonix-Gateway. This would increase Whonix-Gateways's attack surface once Whonix-Workstation is compromised while decreasing Whonix-Workstation's attack surface when using a vulnerable apt-get to download through untrusted Tor exit relays.
 
