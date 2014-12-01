@@ -144,7 +144,7 @@ You should see something like this.
 
 == Recommendation to use Whonix with Physical Isolation ==
 
-Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date. Unfortunately, it is difficult to setup. See [<tvar|A>https://www.whonix.org/wiki/Physical Isolation|</> Physical Isolation]. 
+Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date. Unfortunately, it is difficult to setup. See [https://www.whonix.org/wiki/Physical Isolation| Physical Isolation]. 
 
 == Hardening ==
 
