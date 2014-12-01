@@ -30,8 +30,8 @@ When you change VM settings, add/remove VMs, add/remove virtual hdds, add/remove
 Adding your VirtualBox settings folder to a [https://en.wikipedia.org/wiki/Revision_control revision control system] such as [https://en.wikipedia.org/wiki/Git_(software) git] is a good addition to backups of VirtualBox's settings folder. Should VirtualBox damage your settings file and its backup file (happens sometimes), you can try a recent backup from an earlier git revision.
 
 = See Also =
-* [[<tvar|A>Manually_Create_Whonix_VM_Settings|</> Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]]
-* [<tvar|A>https://www.whonix.org/wiki/File_transfer|</> File Transfer]
+* [[Manually_Create_Whonix_VM_Settings| Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]]
+* [https://www.whonix.org/wiki/File_transfer| File Transfer]
 
 = Footnotes =
 <references/>
