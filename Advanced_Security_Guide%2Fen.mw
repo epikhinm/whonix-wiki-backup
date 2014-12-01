@@ -359,8 +359,8 @@ If you disagree with this assessment or have any suggestions how to improve the 
 Experts only: There is also Hardened Gentoo based Whonix-Gateway. Outdated, needs maintainer. See [https://www.whonix.org/wiki/Hardened_Gentoo_TG| Hardened Gentoo TG] . 
 
 Updates:
-* There's Alpine Linux, where Tor is in testing. [<tvar|A>http://bugs.alpinelinux.org/issues/1067</> Package Request: Tor].</ref>
-* Arch Linux offers a grsecurity kernel. <tvar|A><ref>https://wiki.archlinux.org/index.php/Grsecurity</ref></> 
+* There's Alpine Linux, where Tor is in testing. [http://bugs.alpinelinux.org/issues/1067 Package Request: Tor].</ref> 
+* Arch Linux offers a grsecurity kernel. <ref>https://wiki.archlinux.org/index.php/Grsecurity</ref> 
 
 Footnotes:
 
