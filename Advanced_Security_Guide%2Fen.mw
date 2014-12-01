@@ -163,11 +163,11 @@ Proactive Defenses
 Retroactive Defenses
 
 * The usefulness of this approach is limited. It doesn't prevent security breaches. It can only help making future breaches less likely.
-* [<tvar|A>https://en.wikipedia.org/wiki/Rkhunter</> rkhunter]
+* [https://en.wikipedia.org/wiki/Rkhunter rkhunter] 
 * IDS (Intrusion Detection System)
-* [<tvar|A>https://en.wikipedia.org/wiki/Snort_%28software%29</> Snort]
-* [<tvar|A>http://packages.debian.org/wheezy/tiger</> TIGER]
-* [<tvar|A>http://packages.debian.org/wheezy/sxid</> sxid]
+* [https://en.wikipedia.org/wiki/Snort_%28software%29 Snort] 
+* [http://packages.debian.org/wheezy/tiger TIGER] 
+* [http://packages.debian.org/wheezy/sxid sxid] 
 * antivirus, antimalware
 
 These are only pointers for you to search the web about these topics and these are probably beyond the scope of this guide.
