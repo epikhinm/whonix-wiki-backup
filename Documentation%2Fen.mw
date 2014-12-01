@@ -146,10 +146,10 @@ Anonymity is a complex problem without an easy solution, and security is only as
 
 '''Encryption & Privacy'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
-<small> 
-* [[<tvar|A>Metadata|</> Clean metadata in files]]
-* [[<tvar|A>Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend |</> OpenPGP with KGPG]]
-* [[<tvar|A>OpenPGP|</> OpenPGP key distribution strategies and trust models]]</small> 
+<small>
+* [[Metadata| Clean metadata in files]] 
+* [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | OpenPGP with KGPG]] 
+* [[OpenPGP| OpenPGP key distribution strategies and trust models]]</small> 
 </div>
 
 
