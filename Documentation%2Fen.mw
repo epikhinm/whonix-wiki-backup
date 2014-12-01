@@ -240,31 +240,31 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** [[AppArmor/Whonixcheck| Whonix whonixcheck]] 
 * [[Advanced Security Guide| Advanced Security Guide]]</small> 
 <small>
-* [[<tvar|A>Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix|</> Using Multiple instances of Tor Browser]]
-* [[<tvar|A>Multiple Whonix-Workstations|</> Using Multiple Whonix-Workstations]]
-* [[<tvar|A>Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|</> Using Multiple Whonix-Gateways]]
-* [[<tvar|A>Advanced_Security_Guide#Chaining_Anonymizing_Gateways|</> Chaining Anonymizing Gateways]]
-* [[<tvar|A>Hide Tor and Whonix from your ISP|</> Hide the fact that you are using Tor/Whonix]]
-* [[<tvar|A>Connections_between_Whonix-Gateway_and_Whonix-Workstation|</> (encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]]
-* [[<tvar|A>Design|</> Technical Design]]
-* [[<tvar|A>Tunnel UDP over Tor|</> Tunnel UDP over Tor (Workaround using VPNs)]]
-* [[<tvar|A>VirtualBox Guest Additions|</> VirtualBox Guest Additions, Shared Folder (not recommended, for those who really know better)]]
-* [[<tvar|A>Grow Virtual Harddisk|</> Grow Virtual Harddisk]]
-* [[<tvar|A>Secondary DNS Resolver|</> Secondary DNS resolver]]
-* [[<tvar|A>Secondary DNS Resolver|</> Authenticated DNS over Tor, DNSSEC over Tor]]
-* [[<tvar|A>Secondary DNS Resolver|</> Encrypted DNS over Tor, DNSCrypt by OpenDNS, httpsdnsd by JonDos]]
-* [[<tvar|A>OnionCat|</> OnionCat, GarliCat: Tunnel TCP, UDP, ICMP or any other protocol through Tor or i2p; IPv6, VPN-like, TAP/TUN tunneling device]]
-* [[<tvar|A>Hosting a %28private%29 %28obfuscated%29 bridge or %28exit%29 relay|</> Hosting a (private) (obfuscated) bridge or (exit) relay]]
-* Using Tor's SocksProxy in Whonix-Workstation (See [[<tvar|A>Stream Isolation|</> Stream Isolation]].)
-* Best possible protection against Identity correlation through circuit sharing (See [[<tvar|A>Stream Isolation|</> Stream Isolation]].)
-* [[<tvar|A>PPTP|</> Connect to a Tor Gateway on your local network using PPTP VPN]]
-* [[<tvar|A>Whonix-APT-Repository|</> Whonix's APT Repository, how to enable/disable it?]]
-* [[<tvar|A>Whonix Debian Packages|</> Whonix Debian Packages, which ones are safe to remove?]]
+* [[Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix| Using Multiple instances of Tor Browser]] 
+* [[Multiple Whonix-Workstations| Using Multiple Whonix-Workstations]] 
+* [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways| Using Multiple Whonix-Gateways]] 
+* [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways| Chaining Anonymizing Gateways]] 
+* [[Hide Tor and Whonix from your ISP| Hide the fact that you are using Tor/Whonix]] 
+* [[Connections_between_Whonix-Gateway_and_Whonix-Workstation| (encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]] 
+* [[Design| Technical Design]] 
+* [[Tunnel UDP over Tor| Tunnel UDP over Tor (Workaround using VPNs)]] 
+* [[VirtualBox Guest Additions| VirtualBox Guest Additions, Shared Folder (not recommended, for those who really know better)]] 
+* [[Grow Virtual Harddisk| Grow Virtual Harddisk]] 
+* [[Secondary DNS Resolver| Secondary DNS resolver]] 
+* [[Secondary DNS Resolver| Authenticated DNS over Tor, DNSSEC over Tor]] 
+* [[Secondary DNS Resolver| Encrypted DNS over Tor, DNSCrypt by OpenDNS, httpsdnsd by JonDos]] 
+* [[OnionCat| OnionCat, GarliCat: Tunnel TCP, UDP, ICMP or any other protocol through Tor or i2p; IPv6, VPN-like, TAP/TUN tunneling device]] 
+* [[Hosting a %28private%29 %28obfuscated%29 bridge or %28exit%29 relay| Hosting a (private) (obfuscated) bridge or (exit) relay]] 
+* Using Tor's SocksProxy in Whonix-Workstation (See [[Stream Isolation| Stream Isolation]].) 
+* Best possible protection against Identity correlation through circuit sharing (See [[Stream Isolation| Stream Isolation]].) 
+* [[PPTP| Connect to a Tor Gateway on your local network using PPTP VPN]] 
+* [[Whonix-APT-Repository| Whonix's APT Repository, how to enable/disable it?]] 
+* [[Whonix Debian Packages| Whonix Debian Packages, which ones are safe to remove?]] 
 * File Transfer
-** [[<tvar|A>File Transfer#Security Overview|</> Security Overview]]
-** [[<tvar|A>File_Transfer#Transfer_files_from_the_Host_into_Whonix-Gateway_or_Whonix-Workstation_through_ISO_images|</> Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images]]
-** [[<tvar|A>File_Transfer#Adding_USB_device_to_VirtualBox|</> Adding USB device to VirtualBox]]
-** [[<tvar|A>File Transfer#Shared Folder|</> Shared Folder]]</small> 
+** [[File Transfer#Security Overview| Security Overview]] 
+** [[File_Transfer#Transfer_files_from_the_Host_into_Whonix-Gateway_or_Whonix-Workstation_through_ISO_images| Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images]] 
+** [[File_Transfer#Adding_USB_device_to_VirtualBox| Adding USB device to VirtualBox]] 
+** [[File Transfer#Shared Folder| Shared Folder]]</small> 
 <small>
 ** [[File Transfer#SSH into Whonix-Gateway| sshfs (or ssh) into Whonix-Gateway]] 
 ** [[File_Transfer#SSH_into_Whonix-Workstation| sshfs (or ssh) into Whonix-Workstation]] 
