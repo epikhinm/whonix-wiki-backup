@@ -1,0 +1,56 @@
+{{#seo:
+|description=Sekcja Deweloperska Whonix, Hakowanie Whonix, Rozwijanie Whonix'a
+}}
+<languages />
+__NOTOC__
+{{Header}}
+{{forkme}}
+
+
+'''Link do kodu źródłowego'''
+
+<div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+<small>
+* https://github.com/Whonix/Whonix
+</small>
+</div>
+<br/>
+'''Jak skompilować Whonix'a z kodu źródłowego?'''
+
+<div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+<small>
+* Zobacz [$A Dokumentacje]. 
+
+</small>
+</div>
+<br/>
+
+'''Rozwijanie / Hakowanie Whonix'a'''
+
+<div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+<small>
+
+* [[$A Zaangażuj się]] 
+* [https://www.whonix.org/forum/index.php?board=5.0 Forum Deweloperskie] 
+* <html><a href="/cgi-bin/mailman/listinfo/whonix-devel"> Deweloperska Lista Mailowa</a></html>
+* [[$A Wprowadzenie do kodu źródłowego Whonix]] 
+* [[$A Wprowadzenie do modelu kontroli wersji Git]] 
+* [[$A Subskrypcja]] 
+* [https://github.com/Whonix/Whonix/issues Bilety Deweloperskie, Bugi, Feature Requests oraz Roadmap]
+* [[$A Materialy dodatkowe]] 
+* [[$A Design Techniczny]] 
+* Szczegółowy design - który plik do czego służy
+** [[Dev/Design-Shared]]
+** [[Dev/Design-Gateway]]
+** [[Dev/Design-Workstation]]* [[$A Materiały przydatne przy debugowaniu]] 
+* [[$A Redystrybucja Whonix'a]]
+* [[$A Portowanie Whonix'a]] 
+* [[$A Integracja Ciągła (IC)]]</small> 
+
+
+</div>
+<br/>
+
+{{Footer}}
+
+[[Category:Development]]
