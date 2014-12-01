@@ -343,7 +343,7 @@ In conclusion, the main repository gets most attention and security updates. It 
 
 Whonix currently doesn't do that by default and it's an open question for research if that really improves security.
 
-[<tvar|A>https://github.com/fab1an/unix-admin-tools/blob/master/dpkg-origins</> dpkg-origins] can create a list of all packages and their repository. 
+[https://github.com/fab1an/unix-admin-tools/blob/master/dpkg-origins dpkg-origins] can create a list of all packages and their repository. 
 
 == About grsecurity ==
 Linux kernel is not a secure OS, Linus himself made it pretty clear that he doesn't think highly of the "security community"<ref>https://www.networkworld.com/news/2008/081408-torvalds-security-circus.html</ref>. His threat model and a Tor User threat model don't have much in common. Good that Linux is open source and if we disagree with a policy or politics we can just patch or fork it... Grsecurity/PaX is the most comprehensive kernel patch providing much needed security hardening both for the kernel itself and for making userland protections more effective. 
@@ -481,7 +481,7 @@ You also have to use a different SocksPort, see [[Tor_Browser#Change.2FRemove_Pr
 See [[Multiple Whonix-Workstations]].
 
 == Second, Optional, Extra Firewall ==
-There is a Second, Optional, Extra Firewall for Whonix-Workstation, which is disabled by default. You find it inside Whonix-Workstation in <tvar|A>{{WhonixFirewall}}</>. 
+There is a Second, Optional, Extra Firewall for Whonix-Workstation, which is disabled by default. You find it inside Whonix-Workstation in {{WhonixFirewall}}. 
 
 Read the script comments and decide if you want to use it.
 
