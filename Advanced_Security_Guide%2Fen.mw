@@ -474,7 +474,7 @@ Alternatively, less secure than Multiple Whonix-Workstations, you could start mu
 
 You need to extract Tor Browser into a different folder.
 
-You also have to use a different SocksPort, see [[<tvar|A>Tor_Browser#Change.2FRemove_Proxy_Settings|</> Change/Remove Proxy Settings]]. (See [[Stream Isolation]] page for explanation why you should use different SocksPorts.) 
+You also have to use a different SocksPort, see [[Tor_Browser#Change.2FRemove_Proxy_Settings| Change/Remove Proxy Settings]]. (See [[Stream Isolation]] page for explanation why you should use different SocksPorts.) 
 
 == Using multiple Whonix-Workstations ==
 
