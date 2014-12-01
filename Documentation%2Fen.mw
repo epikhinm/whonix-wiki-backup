@@ -87,17 +87,18 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''First steps with Whonix'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[<tvar|A>Post Install Advice|</> Security Advice after Installing Whonix]]
-* [[<tvar|A>Starting Whonix#Starting Whonix|</> Starting Whonix]]
-* [[<tvar|A>Starting Whonix#Boot Options|</> Startup Options]]
-* [[<tvar|A>Bridges|</> Tor Bridge Mode, using (private) (obfuscated) bridges]]
-* [[<tvar|A>Download#Stay tuned|</> Stay tuned]]
-* [[<tvar|A>Language|</> Change the system language]]
-* [[<tvar|A>Keyboard Layout|</> Change the keyboard layout]]
-* [[<tvar|A>Desktop|</> KDE/Whonix Desktop Tips]]
-* [[<tvar|A>Higher_Screen_Resolution|</> Higher Screen Resolution without installing VirtualBox guest additions]]
-* [[<tvar|A>Security Guide|</> Security Guide]]
-* [[<tvar|A>Install Software|</> Install additional software]]</small>
+* [[Post Install Advice| Security Advice after Installing Whonix]] 
+* [[Starting Whonix#Starting Whonix| Starting Whonix]] 
+* [[Starting Whonix#Boot Options| Startup Options]] 
+* [[Bridges| Tor Bridge Mode, using (private) (obfuscated) bridges]] 
+* [[Download#Stay tuned| Stay tuned]] 
+* [[Language| Change the system language]] 
+* [[Keyboard Layout| Change the keyboard layout]] 
+* [[Desktop| KDE/Whonix Desktop Tips]] 
+* [[Higher_Screen_Resolution| Higher Screen Resolution without installing VirtualBox guest additions]] 
+* [[Security Guide| Security Guide]] 
+* [[Install Software| Install additional software]] 
+</small>
 </div>
 
 
