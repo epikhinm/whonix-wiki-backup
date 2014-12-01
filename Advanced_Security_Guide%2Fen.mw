@@ -184,7 +184,7 @@ Security-wise it makes sense to create a separate user account just for using Vi
 
 == DMZ ==
 
-If you are using a shared network, as in a cable modem/router or ADSL/router setup, that is shared with others, you should consider configuring a [<tvar|A>https://en.wikipedia.org/wiki/DMZ_%28computing%29</> DMZ] for your Whonix-Gateway. 
+If you are using a shared network, as in a cable modem/router or ADSL/router setup, that is shared with others, you should consider configuring a [https://en.wikipedia.org/wiki/DMZ_%28computing%29 DMZ] for your Whonix-Gateway. 
 
 This DMZ would restrict the Whonix-Gateway from accessing and from being accessible by other nodes on the network, eg printers, phones, computers, laptops, even if root access was somehow achieved on it.
 
