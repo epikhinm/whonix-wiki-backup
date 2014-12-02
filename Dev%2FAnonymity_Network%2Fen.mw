@@ -22,7 +22,7 @@ The ''Whonix Framework'' is agnostic about the Anonymity Network being used. In 
 
 == Security considerations ==
 
-Any successful attacks against Tor, does also work against Whonix and will result in a compromise of location/identity. <tvar|A><sup>1</sup></> 
+Any successful attacks against Tor, does also work against Whonix and will result in a compromise of location/identity. <sup>1</sup> 
 
 Whonix does not try to defend against network attacks, like a massive amount of evil Tor nodes, end-to-end correlation attacks and so on. The Tor software package from the Debian repository is installed in Whonix. There are no modifications to Tor software. This is left to the Tor developers and Debian packagers.
 
