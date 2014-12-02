@@ -316,9 +316,9 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''Esoteric Stuff (only for advanced users)'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[$184 Access Whonix-Gateway Ports From Host, make Tor accessible running inside Whonix-Gateway on the host]] 
-* [[$185 Enable Transparent Proxying for Whonix-Gateway's own traffic]] 
-* [[$186 Getting the global system DNS resolver working on Whonix-Gateway (usually recommended against and unnecessary)]]</small> 
+* [[Access Gateway Port From Host| Access Whonix-Gateway Ports From Host, make Tor accessible running inside Whonix-Gateway on the host]] 
+* [[Whonix-Gateways Own Traffic Transparent Proxy| Enable Transparent Proxying for Whonix-Gateway's own traffic]] 
+* [[Whonix-Gateway System DNS| Getting the global system DNS resolver working on Whonix-Gateway (usually recommended against and unnecessary)]]</small> 
 </div>
 
 
