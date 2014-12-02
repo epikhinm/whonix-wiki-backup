@@ -14,7 +14,7 @@ Tor has been chosen for the ''Whonix Example Implementation'', because it's the 
 
 Many users are important, because you can only be anonymous within a big group of people. More secure networks exist in theory, such as the mixminion high latency network, but without enough users, in practice they are less secure. See [<tvar|A>http://www.mail-archive.com/liberationtech@lists.stanford.edu/msg00022.html</> Roger Dingledine explanation] for details. 
 
-On the [<tvar|A>https://www.whonix.org/wiki/Warning|</> Warning] page are some shortcomings of Tor listed. 
+On the [https://www.whonix.org/wiki/Warning| Warning] page are some shortcomings of Tor listed. 
 
 == Whonix and other Anonymity Networks ==
 
