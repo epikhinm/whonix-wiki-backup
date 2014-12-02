@@ -69,7 +69,7 @@ There was [https://www.whonix.org/wiki/Dev/Inspiration#i2p| development idea]] t
 
 That i2p is not in Debian package sources would also make integration harder.
 
-* [<tvar|A>http://trac.i2p2.de/ticket/726</> i2p users can be deanonymized using browser fingerprinting].  ([http://www.webcitation.org/6EQgYfFNf w])
+* [http://trac.i2p2.de/ticket/726 i2p users can be deanonymized using browser fingerprinting].  ([http://www.webcitation.org/6EQgYfFNf w])
 * [http://lists.randombit.net/pipermail/cryptography/2013-June/004580.html About i2p insecurity]
 
 ==== Summary ====
