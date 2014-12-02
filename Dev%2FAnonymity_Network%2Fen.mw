@@ -18,7 +18,7 @@ On the [https://www.whonix.org/wiki/Warning| Warning] page are some shortcomings
 
 == Whonix and other Anonymity Networks ==
 
-The ''Whonix Framework'' is agnostic about the Anonymity Network being used. In theory also Tor could be completely exchanged with any other suited anonymizing network, see [<tvar|A>https://www.whonix.org/wiki/Dev/Technical_Introduction#Whonix_Framework</> Technical Introduction Whonix Framework]. Development in this area stalled due to lack of interest from users, upstream developers and Whonix developers. Anyway, there has been some research, theoretical and practical work done towards such integration, see [<tvar|A>https://www.whonix.org/wiki/Dev/Inspiration|</> Inspiration] in case you are interested.  
+The ''Whonix Framework'' is agnostic about the Anonymity Network being used. In theory also Tor could be completely exchanged with any other suited anonymizing network, see [https://www.whonix.org/wiki/Dev/Technical_Introduction#Whonix_Framework Technical Introduction Whonix Framework]. Development in this area stalled due to lack of interest from users, upstream developers and Whonix developers. Anyway, there has been some research, theoretical and practical work done towards such integration, see [https://www.whonix.org/wiki/Dev/Inspiration| Inspiration] in case you are interested.  
 
 == Security considerations ==
 
