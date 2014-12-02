@@ -149,9 +149,9 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''Encryption & Privacy'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[$72 Clean metadata in files]] 
-* [[$73 OpenPGP with KGPG]] 
-* [[$74 OpenPGP key distribution strategies and trust models]]</small> 
+* [[Metadata| Clean metadata in files]] 
+* [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | OpenPGP with KGPG]] 
+* [[OpenPGP| OpenPGP key distribution strategies and trust models]]</small> 
 </div>
 
 
