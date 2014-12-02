@@ -16,7 +16,7 @@ sudo apt-get install apparmor-profile-pidgin
 Last update: September 22, 2014.
 
 === Profile ===
-Credit for this AppArmor profile goes to [$1 intrigeri].
+Credit for this AppArmor profile goes to [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=676849 intrigeri].
 <pre>
 # Last Modified: Wed Sep 17 19:26:46 UTC 2014
 #include <tunables/global>
