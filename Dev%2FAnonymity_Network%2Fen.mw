@@ -10,7 +10,7 @@ This page describes, why Tor was chosen for the ''Whonix Example Implementation'
 
 == Tor ==
 
-Tor has been chosen for the ''Whonix Example Implementation'', because it's the best researched and most used network. Whonix developer adrelanos believes Tor is currently the most secure anonymity network legally available to most users. See [<tvar|A>http://freehaven.net/anonbib/</> anonbib] for a collection about research papers about Tor and other anonymity networks. 
+Tor has been chosen for the ''Whonix Example Implementation'', because it's the best researched and most used network. Whonix developer adrelanos believes Tor is currently the most secure anonymity network legally available to most users. See [http://freehaven.net/anonbib/ anonbib] for a collection about research papers about Tor and other anonymity networks. 
 
 Many users are important, because you can only be anonymous within a big group of people. More secure networks exist in theory, such as the mixminion high latency network, but without enough users, in practice they are less secure. See [<tvar|A>http://www.mail-archive.com/liberationtech@lists.stanford.edu/msg00022.html</> Roger Dingledine explanation] for details. 
 
