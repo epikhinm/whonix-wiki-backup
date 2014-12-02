@@ -114,7 +114,7 @@ There was a [<tvar|A>https://www.whonix.org/wiki/Dev/Inspiration#Freenet|</> dev
 
 Not suited for Whonix for the Default-Download-Version.
 
-In fact <tvar|A>[http://retroshare.sourceforge.net RetroShare]</> is not an [<tvar|A>https://en.wikipedia.org/wiki/Anonymizer</> anonymizing network], it is a <tvar|A>[https://en.wikipedia.org/wiki/Friend-to-friend friend-to-friend]</> (F2F) network, or optionally a [<tvar|A>https://en.wikipedia.org/wiki/Darknet_(file_sharing)</> darknet]. RetroShare has a very different audience and threat model. RetroShare does not support using an outproxy yet, for this reason, it can not replace Tor on the Whonix-Gateway.    
+In fact [http://retroshare.sourceforge.net RetroShare] is not an [https://en.wikipedia.org/wiki/Anonymizer anonymizing network], it is a [https://en.wikipedia.org/wiki/Friend-to-friend friend-to-friend] (F2F) network, or optionally a [https://en.wikipedia.org/wiki/Darknet_(file_sharing) darknet]. RetroShare has a very different audience and threat model. RetroShare does not support using an outproxy yet, for this reason, it can not replace Tor on the Whonix-Gateway.    
 
 === Proxies / Proxy Chains ===
 
