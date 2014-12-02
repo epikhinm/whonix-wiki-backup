@@ -108,7 +108,7 @@ Not suited for Whonix for the Default-Download-Version.
 
 Replacing Tor with Freenet is impossible, as Freenet is a separated network, not designed to exit the network, i.e. clearnet websites could not be reached, apt-get wouldn't work, etc.
 
-There was a [<tvar|A>https://www.whonix.org/wiki/Dev/Inspiration#Freenet|</> development idea] to install Tor and optionally Freenet on Whonix-Gateway. It would pose the questions. Is Freenet designed for withholding the external IP from a Workstation, i.e. does the Freenet webinterface spill the external IP and if yes, can it be configured, not to? 
+There was a [https://www.whonix.org/wiki/Dev/Inspiration#Freenet| development idea] to install Tor and optionally Freenet on Whonix-Gateway. It would pose the questions. Is Freenet designed for withholding the external IP from a Workstation, i.e. does the Freenet webinterface spill the external IP and if yes, can it be configured, not to? 
 
 === RetroShare ===
 
