@@ -32,7 +32,7 @@ There is no known bug (or "feature") to obtain the users real IP address through
 
 There are other attacks thinkable, which we can not defend against. For example, if an adversary controls your entry node or can observe your ISP and has access to the Whonix-Workstation. He can simply use "morse" (5 seconds much traffic, 10 seconds no traffic...) And then observe it's incoming connections. Then it's game over as well.
 
-<tvar|A><sup>1</sup></> Unless Tor is combined with other means of anonymization (available as optional feature).  
+<sup>1</sup> Unless Tor is combined with other means of anonymization (available as optional feature).  
 
 == Other Anonymity Networks reviewed for Whonix ==
 
