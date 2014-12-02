@@ -240,31 +240,31 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** [[$126 Whonix whonixcheck]] 
 * [[$127 Advanced Security Guide]]</small> 
 <small>
-* [[$128 Using Multiple instances of Tor Browser]] 
-* [[$129 Using Multiple Whonix-Workstations]] 
-* [[$130 Using Multiple Whonix-Gateways]] 
-* [[$131 Chaining Anonymizing Gateways]] 
-* [[$132 Hide the fact that you are using Tor/Whonix]] 
-* [[$133 (encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]] 
-* [[$134 Technical Design]] 
-* [[$135 Tunnel UDP over Tor (Workaround using VPNs)]] 
-* [[$136 VirtualBox Guest Additions, Shared Folder (not recommended, for those who really know better)]] 
-* [[$137 Grow Virtual Harddisk]] 
-* [[$138 Secondary DNS resolver]] 
-* [[$139 Authenticated DNS over Tor, DNSSEC over Tor]] 
-* [[$140 Encrypted DNS over Tor, DNSCrypt by OpenDNS, httpsdnsd by JonDos]] 
-* [[$141 OnionCat, GarliCat: Tunnel TCP, UDP, ICMP or any other protocol through Tor or i2p; IPv6, VPN-like, TAP/TUN tunneling device]] 
-* [[$142 Hosting a (private) (obfuscated) bridge or (exit) relay]] 
-* Using Tor's SocksProxy in Whonix-Workstation (See [[$143 Stream Isolation]].) 
-* Best possible protection against Identity correlation through circuit sharing (See [[$144 Stream Isolation]].) 
-* [[$145 Connect to a Tor Gateway on your local network using PPTP VPN]] 
-* [[$146 Whonix's APT Repository, how to enable/disable it?]] 
-* [[$147 Whonix Debian Packages, which ones are safe to remove?]] 
+* [[Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix| Using Multiple instances of Tor Browser]] 
+* [[Multiple Whonix-Workstations| Using Multiple Whonix-Workstations]] 
+* [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways| Using Multiple Whonix-Gateways]] 
+* [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways| Chaining Anonymizing Gateways]] 
+* [[Hide Tor and Whonix from your ISP| Hide the fact that you are using Tor/Whonix]] 
+* [[Connections_between_Whonix-Gateway_and_Whonix-Workstation| (encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]] 
+* [[Design| Technical Design]] 
+* [[Tunnel UDP over Tor| Tunnel UDP over Tor (Workaround using VPNs)]] 
+* [[VirtualBox Guest Additions| VirtualBox Guest Additions, Shared Folder (not recommended, for those who really know better)]] 
+* [[Grow Virtual Harddisk| Grow Virtual Harddisk]] 
+* [[Secondary DNS Resolver| Secondary DNS resolver]] 
+* [[Secondary DNS Resolver| Authenticated DNS over Tor, DNSSEC over Tor]] 
+* [[Secondary DNS Resolver| Encrypted DNS over Tor, DNSCrypt by OpenDNS, httpsdnsd by JonDos]] 
+* [[OnionCat| OnionCat, GarliCat: Tunnel TCP, UDP, ICMP or any other protocol through Tor or i2p; IPv6, VPN-like, TAP/TUN tunneling device]] 
+* [[Hosting a %28private%29 %28obfuscated%29 bridge or %28exit%29 relay| Hosting a (private) (obfuscated) bridge or (exit) relay]] 
+* Using Tor's SocksProxy in Whonix-Workstation (See [[Stream Isolation| Stream Isolation]].) 
+* Best possible protection against Identity correlation through circuit sharing (See [[Stream Isolation| Stream Isolation]].) 
+* [[PPTP| Connect to a Tor Gateway on your local network using PPTP VPN]] 
+* [[Whonix-APT-Repository| Whonix's APT Repository, how to enable/disable it?]] 
+* [[Whonix Debian Packages| Whonix Debian Packages, which ones are safe to remove?]] 
 * File Transfer
-** [[$148 Security Overview]] 
-** [[$149 Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images]] 
-** [[$150 Adding USB device to VirtualBox]] 
-** [[$151 Shared Folder]]</small> 
+** [[File Transfer#Security Overview| Security Overview]] 
+** [[File_Transfer#Transfer_files_from_the_Host_into_Whonix-Gateway_or_Whonix-Workstation_through_ISO_images| Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images]] 
+** [[File_Transfer#Adding_USB_device_to_VirtualBox| Adding USB device to VirtualBox]] 
+** [[File Transfer#Shared Folder| Shared Folder]]</small> 
 <small>
 ** [[File Transfer#SSH into Whonix-Gateway| sshfs (or ssh) into Whonix-Gateway]] 
 ** [[File_Transfer#SSH_into_Whonix-Workstation| sshfs (or ssh) into Whonix-Workstation]] 
