@@ -6,7 +6,7 @@ __FORCETOC__
 {{AppArmorProfileWarning}}
 <languages />
 
-This profile has to be used in the host. It is tested with VirtualBox 4.1 (4.1.18_Debian r78361), no other versions.  Please report any message you might see in this  [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
+This profile has to be used in the host. It is tested with VirtualBox 4.1 (4.1.18_Debian r78361), no other versions.  Please report any message you might see in this  [$1 forum thread].
 
 In the host, create a file
  /etc/apparmor.d/usr.bin.VBox.
@@ -79,7 +79,7 @@ Run.
 sudo apparmor_parser -r /etc/apparmor.d/usr.bin.VBox
 </pre>
 
-[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
+[$2 troubadour] created this profile. You can discuss it in this [$3 forum thread].
 
 {{Footer}}
 
