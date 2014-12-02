@@ -296,11 +296,11 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''Advanced Topics - Platform Support'''
 <div style="column-count:2;-moz-column-count:2;-webkit-column-count:2">
 <small>
-* [[$176 Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]] (stable) 
-* [[$177 Whonix using KVM rather than VirtualBox]] (testers-only) 
-* [[$178 Whonix using QEMU rather than VirtualBox]] (testers-only) 
-* [[$179 Whonix using VMware rather than VirtualBox]] (unmaintained) 
-* [[$180 Whonix using Qubes OS rather than VirtualBox]] (in development)</small> 
+* [[Dev/Build_Documentation/Physical_Isolation| Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]] (stable) 
+* [[KVM| Whonix using KVM rather than VirtualBox]] (testers-only) 
+* [[QEMU| Whonix using QEMU rather than VirtualBox]] (testers-only) 
+* [[VMware| Whonix using VMware rather than VirtualBox]] (unmaintained) 
+* [[Qubes OS| Whonix using Qubes OS rather than VirtualBox]] (in development)</small> 
 </div>
 
 
