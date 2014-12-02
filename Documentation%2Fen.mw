@@ -72,32 +72,32 @@ Anonymity is a complex problem without an easy solution, and security is only as
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 
 <small>
-* [[Download#First_time_user.3F| First time user?]] 
-* [[Download#Download_Whonix| Download Whonix]] 
-* [[Whonix Signing Key| Download Whonix signing key]] 
-* [[Download#Verify_the_Whonix_images| Verify the Whonix images]] 
-** [[Verify_the_virtual_machine_images_using_Linux| For Linux: Ubuntu, Debian, Whonix, etc. using kgpg]] 
-** [[Verify_the_virtual_machine_images_using_the_command_line| For Linux with the command line]] 
-** [[Verify_the_virtual_machine_images_using_other_operating_systems| For Windows or Mac]] 
-*  [[Pre Install Advice| Security Advice before installing Whonix]] 
-*  [[Download#Install_Whonix| Install Whonix]]</small> 
+* [[$22 First time user?]] 
+* [[$23 Download Whonix]] 
+* [[$24 Download Whonix signing key]] 
+* [[$25 Verify the Whonix images]] 
+** [[$26 For Linux: Ubuntu, Debian, Whonix, etc. using kgpg]] 
+** [[$27 For Linux with the command line]] 
+** [[$28 For Windows or Mac]] 
+*  [[$29 Security Advice before installing Whonix]] 
+*  [[$30 Install Whonix]]</small> 
 </div>
 
 
 '''First steps with Whonix'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Post Install Advice| Security Advice after Installing Whonix]] 
-* [[Starting Whonix#Starting Whonix| Starting Whonix]] 
-* [[Starting Whonix#Boot Options| Startup Options]] 
-* [[Bridges| Tor Bridge Mode, using (private) (obfuscated) bridges]] 
-* [[Download#Stay tuned| Stay tuned]] 
-* [[Language| Change the system language]] 
-* [[Keyboard Layout| Change the keyboard layout]] 
-* [[Desktop| KDE/Whonix Desktop Tips]] 
-* [[Higher_Screen_Resolution| Higher Screen Resolution without installing VirtualBox guest additions]] 
-* [[Security Guide| Security Guide]] 
-* [[Install Software| Install additional software]] 
+* [[$31 Security Advice after Installing Whonix]] 
+* [[$32 Starting Whonix]] 
+* [[$33 Startup Options]] 
+* [[$34 Tor Bridge Mode, using (private) (obfuscated) bridges]] 
+* [[$35 Stay tuned]] 
+* [[$36 Change the system language]] 
+* [[$37 Change the keyboard layout]] 
+* [[$38 KDE/Whonix Desktop Tips]] 
+* [[$39 Higher Screen Resolution without installing VirtualBox guest additions]] 
+* [[$40 Security Guide]] 
+* [[$41 Install additional software]] 
 </small>
 </div>
 
@@ -106,52 +106,52 @@ Anonymity is a complex problem without an easy solution, and security is only as
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 
 <small>
-* [[Reporting Bugs| Reporting Bugs]] 
-* [[Test| Troubeshooting]] 
-* [[Starting Whonix#PAE crash| Whonix does not start]]</small> 
+* [[$42 Reporting Bugs]] 
+* [[$43 Troubeshooting]] 
+* [[$44 Whonix does not start]]</small> 
 </div>
 
 
 '''Connect to the Internet anonymously'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Logging_in_to_captive_portals| Logging in to captive portals, Hotspot Wi-Fi registration]] 
-* [[Tor Controller| Controlling Tor]] 
-* [[Tor Browser| Browsing the web with Tor Browser]] 
-** [[Surfing_Posting_Blogging| Surfing, Posting, Blogging]] 
-** [[Browser Plugins| Using Browser Plugins, Adobe Flash]] 
-* [[Chat| Chatting]] 
-** [[Chat#General Safety Advice| General Safety Advice]] 
-** [[Chat#TorChat| TorChat]] 
-** [[Chat#RetroShare| RetroShare serverless encrypted instant messenger and more - experimental in Whonix]] 
-** [[Chat#Pidgin| Pidgin multi-protocol instant messenger]] 
-** [[Chat#OTR_encryption| Pidgin OTR end-to-end encryption]] 
-** [[XChat| Chatting on IRC with XChat]] 
-* [[Hosting Location Hidden Services| Hosting Location/IP Hidden Servers]] 
-** [[Hidden Services| Hosting Tor Hidden Services, ANY, Hidden Webserver]] 
-** [[Hidden_Services_Guides| Hidden Services Guides]] 
-** [[Hosting| Third Party Hosting Services]] 
-* [[File Sharing| Filesharing, BitTorrent]] 
-* [[E-Mail| E-Mail: Introduction, Webmail, Mozilla Thunderbird with TorBirdy]]
-** [[Remailer| Sending e-mails without registration through Webinterface, Introduction into Remailer]] 
-** [[Mixmaster| Mixmaster, a Remailer over Tor]] 
-* [[rss| rss reader (unfinished in Whonix - under development), subscribing to website and/or blog updates, rss to e-mail and rss to sms]] 
-* [[Money| Anonymous Money, anonymously pay and receive money, Bitcoin, BTC (DRAFT!)]] 
-* [[VoIP| Phone Calls, Voice over IP, VoIP (experimental!)]] 
-* [[Other Anonymizing Networks| Accessing Other Anonymizing Services over Tor]] 
-** [[i2p| i2p]] 
-** [[Freenet| Freenet (hack, advanced users only)]] 
-** [[JonDonym| JonDonym]] 
-** [[Chat#RetroShare| RetroShare (experimental in Whonix)]]</small> 
+* [[$45 Logging in to captive portals, Hotspot Wi-Fi registration]] 
+* [[$46 Controlling Tor]] 
+* [[$47 Browsing the web with Tor Browser]] 
+** [[$48 Surfing, Posting, Blogging]] 
+** [[$49 Using Browser Plugins, Adobe Flash]] 
+* [[$50 Chatting]] 
+** [[$51 General Safety Advice]] 
+** [[$52 TorChat]] 
+** [[$53 RetroShare serverless encrypted instant messenger and more - experimental in Whonix]] 
+** [[$54 Pidgin multi-protocol instant messenger]] 
+** [[$55 Pidgin OTR end-to-end encryption]] 
+** [[$56 Chatting on IRC with XChat]] 
+* [[$57 Hosting Location/IP Hidden Servers]] 
+** [[$58 Hosting Tor Hidden Services, ANY, Hidden Webserver]] 
+** [[$59 Hidden Services Guides]] 
+** [[$60 Third Party Hosting Services]] 
+* [[$61 Filesharing, BitTorrent]] 
+* [[$dA E-Mail: Introduction, Webmail, Mozilla Thunderbird with TorBirdy]]
+** [[$62 Sending e-mails without registration through Webinterface, Introduction into Remailer]] 
+** [[$63 Mixmaster, a Remailer over Tor]] 
+* [[$64 rss reader (unfinished in Whonix - under development), subscribing to website and/or blog updates, rss to e-mail and rss to sms]] 
+* [[$65 Anonymous Money, anonymously pay and receive money, Bitcoin, BTC (DRAFT!)]] 
+* [[$66 Phone Calls, Voice over IP, VoIP (experimental!)]] 
+* [[$67 Accessing Other Anonymizing Services over Tor]] 
+** [[$68 i2p]] 
+** [[$69 Freenet (hack, advanced users only)]] 
+** [[$70 JonDonym]] 
+** [[$71 RetroShare (experimental in Whonix)]]</small> 
 </div>
 
 
 '''Encryption & Privacy'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Metadata| Clean metadata in files]] 
-* [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | OpenPGP with KGPG]] 
-* [[OpenPGP| OpenPGP key distribution strategies and trust models]]</small> 
+* [[$72 Clean metadata in files]] 
+* [[$73 OpenPGP with KGPG]] 
+* [[$74 OpenPGP key distribution strategies and trust models]]</small> 
 </div>
 
 
@@ -159,176 +159,176 @@ Anonymity is a complex problem without an easy solution, and security is only as
 '''Tools'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Software#Media Player| Media Player]] 
-* [[Software#Image Viewer| Image Viewer]] 
-* [[Software#Desktop Screenshot Creator| Desktop Screenshot Creator]] 
-* [[Software#Desktop Video Recorder| Desktop Video Recorder]] 
-* [[Software#Calculator| Calculator]] 
-* [[Software#Terminal| Terminal]]</small> 
+* [[$75 Media Player]] 
+* [[$76 Image Viewer]] 
+* [[$77 Desktop Screenshot Creator]] 
+* [[$78 Desktop Video Recorder]] 
+* [[$79 Calculator]] 
+* [[$80 Terminal]]</small> 
 </div>
 
 
 '''Work on sensitive documents'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Software#Office Suite| Office suite]] 
-* [[Software#Image Editing| Graphics]] 
-* [[Software#Video Editing| Video]] 
-* [[Software#Publishing| Publishing]] 
-* [[Software#Audio Editing| Audio]] 
-* [[Software#Printing and Scanning| Printing and scanning]]</small> 
+* [[$81 Office suite]] 
+* [[$82 Graphics]] 
+* [[$83 Video]] 
+* [[$84 Publishing]] 
+* [[$85 Audio]] 
+* [[$86 Printing and scanning]]</small> 
 </div>
 
 
 '''Tunnel Support / Chaining Support'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Features#VPN_.2F_Tunnel_support| Tunnel Support]] 
-* [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Tunnel Tor through proxy, VPN or SSH (proxy/VPN/SSH -> Tor)]] 
-** [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Tunnel Tor through proxy (proxy -> Tor)]] 
-** [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Tunnel Tor through SSH (SSH -> Tor)]] 
-** [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Tunnel Tor through VPN (VPN -> Tor)]] 
-* [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Tunnel proxy/proxychains/SSH/VPN through Tor (Tor -> Proxy/SSH/VPN)]] 
-** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Tunnel proxy/proxychains through Tor (Tor -> proxy)]] 
-** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Tunnel SSH through Tor (Tor -> SSH)]] 
-** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Tunnel VPN through Tor (Tor -> VPN)]] 
-* [[TestVPN| Example VPNs working with Whonix for testing purposes]] 
-* [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways| Chaining Anonymizing Gateways]]</small> 
+* [[$87 Tunnel Support]] 
+* [[$88 Tunnel Tor through proxy, VPN or SSH (proxy/VPN/SSH -> Tor)]] 
+** [[$89 Tunnel Tor through proxy (proxy -> Tor)]] 
+** [[$90 Tunnel Tor through SSH (SSH -> Tor)]] 
+** [[$91 Tunnel Tor through VPN (VPN -> Tor)]] 
+* [[$92 Tunnel proxy/proxychains/SSH/VPN through Tor (Tor -> Proxy/SSH/VPN)]] 
+** [[$93 Tunnel proxy/proxychains through Tor (Tor -> proxy)]] 
+** [[$94 Tunnel SSH through Tor (Tor -> SSH)]] 
+** [[$95 Tunnel VPN through Tor (Tor -> VPN)]] 
+* [[$96 Example VPNs working with Whonix for testing purposes]] 
+* [[$97 Chaining Anonymizing Gateways]]</small> 
 </div>
 
 
 '''Misc'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[FAQ| FAQ - Frequently Asked Questions]] 
-* [[Authorship| Authors/Changelog, sources, credits and license]] 
-* [[Dev/Changelog| Changelog]] 
-* [[History| History of Whonix]] 
-* [[Whonix:General_disclaimer| DISCLAIMER]] 
-* [[Special:AllPages| List of all Whonix pages (Index)]] 
-* [[Contribute| Contribute]] 
-* [[Donate| Donate]] 
-* [[Official Whonix Online Profiles| Official Whonix Online Profiles (also Social Media)]] 
-* [[Contact| Contacting Whonix developers, Feedback, Questions]]</small> 
+* [[$98 FAQ - Frequently Asked Questions]] 
+* [[$99 Authors/Changelog, sources, credits and license]] 
+* [[$100 Changelog]] 
+* [[$101 History of Whonix]] 
+* [[$102 DISCLAIMER]] 
+* [[$103 List of all Whonix pages (Index)]] 
+* [[$104 Contribute]] 
+* [[$105 Donate]] 
+* [[$106 Official Whonix Online Profiles (also Social Media)]] 
+* [[$107 Contacting Whonix developers, Feedback, Questions]]</small> 
 </div>
 
 
 '''Unfinished'''
 <small>
-* Other [[Censorship Circumvention Tools| Censorship Circumvention Tools]] than [[Bridges| Bridges]]</small> 
+* Other [[$108 Censorship Circumvention Tools]] than [[$documentation_109 Bridges]]</small> 
 
 '''Advanced Topics'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Whonix Configuration Files| Whonix modular flexible .d style configuration folders]] 
-* [[Other Operating Systems| Other Operating Systems such as Windows, Ubuntu, etc. torified by Whonix-Gateway]] 
-* [[Other_Desktop_Environments| Other Desktop Environments (Gnome, LXDE, Xfce, etc.)]] 
-* [[Backup_Whonix_VMs| Backup Whonix VMs]] 
-* [[Manually Create Whonix VM Settings| Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]] 
-* [[Manually Updating Tor Browser| Manually updating Tor Browser, temporary workaround, in case the torbrowser updater ever gets broken]] 
-* [[Dev/Build Documentation| Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]] 
-* [[Download Security| Download Security]] 
-* [[Tuning#Replacing Desktop Environment| Replacing desktop environment]] 
-* [[AppArmor| Hardening using Whonix's AppArmor Profiles]] 
-** [[AppArmor/VirtualBox| VirtualBox]] 
-** [[AppArmor/Tor_Browser_Bundle| Tor Browser Bundle (TBB)]] 
-** [[AppArmor/Icedove| Icedove (with Enigmail)]] 
-** [[AppArmor/Pidgin| Pidgin (with OTR)]] 
-** [[AppArmor/XChat| XChat]] 
-** [[AppArmor/sdwdate| Whonix sdwdate]] 
-** [[AppArmor/Timesync| Whonix timesync]] 
-** [[AppArmor/Whonixcheck| Whonix whonixcheck]] 
-* [[Advanced Security Guide| Advanced Security Guide]]</small> 
+* [[$109 Whonix modular flexible .d style configuration folders]] 
+* [[$110 Other Operating Systems such as Windows, Ubuntu, etc. torified by Whonix-Gateway]] 
+* [[$111 Other Desktop Environments (Gnome, LXDE, Xfce, etc.)]] 
+* [[$112 Backup Whonix VMs]] 
+* [[$113 Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]] 
+* [[$114 Manually updating Tor Browser, temporary workaround, in case the torbrowser updater ever gets broken]] 
+* [[$115 Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]] 
+* [[$116 Download Security]] 
+* [[$117 Replacing desktop environment]] 
+* [[$118 Hardening using Whonix's AppArmor Profiles]] 
+** [[$119 VirtualBox]] 
+** [[$120 Tor Browser Bundle (TBB)]] 
+** [[$121 Icedove (with Enigmail)]] 
+** [[$122 Pidgin (with OTR)]] 
+** [[$123 XChat]] 
+** [[$124 Whonix sdwdate]] 
+** [[$125 Whonix timesync]] 
+** [[$126 Whonix whonixcheck]] 
+* [[$127 Advanced Security Guide]]</small> 
 <small>
-* [[Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix| Using Multiple instances of Tor Browser]] 
-* [[Multiple Whonix-Workstations| Using Multiple Whonix-Workstations]] 
-* [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways| Using Multiple Whonix-Gateways]] 
-* [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways| Chaining Anonymizing Gateways]] 
-* [[Hide Tor and Whonix from your ISP| Hide the fact that you are using Tor/Whonix]] 
-* [[Connections_between_Whonix-Gateway_and_Whonix-Workstation| (encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]] 
-* [[Design| Technical Design]] 
-* [[Tunnel UDP over Tor| Tunnel UDP over Tor (Workaround using VPNs)]] 
-* [[VirtualBox Guest Additions| VirtualBox Guest Additions, Shared Folder (not recommended, for those who really know better)]] 
-* [[Grow Virtual Harddisk| Grow Virtual Harddisk]] 
-* [[Secondary DNS Resolver| Secondary DNS resolver]] 
-* [[Secondary DNS Resolver| Authenticated DNS over Tor, DNSSEC over Tor]] 
-* [[Secondary DNS Resolver| Encrypted DNS over Tor, DNSCrypt by OpenDNS, httpsdnsd by JonDos]] 
-* [[OnionCat| OnionCat, GarliCat: Tunnel TCP, UDP, ICMP or any other protocol through Tor or i2p; IPv6, VPN-like, TAP/TUN tunneling device]] 
-* [[Hosting a %28private%29 %28obfuscated%29 bridge or %28exit%29 relay| Hosting a (private) (obfuscated) bridge or (exit) relay]] 
-* Using Tor's SocksProxy in Whonix-Workstation (See [[Stream Isolation| Stream Isolation]].) 
-* Best possible protection against Identity correlation through circuit sharing (See [[Stream Isolation| Stream Isolation]].) 
-* [[PPTP| Connect to a Tor Gateway on your local network using PPTP VPN]] 
-* [[Whonix-APT-Repository| Whonix's APT Repository, how to enable/disable it?]] 
-* [[Whonix Debian Packages| Whonix Debian Packages, which ones are safe to remove?]] 
+* [[$128 Using Multiple instances of Tor Browser]] 
+* [[$129 Using Multiple Whonix-Workstations]] 
+* [[$130 Using Multiple Whonix-Gateways]] 
+* [[$131 Chaining Anonymizing Gateways]] 
+* [[$132 Hide the fact that you are using Tor/Whonix]] 
+* [[$133 (encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]] 
+* [[$134 Technical Design]] 
+* [[$135 Tunnel UDP over Tor (Workaround using VPNs)]] 
+* [[$136 VirtualBox Guest Additions, Shared Folder (not recommended, for those who really know better)]] 
+* [[$137 Grow Virtual Harddisk]] 
+* [[$138 Secondary DNS resolver]] 
+* [[$139 Authenticated DNS over Tor, DNSSEC over Tor]] 
+* [[$140 Encrypted DNS over Tor, DNSCrypt by OpenDNS, httpsdnsd by JonDos]] 
+* [[$141 OnionCat, GarliCat: Tunnel TCP, UDP, ICMP or any other protocol through Tor or i2p; IPv6, VPN-like, TAP/TUN tunneling device]] 
+* [[$142 Hosting a (private) (obfuscated) bridge or (exit) relay]] 
+* Using Tor's SocksProxy in Whonix-Workstation (See [[$143 Stream Isolation]].) 
+* Best possible protection against Identity correlation through circuit sharing (See [[$144 Stream Isolation]].) 
+* [[$145 Connect to a Tor Gateway on your local network using PPTP VPN]] 
+* [[$146 Whonix's APT Repository, how to enable/disable it?]] 
+* [[$147 Whonix Debian Packages, which ones are safe to remove?]] 
 * File Transfer
-** [[File Transfer#Security Overview| Security Overview]] 
-** [[File_Transfer#Transfer_files_from_the_Host_into_Whonix-Gateway_or_Whonix-Workstation_through_ISO_images| Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images]] 
-** [[File_Transfer#Adding_USB_device_to_VirtualBox| Adding USB device to VirtualBox]] 
-** [[File Transfer#Shared Folder| Shared Folder]]</small> 
+** [[$148 Security Overview]] 
+** [[$149 Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images]] 
+** [[$150 Adding USB device to VirtualBox]] 
+** [[$151 Shared Folder]]</small> 
 <small>
-** [[File Transfer#SSH into Whonix-Gateway| sshfs (or ssh) into Whonix-Gateway]] 
-** [[File_Transfer#SSH_into_Whonix-Workstation| sshfs (or ssh) into Whonix-Workstation]] 
-** [[Sshfs_into_Whonix-Workstation| sshfs into Whonix-Workstation standalone instructions]] 
-** [[File Transfer#Mount and inspect images| Mount and inspect images, IMG, VDI]] 
-* [[Tuning| Tuning]] 
-** [[Tuning| Introduction]] 
-** [[Tuning| Increase Virtual Machine RAM]] 
-** [[Tuning| More CPU cores]] 
-** [[Tuning| Removing packages]] 
-** [[Tuning| Replacing desktop environment]] 
-** [[Tuning| Synthetic CPU]] 
-** [[Tuning| Nested paging and VPIDs]] 
-** [[Tuning| Guest Additions]] 
-** [[Tuning| Hardware-accelerated graphics]] 
-** [[Tuning| Memory ballooning, Page Fusion, Memory overcommitment]] 
-** [[Tuning| 64 bit architecture]] 
-** [[Tuning| Optimized builds]] 
-** [[Tuning| PCI Passthrough]] 
-* [[Manually_Creating_Whonix| Manually Creating Whonix]] 
-* [[Dev/Other Virtualization Platforms| Other Virtualization Platforms]] 
-* [[Skipping Whonix Postinst Scripts| How to skip/blacklist selected Whonix Postinst Scripts]] 
-* [[sparse_files| sparse files]] 
-* [[Nested Virtualization| Running VMs inside VMs (Nested Virtualization)]] 
-* [[Comparison_Of_Tor_with_CGI_Proxies,_Proxy_Chains,_and_VPN_Services|Comparison Of Tor with CGI Proxies, Proxy Chains, and VPN Services]]</small> 
+** [[$152 sshfs (or ssh) into Whonix-Gateway]] 
+** [[$153 sshfs (or ssh) into Whonix-Workstation]] 
+** [[$154 sshfs into Whonix-Workstation standalone instructions]] 
+** [[$155 Mount and inspect images, IMG, VDI]] 
+* [[$156 Tuning]] 
+** [[$157 Introduction]] 
+** [[$158 Increase Virtual Machine RAM]] 
+** [[$159 More CPU cores]] 
+** [[$160 Removing packages]] 
+** [[$161 Replacing desktop environment]] 
+** [[$162 Synthetic CPU]] 
+** [[$163 Nested paging and VPIDs]] 
+** [[$164 Guest Additions]] 
+** [[$165 Hardware-accelerated graphics]] 
+** [[$166 Memory ballooning, Page Fusion, Memory overcommitment]] 
+** [[$167 64 bit architecture]] 
+** [[$168 Optimized builds]] 
+** [[$169 PCI Passthrough]] 
+* [[$170 Manually Creating Whonix]] 
+* [[$171 Other Virtualization Platforms]] 
+* [[$172 How to skip/blacklist selected Whonix Postinst Scripts]] 
+* [[$173 sparse files]] 
+* [[$174 Running VMs inside VMs (Nested Virtualization)]] 
+* [[$175Comparison Of Tor with CGI Proxies, Proxy Chains, and VPN Services]]</small> 
 </div>
 
 
 '''Advanced Topics - Platform Support'''
 <div style="column-count:2;-moz-column-count:2;-webkit-column-count:2">
 <small>
-* [[Dev/Build_Documentation/Physical_Isolation| Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]] (stable) 
-* [[KVM| Whonix using KVM rather than VirtualBox]] (testers-only) 
-* [[QEMU| Whonix using QEMU rather than VirtualBox]] (testers-only) 
-* [[VMware| Whonix using VMware rather than VirtualBox]] (unmaintained) 
-* [[Qubes OS| Whonix using Qubes OS rather than VirtualBox]] (in development)</small> 
+* [[$176 Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]] (stable) 
+* [[$177 Whonix using KVM rather than VirtualBox]] (testers-only) 
+* [[$178 Whonix using QEMU rather than VirtualBox]] (testers-only) 
+* [[$179 Whonix using VMware rather than VirtualBox]] (unmaintained) 
+* [[$180 Whonix using Qubes OS rather than VirtualBox]] (in development)</small> 
 </div>
 
 
 '''Other'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Debian| Debian as Host Operating System Tips, Download, ISO gpg verification, Installation and Security]] 
-* [[Hosting_a_Whonix_Mirror| Hosting a Whonix Mirror]] 
-* [[Forcing_.onion_on_Whonix.org| Forcing .onion on Whonix.org]]</small> 
+* [[$181 Debian as Host Operating System Tips, Download, ISO gpg verification, Installation and Security]] 
+* [[$182 Hosting a Whonix Mirror]] 
+* [[$183 Forcing .onion on Whonix.org]]</small> 
 </div>
 
 
 '''Esoteric Stuff (only for advanced users)'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Access Gateway Port From Host| Access Whonix-Gateway Ports From Host, make Tor accessible running inside Whonix-Gateway on the host]] 
-* [[Whonix-Gateways Own Traffic Transparent Proxy| Enable Transparent Proxying for Whonix-Gateway's own traffic]] 
-* [[Whonix-Gateway System DNS| Getting the global system DNS resolver working on Whonix-Gateway (usually recommended against and unnecessary)]]</small> 
+* [[$184 Access Whonix-Gateway Ports From Host, make Tor accessible running inside Whonix-Gateway on the host]] 
+* [[$185 Enable Transparent Proxying for Whonix-Gateway's own traffic]] 
+* [[$186 Getting the global system DNS resolver working on Whonix-Gateway (usually recommended against and unnecessary)]]</small> 
 </div>
 
 
 '''Appendix'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Introduction| Introduction into Whonix Documentation]] 
-* [https://metrics.torproject.org/exonerator.html  ExoneraTor: a website that tells you whether a given IP address was a Tor relay] 
-* [https://metrics.torproject.org/Tor_Metrics_Portal| Tor Metrics Portal] 
-* [https://compass.torproject.org/Tor_Compass| Tor Compass]</small> 
+* [[$187 Introduction into Whonix Documentation]] 
+* [$188  ExoneraTor: a website that tells you whether a given IP address was a Tor relay] 
+* [$189 Tor Metrics Portal] 
+* [$190 Tor Compass]</small> 
 </div>
 
 
