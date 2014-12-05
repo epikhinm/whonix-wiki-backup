@@ -20,7 +20,6 @@ There are maintenance and usability reasons:
 * Whonix, since based on Debian, is a complete operating system. An anonymous general purpose operating system, not a stripped down minimal system. [[Features]], [[Design]]
 * Debian has much more documentation than small distributions, also about topics such as Security and Hardening.
 * Creating a slim system is difficult and requires a lot of of development time. This should not be Whonix's core competence. There are projects which do not focus on anonymity/privacy/security, but which are dedicated to a slim system.
-* To my knowledge, slim systems could never really attract big market shares. I don't know, why they are less favored, if they have worse marketing or for other reasons. It's the fact that they don't have a huge user base, that matters.
 * Slimming down the system will result in many "strange bugs". People who are used to Debian or Ubuntu will wonder why some things do not work or why Whonix is broken.
 
 Another reason is that Whonix does not play in the anonymity oriented Live CD/DVD market:
@@ -29,20 +28,19 @@ Whonix is a new category of anonymity tools. Whonix does not have the requiremen
 
 Last but not least reason, not putting security over usability:
 
-* Short: I don't put security over more users.
+* Short: Not putting security over more users.
 * Long: For example, this interesting statement from Tor developer Roger Dingledine: [http://www.mail-archive.com/liberationtech@lists.stanford.edu/msg00022.html Mixminion vs Tor]. Similar applies here. Mixminion is a high latency remailer, with cover traffic, protection against traffic confirmation (end-to-end correlation), theoretically more secure than Tor. The problem is "theoretically". They couldn't attract enough users and without enough users it's equally (in)secure as Tor. That's why they decided, to no longer work on Mixminion. Whonix also needs lots of users, to 1) get press/publicity 2) more developers 3) more research and audits. 2 and 3 will result in more security. Creating the most secure and most slim system, would only attract a few geeks. The geeks get hopefully satisfied, because Whonix is highly customizable. Nothing prevents from optionally slimming, hardening and customizing.
 
 = Why is KDE (big) the default desktop environment? Why not use a minimal DE? =
+This was a difficult development path decision. Many people, including Patrick Schleizer, didn't like the old Openbox interface in TorBOX (deprecated project name) 0.1.3 because it was too inconvenient, non-intuitive, uncommon, difficult, etc. There is no rational unarguable choice for the best desktop.
 
-This was a difficult development path decision. Many people, including adrelanos, didn't like the old Openbox interface in TorBOX (deprecated project name) 0.1.3 because it was too inconvenient, non-intuitive, uncommon, difficult, etc. There is no rational unarguable choice for the best desktop.
+MATE has not been chosen, because there are no packages in Debian repositories. GNOME2 is deprecated and only a fraction of GNOME2 users like GNOME3. Other desktops (LXDE, XFCE, Openbox) are less widespread, not so pretty, in in some opinions harder to use (even difficult to create a desktop shortcut), thus not attracting many users.
 
-MATE has not been choosen, because there are no packages in Debian repositories. It is my understanding, that GNOME2 is deprecated and only a fraction of GNOME2 users likes GNOME3. Other desktops (LXDE, XFCE, Openbox) are less widespread, not so pretty, in adrelanos opinion harder to use (even difficult to create a desktop shortcut), thus not attracting many users.
-
-Choosing KDE is a personal preference by Whonix developer adrelanos. KDE has one advantage, the only developer likes it and remains interested to maintain and develop Whonix further.
+Choosing KDE is a personal preference by Whonix developer Patrick Schleizer. KDE has one advantage, the only developer likes it and remains interested to maintain and develop Whonix further.
 
 You are free to uninstall KDE and install any other desktop environment of your own choice.
 
-I recognize, that this is a non-ideal situation. Inspired by [http://www.browserchoice.eu/ select your webbrowser], it would be ideal if Whonix would offer to choose which desktop to install but unfortunately, such a wizard [http://lists.debian.org/debian-derivatives/2012/09/msg00003.html does not exist yet]. There are no development resources to implement such a solution. Help is welcome.
+This is a non-ideal situation. Inspired by [http://www.browserchoice.eu/ select your webbrowser], it would be ideal if Whonix would offer to choose which desktop to install but unfortunately, such a wizard [http://lists.debian.org/debian-derivatives/2012/09/msg00003.html does not exist yet]. There are no development resources to implement such a solution. Help is welcome.
 
 If there were contributors, we could maybe also include other desktop environments by default or offer alternative Whonix builds with different default desktop environments or ideally implement a "choose your desktop" option after first boot of Whonix.
 
@@ -86,59 +84,58 @@ Short answer: We discussed this with torproject.org and were allowed to do so.
 
 Long answer: We had a thread about this issue, [https://trac.torproject.org/projects/tor/wiki/doc/TorBOX/Dev/ArchivedDiscussion/DOCUMENTATION#updatesoverTorshouldnotwasteTorbandwidthDOCUMENTATIONSOLVED updates over Tor, should not waste Tor bandwidth]. Discussed thoroughly. We speculated a lot and thought about solutions until we finally did what we should have done in the first place. We asked torproject.org, see [https://lists.torproject.org/pipermail/tor-talk/2012-March/023486.html tor-talk Operating system updates / software installation behind Tor Transparent Proxy]. Click [https://lists.torproject.org/pipermail/tor-talk/2012-March/subject.html#23507 here] for an overview of all answers. Andrew Lewman ([https://www.torproject.org/about/corepeople.html.en Executive Director, Director, press contact]), too, downloads a lot of updates over Tor and [https://lists.torproject.org/pipermail/tor-talk/2012-March/023493.html did not complain].
 
-= Alpha? Beta? Stable? Development? Whonix version scheme =
-
-'''TODO: Needs revision.'''
-'''DRAFT!'''
-
+= Alpha? Beta? Stable? Development? testers-only? developers-only? Whonix version scheme =
+{{Anchor|Alpha? Beta? Stable? Development? Whonix version scheme}}
 Is Alpha, Beta or Stable related to security? No, our design makes security issues inherently less likely to occur.
 
-We are still working heavily on usability, working on some user facing stuff (like zenity). Until those are all integrated and tested we wouldn't be doing our users a favor by calling it not an alpha. They get turned away if things don't work right.
+The terms alpha, beta lost their meaning. Too many applications which are working fine for years are called alpha or beta and have version numbers below 1.0. Users are not taking these terms serious anymore. Therefore Whonix avoids these terms. Rather, Whonix uses different terms which mean what they say.
 
-Alpha: Features are constantly being added.
-
-Beta: Only fix important stuff, test it.
-
-Stable: Build and release the current beta with all fixes when we feel it's ready. We expect beta testing to last a month or so, shorter if we can get feedback from more users.
-
-Development version: Only goes for the source. Things can be added in order to get feedback from others. The longer things are inside, the longer they are accepted. Doesn't mean they are better tested. Sometimes the source can even break.
+* stable versions
+* testers-only versions
+* developers-only
 
 = Why do you use the 32 bit operating system, not 64 bit? =
+<u>Updates</u>:
+* A critical VirtualBox bug: [https://www.virtualbox.org/ticket/10853 VirtualBox ticket #10853: Mouse position repeatedly reset to top and/or left of screen].
+* Since Whonix 0.4.0 the build environment uses grml-debootstrap (perhaps kameleon in future) and chroot. Image creation goes much faster and changing the architecture is possible by using for example the --64bit-linux build option. If Whonix receives contributions or due to user feedback it might be possible in future to have 32 and 64 bit downloads.
 
-Update: A critical VirtualBox bug: [https://www.virtualbox.org/ticket/10853 VirtualBox ticket #10853: Mouse position repeatedly reset to top and/or left of screen].
-
-Since Whonix 0.4.0 the build environment uses grml-debootstrap (perhaps kameleon in future) and chroot. Image creation goes much faster and changing the architecture requires only a very few changes. If Whonix revives contributions or due to user feedback it might be possible in future to have 32 and 64 bit downloads.
-
-Old statement: 32bit software runs without problems on 32bit and 64bit hosts. 64bit software not so much. Because we generally don't control what host OS people use, I chose to base Whonix on 32bit. Secondly, 64bit software needs more RAM, we already run 3 operating systems on a system which, eats RAM. Let's better minimize that. KVM and other solutions improve RAM usage through page sharing or what it's called, VirtualBox doesn't. Thirdly, according to Brad Spengler and/or PAX team, amd64 is a brain dead instruction set and actually worse than x86, despite the large address space making ASLR more effective. They recommended to use grsec on x86 and we hope we can switch to a grsec kernel (wheezy has one, let's see if they maintain it).
+<u>Old statement</u>: <br />
+32bit software runs without problems on 32bit and 64bit hosts. 64bit software not so much. Because we generally don't control what host OS people use, 32bit has been chosen as base for official Whonix releases. Secondly, 64bit software needs more RAM, we already run 3 operating systems on a system which, eats RAM. Let's better minimize that. [[KVM]] and other solutions improve RAM usage through page sharing or what it's called, VirtualBox doesn't. Thirdly, according to Brad Spengler and/or PAX team, amd64 is a brain dead instruction set and actually worse than x86, despite the large address space making ASLR more effective. They recommended to use grsec on x86 and we hope we can switch to a grsec kernel.
 
 = Why aren't you using OpenBSD, it's the most secure OS ever!!!1! =
+Last update: 27.07.2014 UTC 16:40
 
-<font size=-3><s>OpenBSD fails completely for the Tor threat model which downloading and updating software over untrusted exit relays. OpenBSD does not offer any signed files, they do not even offer hash sums for all required files (at least the ports tar ball doesn't have one). When asking about that the answer is "buy the CDs" (=something like $80 per year if you want to stay current). As if CDs via post through a 3rd party reseller offer a better trust chain than mirrors with hash sums, let alone proper WOT signatures. There are alternatives to GnuPG if it's just about the license...</s></font> Further, tracking stable - which is recommended for production systems - is needlessly complex: it requires the user to recompile everything even though there are usually only a few packages that require an update. The most fitting approach would be to just apply the patches from the errata but apparently not all security related fixes in -stable are listed there and OpenBSD admits as much that patch branch is really not user-friendly. Further problems: OpenBSD seems to default to using very "conservative" hash algorithms, md5 or sha1 which are both broken. This clashes with their claimed crypto focus. FDE support is lacking/limited. There doesn't seem to be a modern mandatory access control (MAC<ref>https://en.wikipedia.org/wiki/Mandatory_access_control</ref>), instead there's systrace which has been criticized for having fundamental security problems (this may or may not have changed since then). <font size=-3><s>OpenBSD doesn't seem to be using PIE executables by default, meaning, it doesn't really have ASLR.</s></font> Documentation about such issues is completely lacking. <s>There's also the strange policy of sticking with bind and sendmail when there were secure-by-design alternatives (see [http://cr.yp.to/qmail/qmailsec-20071101.pdf PDF!]) with much better track record,</s> BIND-9, despite the rewrite, continues to be a security hazard just judging by the OpenBSD errata entries. OpenBSD would otherwise be a great choice for Whonix-Gateway. It has a very capable firewall, the track record is probably better than of any other OS though they (just like their competition for fairness sakes) prefer to label "potential" code execution vulnerabilities as a DoS. OpenBSD is also a very small OS (small TCB), its kernel may be the most secure UNIX-like kernel, but it's still a monolithic kernel. Their claim of being THE most secure operating system has become more and more dubious since the introduction of actually usable microkernels. In summary: I don't like their attitude and several essential (for Whonix) security properties are missing.
+This FAQ entry answers from perspective of the Whonix distribution to people who suggest to base Whonix on top of OpenBSD instead of Debian.
 
-Also see [http://thread.gmane.org/gmane.os.openbsd.bugs/18754 security vulnerability - NTP not authenticated] and it doesn't look like they step forward to fix it. The suggestion was to authenticate the connection to the NTP server, which is not possible for Whonix for many reasons. <ref>We need to distribute the trust, not using only one NTP server and we must use free services which are available for anyone and not something requiring an own server.</ref>
-
-<font size=-3><s>OpenBSD's target audience aren't end users, that's why they don't care to provide signed updates for the masses, see [http://unix.stackexchange.com/questions/38041/how-to-check-downloaded-package-on-openbsd-5-1 How to check downloaded package on OpenBSD 5.1?].</s></font> <ref>http://www.openbsd.org/faq/faq15.html#PkgSig</ref>
+See [http://thread.gmane.org/gmane.os.openbsd.bugs/18754 security vulnerability - NTP not authenticated] [by default for everyone] and it doesn't look like they step forward to fix it. The suggestion was to authenticate the connection to the NTP server, which is not possible for Whonix for many reasons. We need to distribute the trust, not using only one NTP server and we must use free services which are available for anyone and not something requiring an own server. And even if we would use authenticated NTP. @Fled pointed out <ref>https://twitter.com/feldpos/status/493426189282054144</ref>, that the clock can not be moved more than 600 seconds. That is better than nothing - still - an adversary in position to move the clock 600 seconds can harm anonymity/privacy (see [[Dev/TimeSync]] for further explanation).
 
 OpenBSD's website isn't reachable over SSL or as a Tor hidden service. How are users supposed to securely view the OpenBSD site and not learn things set up by a man-in-the-middle?
 
-If they don't attract the masses, ordinary crackers, hackers and the security research community doesn't get attracted as they do with more popular operating systems. At the same time a targeted attack gets easier, because people who get paid to find exploits can find them more easily.
+There is now Qubes OS, OpenBSD lacks such innovative security improvements, which claims.
 
-If this sounds a bit harsh on OpenBSD it's because it could be such a great OS but it isn't (mostly more for political and social/"ego" than technical reasons) which is frustrating.
+[http://www.openbsd.org/faq/faq1.html#WhyUse source] ([http://www.webcitation.org/6RNq1f996 w])
+<blockquote>
+OpenBSD is thought of by many security professionals as the most secure UNIX-like operating system, as the result of a never-ending comprehensive source code security audit. 
+</blockquote>
 
-Update 1: There is now Qubes OS and I am missing such innovative security improvements from OpenBSD, which claims to be the most secure operating system.
+Who are those many security professionals?
 
-Update 2: OpenBSD according to [http://www.bsdstats.org/ bststats.org] ([http://www.webcitation.org/6F4tFWwNy w]) has very few users. 56 at time of writing. I know, that people must undergo a rather complicated manual process to get counted, however compared to 24,168 FreeBSD users, that's not very much.
+OpenBSD according to [http://www.bsdstats.org/ bststats.org] ([http://www.webcitation.org/6F4tFWwNy w]) has very few users. 56 at time of writing. People must undergo a rather complicated manual process to get counted, however compared to 24,168 FreeBSD users, that's not very much. If they don't attract the masses, ordinary crackers, hackers and the security research community doesn't get attracted as they do with more popular operating systems. At the same time a targeted attack gets easier, because people who get paid to find exploits can find them more easily.
 
 = Why don't you use FreeBSD, which is more secure?!? =
+Last update: 27.07.2014 UTC 16:40
+
+This FAQ entry answers from perspective of the Whonix distribution to people who suggest to base Whonix on top of FreeBSD instead of Debian.
+
 It is difficult (very time consuming in this case) proofing a negative. Such as proofing non-existent security features. Either a search results in "security feature implemented" or nothing.
 
 To avoid getting out of date and hurting other people's feelings, it's better not to make any statements about non-existent security features, but just asking the appropriate questions.
 
-Does FreeBSD have a secure package manager? Can every user download from an already existing '''signed''' repository or is it required to run an own repository? Does it defend against outdated metadata, can a man-in-the-middle use a roll back or freeze attack against the repository? Does it defend [https://www.cs.arizona.edu/stork/packagemanagersecurity/ this] ([http://www.webcitation.org/6Ev4smCoD w])? Does it cover the [https://www.updateframework.com/projects/project/wiki/Docs/Security TUF threat model] ([http://www.webcitation.org/6Ev4owhEP w])?
+Does FreeBSD have a secure-by-default update mechanism? Will every (new) user download by default from an already existing '''signed''' repository, or are special settings required, or is it required to run an own repository? Does it defend against outdated metadata, can a man-in-the-middle use a roll back or freeze attack against the repository? Does it defend [https://www.cs.arizona.edu/stork/packagemanagersecurity/ this] ([http://www.webcitation.org/6Ev4smCoD w])? Does it cover the [https://www.updateframework.com/projects/project/wiki/Docs/Security TUF threat model] ([http://www.webcitation.org/6Ev4owhEP w])?
 
 Not finding anything doesn't mean there isn't something. The best way to get confirmation about the absence of security features or in other words, the best way to get a confirmation about possible attacks due to missing security features is asking the developers of that project. (An honest reply from Open Source projects is assumed.) There are simply too many distributions to ask these things.
 
-So, if you believe that FreeBSD is a secure distribution, if you are even advocating that standpoint, then the burden of proof is on the person making the claim (you). It's up to you to come up with references that these security features are implemented. It is not up to the Whonix developers to spend a lot time, proving that these security features are non-existent. Or it's up to you to create such references by asking the distribution's developers. Another way would be coming up with arguments why these security features are unnecessary (this is unlikely in the specific case of package manager security). Until the claim of being a more secure distribution gets substantiated, please do not take offense by not considering that distribution. 
+So, if you believe that FreeBSD is a secure distribution, if you are even advocating that standpoint, then the burden of proof is on the person making the claim (you). It's up to you to come up with references that these security features are implemented. It is not up to the Whonix developers to spend a lot time, proving that these security features are non-existent. Or it's up to you to create such references by asking the distribution's developers. Another way would be coming up with arguments why these security features are unnecessary (this is unlikely in the specific case of package manager security). Until the claim of being a more secure distribution gets substantiated, please do not take offense by not considering that distribution.
 
 = Why don't you use OpenWRT, which is more secure?!? =
 Same reasons as above for FreeBSD.
@@ -153,15 +150,15 @@ See [[Comparison with Others]].
 
 '''UPDATE 7:''' Rewrite.
 
-'''This is a subjective statement of opinion by Whonix developer adrelanos.''' (Still open for feedback, corrections, improvements!)
+'''This is a subjective statement of opinion by Whonix developer Patrick Schleizer.''' (Still open for feedback, corrections, improvements!)
 
 [https://tails.boum.org/ Tails] is a respected project with similar goals (anonymity, privacy and security), which exists for many years and which has multiple developers, experience and a working infrastructure. The Whonix and the Tails developers cooperate to some degree and are discussing things, which are related to the projects on the Tails developers mailing list. Parts of Whonix are based on Tails. For example tails_htp was invented by Tails. Whonix also profits from their previous (Debian) upstream efforts (packaging and so on), their old and current discussions, their research, design documents, experience, feedback and so on.
 
-Even though adrelanos highly values Tails, why is Whonix a separate project and not a contribution to Tails?
+Even though Patrick Schleizer highly values Tails, why is Whonix a separate project and not a contribution to Tails?
 
-Whonix can not be merged into Tails by adrelanos. There are technical, skill and political reasons.
+Whonix can not be merged into Tails by Patrick Schleizer. There are technical, skill and political reasons.
 
-Adrelanos doesn't/didn't know how to implement various things into Tails, and don't/didn't know when the Tails developers will add them, which are adrelanos's priorities, but knew how to solve them in a separate project (Whonix), at least as in a way, that users are provided with instructions how to do it. Some examples.
+Patrick Schleizer doesn't/didn't know how to implement various things into Tails, and don't/didn't know when the Tails developers will add them, which are Patrick Schleizer's priorities, but knew how to solve them in a separate project (Whonix), at least as in a way, that users are provided with instructions how to do it. Some examples.
 
 '''Some of these items may already be either partially or fully solved in Tails by now.'''
 
@@ -231,10 +228,10 @@ Adrelanos doesn't/didn't know how to implement various things into Tails, and do
 
 Also political and design decisions differ too much.
 
-* As a code contributor to Tails, adrelanos would have to accept decisions made by the Tails decision making process and couldn't simply modify anything as personally desired, preferred or believed to be the best solution. That's the great thing about Free Software. You are free to disagree and to create a fork. Since adrelanos motivation was not about a Live DVD and personally found improving Tails much more difficult than starting fresh, a new project, Whonix, was created.
+* As a code contributor to Tails, Patrick Schleizer would have to accept decisions made by the Tails decision making process and couldn't simply modify anything as personally desired, preferred or believed to be the best solution. That's the great thing about Free Software. You are free to disagree and to create a fork. Since Patrick Schleizer motivation was not about a Live DVD and personally found improving Tails much more difficult than starting fresh, a new project, Whonix, was created.
 * Source Code Merge Policy:
 ** Whonix: does not yet have a comprehensive merge policy. It's welcome, but not compulsory to write a design or documentation.
-** Tails: In adrelanos opinion, [https://tails.boum.org/contribute/merge_policy/ Tails merge policy] is too strict. This is not a complaint or critique. They will have their reasons for that and it has to be noted, that Tails is still doing well and useful for many people. Anyone who does not agree has the freedom to contribute to another project or to start a new project. Adrelanos just made use of that freedom.
+** Tails: In Patrick Schleizer's opinion, [https://tails.boum.org/contribute/merge_policy/ Tails merge policy] is too strict. This is not a complaint or critique. They will have their reasons for that and it has to be noted, that Tails is still doing well and useful for many people. Anyone who does not agree has the freedom to contribute to another project or to start a new project. Patrick Schleizer just made use of that freedom.
 * One big difference is, that Tails is a Live DVD and therefore inherits some restrictions and limitations. Tails must fit on a DVD, while Whonix does not have such a requirement. Whonix has higher hardware requirements, but therefore more space to implement features. That means that initially fewer people will be able to use Whonix, but over the years available hardware to people will (hopefully) improve. Whonix is discovering both, theoretically and practically, new designs. Over time, depending on user feedback and general interest, a Live DVD or Live Blu-ray might be created.
 
 = How is Whonix different from the Tor Browser Bundle? =
@@ -246,8 +243,14 @@ See [[Comparison with Others]].
 This answer has been moved to the [[Voip#Skype|Voip]] page.
 
 = Isn't VirtualBox an insecure choice? =
+<u>Updates</u>:
 
-VirtualBox is not an ideal choice, I acknowledge it, see: [[Dev/Virtualization Platform]], but there are no better alternatives, which are usable by a big amount of people.
+* [[KVM|KVM / Qemu / Virt-Manager]] in testing
+* Using Whonix on top of Qubes OS looks much easier now. See the [https://sourceforge.net/p/whonix/featureblog/2013/02/running-whonix-on-top-of-qubes-os-anyone-interested-unpacking-ova-images/ blog post]. Whonix based on Qubes OS [https://www.whonix.org/forum/index.php/topic,392.0.html in development]
+
+<u>Old statement</u>:
+
+VirtualBox is not an ideal choice, see: [[Dev/Virtualization Platform]], but there are no better alternatives, which are usable by a big amount of people.
 
 It's about different goals. Whonix's main goal is to protect the user's IP/location.
 
@@ -257,7 +260,7 @@ Saying VirtualBox is too weak, is theoretical and does not have any practical im
 
 On the other hand, how many known exploits exist for VirtualBox? What's the track record of exploits?
 
-I acknowledge, that virtual machine exploits may become a problem in future. Right now, Whonix provides more security out of the box. Whonix right now, advertises and educates the security by isolation principle.
+Admittingly virtual machine exploits may become a problem in future. Right now, Whonix provides more security out of the box. Whonix right now, advertises and educates the security by isolation principle.
 
 Anyone seriously looking into Whonix for security will read the [[Documentation]], the [[Security Guide]] and the [[Advanced Security Guide]] and find out about [[Physical Isolation]]. Whonix is an appetizer for the [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/IsolatingProxy Isolating Proxy Concept] and [http://theinvisiblethings.blogspot.com/2008/09/three-approaches-to-computer-security.html Security by Isolation].
 
@@ -269,13 +272,11 @@ Many users are still on Windows or Linux. Whonix can right now fill the void and
 
 Whonix can not serve all target audiences. The more security educated/interested people will use things like [[Physical Isolation]] or qubes-tor. Hardcore security educated/interested people will probably build their own custom hardened solutions, but can still profit from Whonix's research and source code. Those more hardened solutions, such as the [[Hardened Gentoo TG|Hardened Gentoo Whonix-Gateway]] are more difficult to use and can therefore not be the default for Whonix.
 
-'''UPDATE 1''': Using Whonix on top of Qubes OS looks much easier now. See the [https://sourceforge.net/p/whonix/featureblog/2013/02/running-whonix-on-top-of-qubes-os-anyone-interested-unpacking-ova-images/ blog post].
-
 = Will there be a Whonix Live CD or DVD? =
 
 Unless someone joins the project and contributes, this won't happen in near future.
 
-Whonix developer adrelanos has limited knowledge about Live CD/DVD creation. At the moment Whonix is a rather simple project. Many things, get delegated to upstream. VirtualBox features to run on various platforms, Debian provides a fine operating system, hardware support is delegated to the host operating system and VirtualBox, Tor is providing a fine anonymizer. Creating a Live CD /DVD would be difficult, especially the hardware support. Whonix is also too big and that would be very difficult to fix, see [[#Why are the Whonix images so big?]] above. Adrelanos lacks experience about Live CD/DVD deployment.
+Whonix developer Patrick Schleizer has limited knowledge about Live CD/DVD creation. At the moment Whonix is a rather simple project. Many things, get delegated to upstream. VirtualBox features to run on various platforms, Debian provides a fine operating system, hardware support is delegated to the host operating system and VirtualBox, Tor is providing a fine anonymizer. Creating a Live CD /DVD would be difficult, especially the hardware support. Whonix is also too big and that would be very difficult to fix, see [[#Why are the Whonix images so big?]] above. Patrick Schleizer lacks experience about Live CD/DVD deployment.
 
 A clean way to do it would be to contribute to Tails instead, see [https://tails.boum.org/todo/Two-layered_virtualized_system/ Tails wishlist: Two-layered virtualized system]. A similar feature was already implemented in Liberte Linux, but ultimately rejected ([http://archives.seul.org/or/talk/Mar-2012/msg00248.html reference]).
 
@@ -328,13 +329,13 @@ Please also see the next question below.
 
 '''NO!'''
 
-Tor's configuration file has been adapted for Whonix, you can check it on Whonix-Gateway in <code>/etc/tor/torrc</code>. There are no patches to Tor. The normal Debian Tor package is being used in Whonix.
+Tor's configuration file has been adapted for Whonix, you can check it on Whonix-Gateway in <code>/etc/tor/torrc</code> and <code>/usr/share/tor/tor-service-defaults-torrc</code>. (In Whonix 9, this is done by the [https://github.com/Whonix/anon-gw-anonymizer-config anon-gw-anonymizer-config] package.) There are no patches to Tor. The normal Debian Tor package is being used in Whonix.
 
 Whonix tries to be as less special as possible to ease security auditing of Whonix.
 
 Any changes to the Tor routing algorithm should be proposed, discussed and eventually implemented upstream in Tor on torproject.org. And if discussion fails, a Tor fork<ref name=fork>https://en.wikipedia.org/wiki/Fork_(software_development)</ref> could be created. Tor has already been forked at least once.
 
-Doing such changes directly in Whonix would limit discussions about Whonix to the security of the modified routing algorithm. To allow further exploration of Whonix's security, Whonix developer adrelanos believes, it is required to be as agnostic as possible about all parts of Whonix.
+Doing such changes directly in Whonix would limit discussions about Whonix to the security of the modified routing algorithm. To allow further exploration of Whonix's security, Whonix developer Patrick Schleizer believes, it is required to be as agnostic as possible about all parts of Whonix.
 
 = Why doesn't Whonix improve Tor? =
 
@@ -346,7 +347,7 @@ Creating Whonix is difficult and time consuming enough. Improving Tor is left to
 
 No.
 
-Any improvements to Tor should be proposed upstream. If adrelanos finds a bug or has a suggestion it will be proposed upstream on torproject.org. [[Dev/Threat Model#Design Document, innovations and research|Happens.]]
+Any improvements to Tor should be proposed upstream. If Patrick Schleizer finds a bug or has a suggestion it will be proposed upstream on torproject.org. [[Dev/Threat Model#Design Document, innovations and research|Happens.]]
 
 For reasons why there isn't an improved version of Tor in Whonix see the question [[#Does Whonix modify Tor?]] above.
 
@@ -359,15 +360,14 @@ Whonix is an anonymity distribution gluing together concepts, which are generall
 
 Whonix also doesn't modify Tor Browser for the same reasons also listed in the already answered questions [[#Does Whonix modify Tor?]], [[#Why doesn't Whonix improve Tor?]] and [[#Can you improve Tor?]] above.
 
-Whonix includes Tor Browser and with only [[Tor Browser#Tor Browser in Whonix differences|minor]] differences, such as proxy settings for [[Stream Isolation]].
+Whonix includes Tor Browser and with only [[Tor Browser#Tor Browser in Whonix differences|minor]] differences.
 
 Mike Perry, developer of Tor Browser has also made a good posting why it's better to have JavaScript enabled in Tor Browser by default, see [https://lists.torproject.org/pipermail/tor-talk/2012-May/024227.html tor-talk Tor Browser disabling Javascript anonymity set reduction]. In summary to his post, Tor Button and the Tor Browser patches to handle the most serious issues related to JavaScript. There are no IP/location bypass problems. Although there are outstanding issues <ref>[https://trac.torproject.org/projects/tor/query?keywords=~tbb-fingerprinting tbb-fingerprinting]</ref> <ref>[https://trac.torproject.org/projects/tor/query?keywords=~tbb-linkability tbb-linkability]</ref>, deactivating JavaScript by default couldn't attract enough users, without enough users the anonymity set will also reduce. When someone deactivates JavaScript it may be even more fingerpintable, depending on how many people disable JavaScript, which no one really knows. The Tor Project also plans to create a [https://trac.torproject.org/projects/tor/ticket/9387 security slider] and has recently updated its [https://www.torproject.org/docs/faq#TBBJavaScriptEnabled JavaScript FAQ] stating {{Code|Until we get there, feel free to leave JavaScript on or off depending on your security, anonymity, and usability priorities.}}
 
 Last, but definitively not least, Whonix shares the same [[Fingerprint]] as other Tor Browser Bundle users, which is good for anonymity.
 
 = How difficult is it to develop Whonix? =
-
-This is just adrelanos's opinion and feeling.
+This is just Patrick Schleizer's opinion and feeling.
 
 Whonix source code isn't rocket science. In comparison to other things it's very simple.
 
@@ -414,7 +414,7 @@ Yes, see [[Secondary DNS Resolver]].
 
 More reasons: Tor is about distributing trust. Tor's DNS server change as circuits change, thus trust is distributed. Circuits are stream isolated (for pre-installed applications) and change every ten minutes. As far as I know, there are only two public open resolvers supporting the protocol: [https://cloudns.com.au/ CloudNS] and [http://www.opendns.com OpenDNS]. (There is a free server-side proxy that anybody can use.)
 
-I have no reason to distrust public resolvers supporting DNSCrypt and/or OpenDNS. Even if I trusted the people running DNSCrypt servers, their servers would have to be trusted as well and that's not wise to let DNS security for all Whonix users depend on few servers. It's also about load balancing. If Whonix was to use a DNSCrypt supporting server by default and that server decides to forbid connections from the Tor network (due to the Tor network used to abuse their servers with DDOS or for whatever reasons) or if the servers go down for maintenance, DNS would break for all Whonix users.
+Public resolvers supporting DNSCrypt and/or OpenDNS have not given reasons to distrust them yet. Even we trusted the people running DNSCrypt servers, their servers would have to be trusted as well and that's not wise to let DNS security for all Whonix users depend on few servers. It's also about load balancing. If Whonix was to use a DNSCrypt supporting server by default and that server decides to forbid connections from the Tor network (due to the Tor network used to abuse their servers with DDOS or for whatever reasons) or if the servers go down for maintenance, DNS would break for all Whonix users.
 
 For even more explanations on DNSCrypt, see forum post [https://sourceforge.net/p/whonix/discussion/general/thread/3c99944b/#3ea4 one] and [https://sourceforge.net/p/whonix/discussion/general/thread/e659f3ad/#bff5 two] related to this topic.
 
@@ -427,7 +427,7 @@ Short answer: No.
 
 Long answer: No, DNSCrypt on the host or in your router only affects your clearnet activities. Tor assumes your local network and ISP to be totally unsafe and untrustworthy. Neither Tor nor Whonix are affected by DNS settings on your host or in your router.
 
-Whether DNSCrypt is useful for your clearnet activities or not - that isn't clear. There are pro and contra arguments. If you ask me, it's useful when using foreign or untrusted Wifi networks (shared with others), since they could modify and/or read your DNS requests. Other than that, I think you will just shift the trust from one party (ISP) to another (DNSCrypt supporting DNS server, ex: OpenDNS). If the DNSCrypt supporting DNS server (ex: OpenDNS) is more trustworthy, then it's good. Which one should be trusted more, your ISP or OpenDNS - I don't know.
+Whether DNSCrypt is useful for your clearnet activities or not - that isn't clear. There are pro and contra arguments. It's useful when using foreign or untrusted Wifi networks (shared with others), since they could modify and/or read your DNS requests. Other than that, you will just shift the trust from one party (ISP) to another (DNSCrypt supporting DNS server, ex: OpenDNS). If the DNSCrypt supporting DNS server (ex: OpenDNS) is more trustworthy, then it's good. Which one should be trusted more, your ISP or OpenDNS - you tell me.
 
 = What's the difference of installing a VPN on the host versus installing on Whonix-Gateway? =
 
@@ -484,7 +484,9 @@ However, there are still ways you could shoot your own foot. It might be [[DoNot
 = Graphical Whonix-Gateway? =
 If you think, it uses too much RAM or generally prefer a terminal version of Whonix-Gateway, you can use reduce Whonix-Gateway's RAM to 128 MB and [[Desktop#RAM_Adjusted_Desktop_Starter|RAM Adjusted Desktop Starter]] will automagically boot into a terminal version of Whonix-Gateway.
 
-Whonix aims to become as accessible in usability as possible. Sorry, if you're a Linux geek and were happy with Whonix-Gateway 0.5.6, but you're not the ''only'' target audience. Whonix is also an attempt to get more {{Code2|casual users}}<ref>https://forums.virtualbox.org/viewtopic.php?f=3&t=57532</ref> <ref>See [https://www.youtube.com/watch?v=qPWIA6D5Odg&lc=i9pytdxZ1Z9C1she5VfyQBYWIBXCvH8A80AFs309Cfg linked comment].</ref> using Tor, because {{Code2|the more people use Tor, the better the anonymity Tor can provide becomes}}<ref>
+When using Whonix with [[KVM]], thanks to [https://www.whonix.org/forum/index.php/topic,454.0.html dynamic memory management] the RAM overhead might be a non-issue. By manually enabling these features you may profit from this already today. Eventually at release time of Whonix 10 or above and using [[KVM]], Whonix will enable this by default.
+
+Whonix aims to become as accessible in usability as possible. Sorry, if you're a Linux geek and were happy with the older non-graphical version of Whonix-Gateway <ref>0.5.6</ref>, but you're not the ''only'' target audience. Whonix is also an attempt to get more {{Code2|casual users}}<ref>https://forums.virtualbox.org/viewtopic.php?f=3&t=57532</ref> <ref>See [https://www.youtube.com/watch?v=qPWIA6D5Odg&lc=i9pytdxZ1Z9C1she5VfyQBYWIBXCvH8A80AFs309Cfg linked comment].</ref> using Tor, because {{Code2|the more people use Tor, the better the anonymity Tor can provide becomes}}<ref>
 [https://www.torproject.org/download/download-easy.html.en Quote]:
 
 <blockquote>
@@ -492,7 +494,7 @@ Whonix aims to become as accessible in usability as possible. Sorry, if you're a
 </blockquote>
 </ref>.
 
-As in Whonix 0.5.6 it was difficult for users who never used Linux before to do tasks such as upgrading or configure obfuscated bridges etc. Many things are simpler and more encouraging in a graphical desktop environment. Such as:
+In the older non-graphical version of Whonix-Gateway <ref>0.5.6</ref> it was difficult for users who never used Linux before to do tasks such as upgrading or configure obfuscated bridges etc. Many things are simpler and more encouraging in a graphical desktop environment. Such as:
 
 * setting up bridges / flashproxies
 * auditing logs
@@ -508,14 +510,15 @@ As in Whonix 0.5.6 it was difficult for users who never used Linux before to do 
 * running tshark / wireshark
 * [[FAQ#What.27s_the_difference_of_installing_a_VPN_on_the_host_versus_installing_on_Whonix-Gateway.3F|tunneling only Whonix-Gateway's traffic through a VPN]]
 
-And big black text-only window (terminal) looks scary. A graphical desktop environment is also a prerequisite for further planed improvements, such as a Whonix Controller, which will be a graphical Whonix Controller, where you have buttons such as
+And big black text-only window (terminal) looks scary. A graphical desktop environment is also a prerequisite for further planed improvements, such as a Whonix Controller, which will be a [https://github.com/Whonix/Whonix/issues/132 graphical Whonix Controller], where you have buttons such as
 
 * "create hidden blog", and then you end up with a preconfigured blog
 * "enable TorChat"
 * "backup hidden service keys"
-* and so forth).
+* [https://github.com/Whonix/Whonix/issues/167 Better Circumvention User Interface]
+* and so forth.
 
-Also terminal-only environments are often unusable by users with disabilities. That's why Whonix {{Whonix6}} and above will feature an optional graphical desktop environment.
+Also terminal-only environments are often unusable by users with disabilities. That's why recent Whonix versions <ref>Since {{Whonix6}} and above</ref> feature an optional graphical desktop environment.
 
 If you think, the graphical Whonix-Gateway uses too much disk size and/or you want to do non-originally intended things, such as running Whonix completely in RAM, sorry to say. Whonix has never been developed with low size, low RAM or low system requirements in mind. See also [[#Why are the Whonix images so big?]] and [[#Will there be a Whonix Live CD or DVD?]].
 
@@ -550,6 +553,29 @@ No matter how clever the setup sounds, nothing can beat an amnesic system. At ba
 # Compare the images.
 
 Without performing these basics steps, the setup may sound clever, but may not work out so well against actual forensics. So if you are concerned about local forensics, at bare minimum, use full disk encryption. When established Open Source encryption solutions such as Linux dmcrypt are rightly used, they usually hold their promises. Again, it's not as good as an amnesic system. If being forced to surrender the password is of concern to you, Whonix may not be the right tool for you. Again, without anyone doing actual forensics, be careful with any claims or assumptions how well data may be gone.
+
+= Feedback & Suggestions =
+Thank you! Software projects flourish on community feedback. We hear and consider every suggestion.
+
+Please be patient as we address the competing priorities and challenges of our ambitious goal. As Whonix's resources grow, we'll be able to get more done.
+
+= New Identity and Tor circuits =
+The behavior of "new identity" in context of TorButton and [[arm]] often misunderstood. First of all, there are various ways to issue a issue a "new identity". Here is a list:
+
+* [[Tor_Browser#New_Identity_Button|Tor Browser - TorButton]]
+* [[Tor_Browser#Get_New_Identity_without_Tor_ControlPort_Access|Tor Browser - Get New Identity without Tor ControlPort Access]]
+* [[Arm|Arm]]
+* [[Tor_Controller#tor-ctrl|tor-ctrl]]
+* [[Tor_Controller#netcat|netcat]]
+* and probably others
+
+They got one in common. They send a Tor ControPort protocol command "signal newnym" to Tor's ControlPort. Tor circuit lifetimes the result of "signal newnym" is it often misunderstood. "signal newnym" uses a fresh circuit for new connections.
+
+Note, although chances are good that you are getting a new Tor exit relay, a new IP, a new circuit does not guarantee a new Tor exit relay. Tor may only have replaced the middle relay while using the same Tor exit relay. This is by design and Tor default.
+
+"signal newnym" won't interfere with long living connections such as for example an IRC connection.
+
+When you open https://check.torproject.org in your browser, then issue "signal newnym" using [[Arm|Arm]], then reload https://check.torproject.org it may still show the same IP. This is probably because the browser didn't close the connection to https://check.torproject.org in the first place. When you repeat that experiment with a small modification, chances are good you might see a new Tor exit IP. Open https://check.torproject.org in your browser, then issue "signal newnym" using [[Arm|Arm]], then close Tor Browser, then start Tor Browser again. then open https://check.torproject.org again, you might see a new Tor exit relay IP.
 
 = Footnotes =
 <references />
