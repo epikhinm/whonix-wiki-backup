@@ -73,15 +73,16 @@ __NOTITLE__
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 
 <small>
-* [[Download#First_time_user.3F| First time user?]] 
-* [[Download#Download_Whonix| Download Whonix]] 
-* [[Whonix Signing Key| Download Whonix signing key]] 
-* [[Download#Verify_the_Whonix_images| Verify the Whonix images]] 
-** [[Verify_the_virtual_machine_images_using_Linux| For Linux: Ubuntu, Debian, Whonix, etc. using kgpg]] 
-** [[Verify_the_virtual_machine_images_using_the_command_line| For Linux with the command line]] 
-** [[Verify_the_virtual_machine_images_using_other_operating_systems| For Windows or Mac]] 
-*  [[Pre Install Advice| Security Advice before installing Whonix]] 
-*  [[Download#Install_Whonix| Install Whonix]]</small> 
+* [[Download#First_time_user.3F| Починаючий користувач?]]
+* [[Download#Download_Whonix| Завантаження Whonix]]
+* [[Whonix Signing Key| Завантаження ключа підпису Whonix]]
+* [[Download#Verify_the_Whonix_images| Підтвердженя зображень Whonix]]
+** [[Verify_the_virtual_machine_images_using_Linux| Для Linux:Ubuntu, Debian, Whonix, etc. використовуючи kgpg]]
+** [[Verify_the_virtual_machine_images_using_the_command_line| Для Linux з командним рядком]]
+** [[Verify_the_virtual_machine_images_using_other_operating_systems| Для Windows або Mac]]
+* [[Pre Install Advice| Поради бепеки перед встановленням Whonix]]
+* [[Download#Install_Whonix| Встановлення Whonix]]
+</small> 
 </div>
 
 
