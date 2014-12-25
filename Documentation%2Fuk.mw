@@ -75,7 +75,7 @@ __NOTITLE__
 <small>
 * [[Download#First_time_user.3F| Починаючий користувач?]]
 * [[Download#Download_Whonix| Завантаження Whonix]]
-* [[Whonix Signing Key| Завантаження ключа підпису Whonix]]
+* [[Whonix Signing Key| Завантаження  Whonix signing key]]
 * [[Download#Verify_the_Whonix_images| Підтвердженя зображень Whonix]]
 ** [[Verify_the_virtual_machine_images_using_Linux| Для Linux:Ubuntu, Debian, Whonix, etc. використовуючи kgpg]]
 ** [[Verify_the_virtual_machine_images_using_the_command_line| Для Linux з командним рядком]]
