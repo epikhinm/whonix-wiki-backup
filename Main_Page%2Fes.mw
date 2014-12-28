@@ -1,5 +1,5 @@
 {{#seo:
-|fb:admins=100007482551659
+|fb:admins=100007482551659 
 |fb:app_id=606207202785157
 |twitter:card=summary_large_image
 |twitter:site=@Whonix
@@ -21,14 +21,14 @@ __NOTOC__
 Descargar Whonix]]</h1></div>
 <div class="left" style="float:left; width:33%; margin:0; padding:0.5em;"><div class="header" style="border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;"><h1 class="header" style="text-align:center; padding:0; margin:0;">
 
-[[About| Acerca de]]</h1></div>
+[[$A Acerca de]]</h1></div> 
 [[Image:whonix_concept_refined.jpg|center|Whonix Concept|500px]] <!-- old version: http://www.webcitation.org/6TOSrrjYX -->
 
-Whonix es un sistema operativo enfocado en anonimato, privacidad y seguridad. Está basado en la red de anonimato  Tor <ref>https://en.wikipedia.org/wiki/Debian</ref>, Debian GNU/Linux<ref>https://en.wikipedia.org/wiki/Debian</ref> y seguridad por aislamiento. Es imposible que haya fugas de DNS, y ni siquiera el "malware" con privilegios de "root" puede encontrar la verdadera IP del usuario.
+Whonix es un sistema operativo enfocado en anonimato, privacidad y seguridad. Está basado en la red de anonimato  Tor <ref>$A</ref>, Debian GNU/Linux<ref>$A</ref> y seguridad por aislamiento. Es imposible que haya fugas de DNS, y ni siquiera el "malware" con privilegios de "root" puede encontrar la verdadera IP del usuario.  
 
 Whonix consists of two parts: One solely runs Tor and acts as a gateway, which we call Whonix-Gateway. The other, which we call Whonix-Workstation, is on a completely isolated network. Only connections through Tor are possible.
 
-Para saber más sobre seguridad y anonimato en Whonix, continúa en la página [[About|Sobre Whonix]].
+Para saber más sobre seguridad y anonimato en Whonix, continúa en la página [[About|Sobre Whonix]]. 
 <html>
 <div class="hreview">
    <span class="item">
@@ -40,10 +40,10 @@ is <span itemprop="price">Free</span> as in price and freedom, <span class="summ
 <ref>[http://sourceforge.net/projects/whonix/ Whonix sourceforge.net project home page] [http://www.webcitation.org/6O1gNLC1B (w)]; [http://sourceforge.net/projects/whonix/reviews/ Whonix sourceforg.net project review page] [http://www.webcitation.org/6O1gT5Wqw (w)]</ref>
 </div>
 
-<div class="middle" style="float:left; width:33%; margin:0; padding:0.5em;"><div class="header" style="border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;"><h2 class="header" style="text-align:center; padding:0; margin:0;">Novedades del [https://www.whonix.org/blog blog] [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]
+<div class="middle" style="float:left; width:33%; margin:0; padding:0.5em;"><div class="header" style="border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;"><h2 class="header" style="text-align:center; padding:0; margin:0;">Novedades del [$A blog] [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/blog/feed/]] 
 </h2></div>
 <rss number=10 title=off desc=off>https://www.whonix.org/blog/feed/rss2/</rss>
-<div class="header" style="border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;"><h2 class="header" style="text-align:center; padding:0; margin:0;">Novedades del [https://www.whonix.org/forum Foro] [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]
+<div class="header" style="border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;"><h2 class="header" style="text-align:center; padding:0; margin:0;">Novedades del [$A Foro] [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]] 
 </h2></div>
 <rss number=15 title=off desc=off>https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=15</rss>
 </div>
@@ -60,7 +60,7 @@ Whonix con escritorio KDE|center]]
 <td>
 Compañía</td>
 <td style="text-align:left; ">
-[https://www.whonix.org/forum/index.php/topic,109.0.html ninguna] 
+[$A ninguna]  
 </td>
 <tr>
 <td>
@@ -72,7 +72,7 @@ Desarrollador
 <td>
 Familia de SO</td>
 <td style="text-align:left;">
-[https://en.wikipedia.org/wiki/Debian Tipo Unix], basado en [https://en.wikipedia.org/wiki/Debian Debian]</td>
+[$A Tipo Unix], basado en [$A Debian]</td>  
 </tr>
 <tr>
 <td>
@@ -83,7 +83,7 @@ Activo</td>
 <tr>
 <td>
 Modelo de código</td>
-<td style=""text-align:left;">[https://en.wikipedia.org/wiki/Open_source Código abierto]
+<td style=""text-align:left;">[$A Código abierto] 
 </td>
 </tr>
 <tr>
@@ -109,7 +109,7 @@ ninguno
 <td>
 Marketing target</td>
 <td style=""text-align:left;">
-Anonimato; Privacidad; Seguridad; Computación personal; [[Hosting Location Hidden Services| Servidores de ubicación oculta]]
+Anonimato; Privacidad; Seguridad; Computación personal; [[$A Servidores de ubicación oculta]] 
 </td>
 </tr>
 <tr>
@@ -126,27 +126,27 @@ Plataformas soportadas</td>
 <td style=""text-align:left;">
 [estable: compatible con x86 y/o [[VirtualBox]]] [experimental: [[KVM]], [[QEMU]], [[Qubes]]] + 
 <ref>
-[[Other Operating Systems| Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).</ref>
+[[Other Operating Systems| Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).</ref> 
 </td>
 </tr>
 <tr>
-<td>[https://en.wikipedia.org/wiki/Kernel_(computing) Tipo de kernel]
+<td>[$A Tipo de kernel] 
 </td>
 <td style="text-align:left;">
-[https://en.wikipedia.org/wiki/Linux_kernel Monolítico] ([https://en.wikipedia.org/wiki/Linux_kernel kernel Linux])
+[$A Monolítico] ([$A kernel Linux])  
 </td>
 </tr>
 <tr>
 <td>
-[https://en.wikipedia.org/wiki/User_interface Interfaz de usuario predeterminada]
+[$A Interfaz de usuario predeterminada] 
 </td>
 <td style=""text-align:left;">[https://en.wikipedia.org/wiki/KDE KDE]</td>
 </tr>
 <tr>
 <td>
-[https://en.wikipedia.org/wiki/Software_license Licencia]</td>
+[$A Licencia]</td> 
 <td style=""text-align:left;">
-[https://en.wikipedia.org/wiki/GNU_GPL Software libre], principalmente [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL] y otras licencias
+[$A Software libre], principalmente [$A GNU GPL] y otras licencias  
 <ref>{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}</ref>
 </td>
 </tr>
@@ -175,18 +175,18 @@ Sitio web oficial</td>
 Image:kde0_5_0.png|alt=Captura de pantalla del escritorio Whonix|Whonix con escritorio KDE
 Image:whonixcheck_gui.png|alt=captura de pantalla de whonixcheck|[[whonixcheck|whonixcheck]]
 Image:timesync_gui.png|alt=Whonix timesync gui screenshot|[[TimeSync|TimeSync]]
-Image:stream_isolation.1.0.jpg|alt=Gráfico de aislamiento de flujos en Whonix|[[Stream Isolation| Aislamiento de flujos]]
-Image:mat.png|alt=metadata anonymiziation toolkit screenshot|MAT - [[Metadata| Metadata]] Anonymisation Toolkit
-Image:flash_leak_test.png|alt=Adobe Flash IP Leak Test in Whonix Screenshot|[[Browser Plugins| Flash]] Leak Test SocksPort and TransPort
+Image:stream_isolation.1.0.jpg|alt=Gráfico de aislamiento de flujos en Whonix|[[$A Aislamiento de flujos]] 
+Image:mat.png|alt=metadata anonymiziation toolkit screenshot|MAT - [[Metadata| Metadata]] Anonymisation Toolkit 
+Image:flash_leak_test.png|alt=Adobe Flash IP Leak Test in Whonix Screenshot|[[Browser Plugins| Flash]] Leak Test SocksPort and TransPort 
 Image:Thunderbird_17.0.png|alt=Captura de pantalla de Thunderbird, Icedove|Mozilla Thunderbird (llamado Icedove en Debian) con TorBirdy, véase  [[E-Mail]]
-Image:xchat_screenshot_created_by_adrelanos.png|alt=Captura de pantalla de XChat|[[XChat|XChat]], cliente de chat IRC
-Image:torbrowser.png|alt=Captura de pantalla del navegador Tor|[[Tor Browser| Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
+Image:xchat_screenshot_created_by_adrelanos.png|alt=Captura de pantalla de XChat|[[XChat|XChat]], cliente de chat IRC 
+Image:torbrowser.png|alt=Captura de pantalla del navegador Tor|[[Tor Browser| Tor Browser]], privacy by design. Fighting web fingerprinting and linkability. 
 Image:shield_badge.png|alt=Logo de la Liga de defensa de internet|Whonix es miembro de la [http://internetdefenseleague.org Liga de defensa de internet].
-Image:OIN_logo_200px.jpeg|alt=Open Invention Network Logo|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
+Image:OIN_logo_200px.jpeg|alt=Open Invention Network Logo|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].  
 
-Image:500.png|link=Download|alt=Logo antiguo de Whonix|[[Download| Logo antiguo de Whonix]]
+Image:500.png|link=Download|alt=Logo antiguo de Whonix|[[$A Logo antiguo de Whonix]] 
 
-Image:donate.png|link=Donate|alt=Icono de donación a Whonix|[[Donate| ¡Dona a Whonix!]]
+Image:donate.png|link=Donate|alt=Icono de donación a Whonix|[[$A ¡Dona a Whonix!]] 
 </gallery>
 
 <html>
@@ -195,7 +195,7 @@ Image:donate.png|link=Donate|alt=Icono de donación a Whonix|[[Donate| ¡Dona a 
 <img itemprop="logo" style="text-align:center;" src="https://www.whonix.org/w/images/e/e0/210-Banner.png" />
 </div>
 </html>
-'''[[Screenshots| Más capturas de pantalla]]'''
+'''[[$A Más capturas de pantalla]]''' 
 = <h1 style="text-align:center;">Notas</h1> =
 
 Whonix se produce independientemente del proyecto Tor y no arrastra garantía alguna de él.<ref>https://www.torproject.org</ref>.
@@ -203,6 +203,6 @@ Whonix se produce independientemente del proyecto Tor y no arrastra garantía al
 <references />
 
 Gracias a Tomchen1989 de Wikimedia Commons por el botón de descarga [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
-Gracias a [https://www.awxcnx.de/handbuch_43.htm awxcnx.de] por la captura de pantalla de dominio público de MAT.[[Category:Documentation]]{{Footer}}
+Gracias a [$A awxcnx.de] por la captura de pantalla de dominio público de MAT. [[Category:Documentation]]{{Footer}}
 
 </div>
