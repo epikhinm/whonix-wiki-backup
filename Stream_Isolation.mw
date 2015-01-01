@@ -11,11 +11,11 @@ The following graphic illustrates the difference of using Tor SocksPort's compar
 
 [[Image:stream_isolation.1.0.jpg|frame|none|alt=|Stream Isolation Graphic]]
 
-Whonix 0.2.1 and above implement protection against {{Code2|identity correlation through circuit sharing}}, however, for better privacy, you are still advised to understand a bit of the technical background. Since Tor version 0.2.3, different Socks,- Dns-, or TransPorts go through different circuits, therefore preventing {{Code2|identity correlation}}. Whonix configures most applications that come preinstalled with Whonix to use different SocksPort, thus no {{Code2|identity correlation}} is at risk. Whonix uses either socks proxy settings to direct various applications to different SocksPorts or uwt (more information below).
+Whonix implements protection against {{Code2|identity correlation through circuit sharing}}, however, for better privacy, you are still advised to understand a bit of the technical background. Since Tor version 0.2.3, different Socks,- Dns-, or TransPorts go through different circuits, therefore preventing {{Code2|identity correlation}}. Whonix configures most applications that come preinstalled with Whonix to use different SocksPort, thus no {{Code2|identity correlation}} is at risk. Whonix uses either socks proxy settings to direct various applications to different SocksPorts or [https://github.com/Whonix/uwt uwt] (more information below).
 
 Any other traffic (i.e. custom installed applications, misc applications, such as {{Code2|nslookup}}, go through Tor's Dns-, and/or TransPort (can be optionally disabled, see below).
 
-Applications in Whonix 0.2.1 and above configured to prevent {{Code2|identity correlation through circuit sharing}}:
+Applications in Whonix are configured to prevent {{Code2|identity correlation through circuit sharing}}:
 
 {| class="wikitable" style="text-align: center; background-color: #fff"
 !style="height:27px"|application
@@ -29,7 +29,7 @@ Applications in Whonix 0.2.1 and above configured to prevent {{Code2|identity co
 |style="background-color:{{Green}}"|yes
 |style="background-color:{{Green}}"|yes
 |socks proxy settings
-|9150 <ref>Whonix-Workstation 127.0.0.1:9150 gets redirected to 192.168.0.10:9150 by rinetd. See on Whonix-Workstation file /etc/rinetd. Changing proxy settings in Tor Browser has proven to be unreliable. At some point Tor Button may change its internals and therefore break something again. Keeping the default settings and not requiring any changes in Tor Browser seems like the best way to support compatibility in long run and also is simplest in case {{Code|update-torbrowser}} breaks and [[Manually_Updating_Tor_Browser|manually updating Tor Browser]] is required again in future.</ref>
+|9150 <ref>Whonix-Workstation 127.0.0.1:9150 gets redirected to 10.152.152.10:9150 by rinetd. See on Whonix-Workstation file /etc/rinetd and package [https://github.com/Whonix/anon-ws-disable-stacked-tor anon-ws-disable-stacked-tor]. Changing proxy settings in Tor Browser has proven to be unreliable. At some point Tor Button may change its internals and therefore break something again. Keeping the default settings and not requiring any changes in Tor Browser seems like the best way to support compatibility in long run and also is simplest in case {{Code|update-torbrowser}} breaks and [[Manually_Updating_Tor_Browser|manually updating Tor Browser]] is required again in future.</ref>
 |[[Tor Browser]]
 |-
 |style="background-color:#f9f9f9;height:27px"|XChat
@@ -48,9 +48,9 @@ Applications in Whonix 0.2.1 and above configured to prevent {{Code2|identity co
 |-
 |style="background-color:#f9f9f9;height:27px"|Instant Messenger
 |style="background-color:{{Red}}"|no
-|style="background-color:{{Red}}"|no
+|style="background-color:{{Red}}"|no ([https://github.com/Whonix/pidgin-improved-privacy TODO])
 |socks proxy settings
-|port prepared, IP 192.168.0.10, port 9103
+|port prepared, IP 10.152.152.10, port 9103
 |[[Chat]]
 |- 
 |style="background-color:#f9f9f9;height:27px"|apt-get
@@ -62,10 +62,10 @@ Applications in Whonix 0.2.1 and above configured to prevent {{Code2|identity co
 |-
 |style="background-color:#f9f9f9;height:27px"|aptitude
 |style="background-color:{{Green}}"|yes
-|style="background-color:{{Red}}"|no
+|style="background-color:{{Green}}"|yes
+|uwt wrapper
 | -
 | -
-|[http://sourceforge.net/p/whonix/discussion/general/thread/f3629bd3/#4faa in forum] (will be installed by default in Whonix {{Whonix6}} and above)
 |-
 |style="background-color:#f9f9f9;height:27px"|gpg
 |style="background-color:{{Green}}"|yes
@@ -91,7 +91,7 @@ Applications in Whonix 0.2.1 and above configured to prevent {{Code2|identity co
 |style="background-color:#f9f9f9;height:27px"|[[Dev/TimeSync|sdwdate]]
 |style="background-color:{{Green}}"|yes
 |style="background-color:{{Green}}"|yes
-|socks proxy settings
+|[https://github.com/Whonix/sdwdate-plugin-anon-shared-streamiso socks proxy settings]
 | -
 | -
 |-
@@ -120,24 +120,24 @@ Applications in Whonix 0.2.1 and above configured to prevent {{Code2|identity co
 |style="background-color:{{Red}}"|no
 |style="background-color:{{Red}}"|no
 |socks proxy settings
-|port prepared, IP 192.168.0.10, port 9111
+|port prepared, IP 10.152.152.10, port 9111
 |[[Money]]
 |-
 |style="background-color:#f9f9f9;height:27px"|privoxy
 |style="background-color:{{Red}}"|no
 |style="background-color:{{Red}}"|no
 |socks proxy settings
-|port prepared, IP 192.168.0.10, port 9112
+|port prepared, IP 10.152.152.10, port 9112
 | -
 |- 
 |style="background-color:#f9f9f9;height:27px"|polipo
 |style="background-color:{{Red}}"|no
 |style="background-color:{{Red}}"|no
 |socks proxy settings
-|port prepared, IP 192.168.0.10, port 9113
+|port prepared, IP 10.152.152.10, port 9113
 | -
 |-
-|style="background-color:#f9f9f9;height:27px"|torbrowser update script
+|style="background-color:#f9f9f9;height:27px"|[https://github.com/Whonix/tb-updater tb-updater (AnonDist)]
 |style="background-color:{{Green}}"|yes
 |style="background-color:{{Green}}"|yes
 |socks proxy settings
@@ -171,11 +171,22 @@ Applications in Whonix 0.2.1 and above configured to prevent {{Code2|identity co
 |uwt wrapper
 | -
 |[[Mixmaster]]
+|-
+|style="background-color:#f9f9f9;height:27px"|KDE application wide proxy settings
+|style="background-color:{{Red}}"|no
+|style="background-color:{{Green}}"|yes
+|pre-configured socks proxy settings, port 9122
+|no KDE applications with network activity pre-installed
+| -
+|-
+|style="background-color:#f9f9f9;height:27px"|GNOME application wide proxy settings
+|style="background-color:{{Red}}"|no
+|style="background-color:{{Red}}"|no
+|[[Dev/GNOME|not pre-configured]], port prepared, port 9123
+|no GNOME applications with network activity pre-installed
+| -
+|-
 |}
-
-Whonix 6 and above: KDE application wide proxy settings (no KDE applications with network activity pre-installed, pre-configured socks proxy settings, port 9122)
-
-Whonix 6 and above: GNOME application wide proxy settings (no GNOME applications with network activity pre-installed, [[Dev/GNOME|not pre-configured]], port prepared, port 9123)
 
 The required socks proxy settings were setup by the Whonix build scripts. uwt wrappers are set up on Whonix-Gateway and on Whonix-Workstation under {{Code|/usr/share/whonix/postinst.d/70_uwt}}. [https://trac.torproject.org/projects/tor/wiki/doc/torsocks uwt] is a wrapper around torsocks, which is also already installed to {{Code|/usr/bin/uwt}}.
 
@@ -216,9 +227,9 @@ Hidden services are automatically separated from each other.<ref>https://lists.t
 
 === Basic Protection ===
 
-Most applications which come with Whonix 0.2.1 and above are already configured to prevent {{Code2|identity correlation through circuit sharing}}, you really should read the introduction above.
+Most applications which come with Whonix are configured to prevent {{Code2|identity correlation through circuit sharing}}, you really should read the introduction above.
 
-The only traffic going through TransPort by default is [[whonixcheck]] when testing the TransPort. If that is of concern to you, it can be disabled in whonixcheck. Just comment out the "{{Code2|check_tor "TransPort"}}" in {{Code2|/usr/bin/whonixcheck}} in that case.
+The only traffic going through TransPort by default is [[whonixcheck]] when testing the TransPort. If that is of concern to you, it can be disabled in whonixcheck, see [[Advanced Security Guide#Prevent polluting TransPort]].
 
 All custom installed application's TCP traffic is routed through Tor's TransPort and all their DNS requests through Tor's DnsPort. This means different activities or "identities" in different applications (say browser, IRC, email) end up being routed through the same circuit, thus {{Code2|identity correlation}} is at risk.
 
@@ -226,10 +237,10 @@ To protect against this, you have to set up per-application SOCKS ports in Whoni
 
 On Whonix-Gateway in {{Code2|/usr/share/tor/tor-service-defaults-torrc}} are already a lot custom socks ports prepared for custom installed applications:
 
-* Without {{Code2|IsolateDestAddr}} and without {{Code2|IsolateDestPort}}: SocksPort 192.168.0.10:9152 to 9159
-* With {{Code2|IsolateDestAddr}}, but without {{Code2|IsolateDestPort}}: SocksPort 192.168.0.10:9160 to 9169
-* Without {{Code2|IsolateDestAddr}}, but with {{Code2|IsolateDestPort}}: SocksPort: 192.168.0.10:9170 to 9179
-* With {{Code2|IsolateDestAddr}} and with {{Code2|IsolateDestPort}}: SocksPort: 192.168.0.10:9180 to 9189
+* Without {{Code2|IsolateDestAddr}} and without {{Code2|IsolateDestPort}}: SocksPort 10.152.152.10:9152 to 9159
+* With {{Code2|IsolateDestAddr}}, but without {{Code2|IsolateDestPort}}: SocksPort 10.152.152.10:9160 to 9169
+* Without {{Code2|IsolateDestAddr}}, but with {{Code2|IsolateDestPort}}: SocksPort: 10.152.152.10:9170 to 9179
+* With {{Code2|IsolateDestAddr}} and with {{Code2|IsolateDestPort}}: SocksPort: 10.152.152.10:9180 to 9189
 * If they those are not enough, you can add your own ones.
 
 What are {{Code2|IsolateDestAddr}} and {{Code2|IsolateDestPort}}? You can learn about them in the [https://www.torproject.org/docs/tor-manual.html.en Tor manual]. See also [https://lists.torproject.org/pipermail/tor-talk/2012-May/024403.html tor-talk mailing list: Tor's stream isolation features defaults]. Usually, unless you know better, you are better off not using {{Code2|IsolateDestAddr}} or {{Code2|IsolateDestPort}}.
@@ -245,16 +256,16 @@ Additional comments regarding the Torify HOWTO:
 * DNS related [https://trac.torproject.org/projects/tor/wiki/doc/TorFAQ#IkeepseeingthesewarningsaboutSOCKSandDNSandinformationleaks.ShouldIworry warnings] still apply, though to a lesser extent - an attack could only make correlations but still couldn't figure out your IP. You can prevent that, be out commenting (# in front) DnsPort in {{Code2|/etc/tor/torrc}} on the Whonix-Gateway and by removing the DNS redirection firewall rule from {{WhonixFirewall}}.
 ** Do not use a [https://trac.torproject.org/projects/tor/wiki/doc/SupportPrograms#DNS local DNS resolver], as all DNS requests would be executed by the same circuit.
 * Other leaks, such as applications not honoring the proxy settings / wrapper, ICMP or UDP leaks do not apply to Whonix.
+* The SafeSocks setting is for rejecting unsafe variants of socks that might cause DNS leaks. The Whonix design model mitigates DNS leaks by redirecting all requests to Tor's DnsPortr. Enablong this setting would give marginal benefit in this situation but would complicate debugging.
 
 === Better Protection ===
-
 For best protection against {{Code2|identity correlation}}:
 
 Read the advice above and on Whonix-Gateway:
 
 Deactivate KDE / GNOME - application wide proxy settings...
 
-* Whonix {{Whonix6}} and above: Because those proxy settings are not application specific, but rather force all KDE / GNOME applications through the same SocksPort (no KDE / GNOME applications which use the internet preinstalled by default), deactivating those KDE / GNOME - wide proxy settings gives better control about stream isolation.
+* Because those proxy settings are not application specific, but rather force all KDE / GNOME applications through the same SocksPort (no KDE / GNOME applications which use the internet preinstalled by default), deactivating those KDE / GNOME - wide proxy settings gives better control about stream isolation.
 
 To deactivate TransPort and DnsPort...
 
@@ -302,7 +313,7 @@ sudo nano /etc/tor/torrc
 Add.
 
 <pre>
-SocksPort 192.168.0.10:9150 IsolateDestAddr IsolateDestPort
+SocksPort 10.152.152.10:9150 IsolateDestAddr IsolateDestPort
 </pre>
 
 Save.
@@ -317,9 +328,43 @@ Done.
 </ref>.
 
 == Deactivate uwt Stream Isolation Wrapper ==
+=== Temporary ===
+==== anondist-orig Method ====
+Append {{Code2|.anondist-orig}} to the command you want to run. For example, instead of using.
+
+<pre>
+curl 38.229.72.22
+</pre>
+
+Use.
+
+<pre>
+curl.anondist-orig 38.229.72.22
+</pre>
+
+==== Environment Variable Method ====
+Use the {{Code2|UWT_DEV_PASSTHROUGH}} environment variable. <ref>https://github.com/Whonix/uwt/blob/master/usr/bin/uwt#L49</ref>
+
+Example. Set the UWT_DEV_PASSTHROUGH environment variable. This will disable using torsocks for all following invocations.
+
+<pre>
+export UWT_DEV_PASSTHROUGH="1"
+</pre>
+
+<pre>
+curl 38.229.72.22
+</pre>
+
+When running as user and using sudo, do not forget sudo's -E parameter which stands for preserve environment.
+
+<pre>
+sudo -E apt-get update
+</pre>
+
+=== Permanently ===
 '''OPTIONAL. Usually not required. Only for special setups and people who know what they are doing.'''
 
-You can enable/disable all uwt stream isolation wrappers globally or enable/disable specific stream isolation wrappers, see uwt {{Code|/etc/whonix.d/30_uwt_default}} configuration file.
+You can enable/disable all uwt stream isolation wrappers globally or enable/disable specific stream isolation wrappers, see uwt {{Code|/etc/uwt.d/30_uwt_default}} configuration file.
 
 == Development ==
 === Tests ===
@@ -374,7 +419,7 @@ If it shows something else, such as a resolved IP, the Transparent DNS is enable
 === Check if Transparent TCP is disabled ===
 Test.
 <pre>
-curl.whonix-orig 38.229.72.22 ; echo $?
+curl.anondist-orig 38.229.72.22 ; echo $?
 </pre>
 
 Should show.
@@ -388,7 +433,7 @@ If it shows something else, such as the html source code, then Transparent TCP i
 === Check if Transparent Proxying is disabled ===
 Test.
 <pre>
-curl.whonix-orig https://check.torproject.org/ ; echo $?
+curl.anondist-orig https://check.torproject.org/ ; echo $?
 </pre>
 
 Should show.
