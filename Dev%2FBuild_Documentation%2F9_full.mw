@@ -4,17 +4,11 @@
 }}
 {{forkme}}
 
-{{mbox
-| type       = critical
-| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=<translate>Whonix 9 is still under development warning</translate>]]
-| text       = Whonix 9 is still under development. See [[Dev/Build Documentation]] to find links to the stable version.
-}}
-
 = Build Documentation =
 == Introduction ==
 This page documents how to build Whonix VirtualBox or .qcow2 images (for [[KVM]]). If you have any questions or need help, get in Contact.
 
-It documents how to build the '''testers-only version''' of Whonix. Rather, if you are interested in building the stable version of Whonix, click [[Dev/Build_Documentation|Build Documentation]].
+It documents how to build the '''stable version''' of Whonix.
 
 Knowledge assumed: basic principles of Virtualization; operation of your platform; Linux knowledge: how to install Debian and basic command line knowledge.
 
@@ -26,10 +20,10 @@ in contact.
 How to use the resulting images, is documented in the [[Documentation]].
 
 == Warning ==
-* <u>'''Short'''</u>: '''Don't add private files to Whonix's source code folder!'''
+* <u>'''Short'''</u>: '''Don't add private files to Whonix's source code folder! [...]'''
 <div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
 <div class="mw-collapsible-content">
-''Long'': Technically, it would work. Everything in whonix_gateway folder will get installed on Whonix-Gateway, whonix_workstation folder respectively, whonix_shared folder goes to both Whonix machines. This is recommended against. Those files would get managed by either the whonix-gateway-files, whonix-workstation-files or the whonix-shared-files package. When you later update Whonix debian packages, your files would get deleted by the package manager. Also adding private files to Whonix's source code folder, later contributing to Whonix's development and accidentally pushing the wrong git branch would be a disaster. Better add your private files to Whonix after building Whonix. Or add a custom build step adding your files, which then get copied from a folder outside of Whonix's source folder.
+''Long'': [...] Unless you know what you are doing. Technically, it would work. Everything in whonix_gateway folder will get installed on Whonix-Gateway, whonix_workstation folder respectively, whonix_shared folder goes to both Whonix machines. This is recommended against. Those files would get managed by either the whonix-gateway-files, whonix-workstation-files or the whonix-shared-files package. When you later update Whonix debian packages, your files would get deleted by the package manager. Also adding private files to Whonix's source code folder, later contributing to Whonix's development and accidentally pushing the wrong git branch would be a disaster. Better add your private files to Whonix after building Whonix. Or add a custom build step adding your files, which then get copied from a folder outside of Whonix's source folder.
 </div>
 </div>
 <br />
@@ -77,6 +71,61 @@ Start menu -> System Settings -> Desktop Search -> uncheck Enable Nepomuk Semati
 </div>
 </div>
 <br />
+* <u>'''Short'''</u>: '''Don't install {{Code2|apt-listchanges}} as custom package during VM image builds or don't have it installed during {{Code2|--install-to-root}} builds.''' 
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+<div class="mw-collapsible-content">
+''Long'': Because likely might change the build process from a non-interactive one to an interactive one. You're better off purging apt-listchanges.
+
+<pre>
+sudo apt-get purge apt-listchanges
+</pre>
+
+Alternatively, you could use a non-interactive frontend for {{Code2|apt-listchanges}} such as {{Code2|text}}. To do so, you would have to edit {{Code2|/etc/apt/listchanges.conf}}.
+
+<pre>
+sudo nano /etc/apt/listchanges.conf
+</pre>
+
+<pre>
+[apt]
+frontend=text
+</pre>
+
+After Whonix has been build, you're free to reinstall {{Code2|apt-listchanges}}.
+</div>
+</div>
+<br />
+* <u>'''Short'''</u>: '''Don't use images created inside Continuous Integration (CI) environments for anything besides testing!'''
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+<div class="mw-collapsible-content">
+Usually you are not using [https://en.wikipedia.org/wiki/Continuous_integration CI] environments without knowing.
+
+You can find out if you are running inside a CI environment by running.
+
+<pre>
+echo "$CI"
+</pre>
+
+If it shows nothing, i.e.
+
+<pre>
+
+</pre>
+
+Everything is fine.
+
+Otherwise, if it were to show.
+
+<pre>
+true
+</pre>
+Then don't use these images for anything besides testing.
+
+Reason:
+https://github.com/Whonix/Whonix/blob/master/build-steps.d/1100_prepare-build-machine#L577
+</div>
+</div>
+<br />
 
 == Build Anonymity ==
 While downloading the required tools for building Whonix your internet service provider could if he want notice that you want to build Whonix. This is especially interesting, if you want to redistribute Whonix, but still want to stay anonymous. The full story can be read in the chapter [[Build Anonymity]].
@@ -109,9 +158,7 @@ When making changes here, please consider also making changes there.
 If you are interested, click on Expand on the right.
 <div class="mw-collapsible-content">
 
-'''TODO''': Currently probably not possible, because there is no existing Whonix release based on Debian stable (currently: wheezy).
-
-Building Whonix in Whonix is possible as well (if the Whonix version you are using as host is also based on Debian stable (currently: wheezy)). Unfortunately, apt-cacher-ng does not like Whonix's apt repository on sourceforge.net. Adrelanos already reported a bug. As long as this bug isn't fixed, you need to disable Whonix's apt repository while building Whonix. You can do this using the {{Code2|whonix_repository}} tool.
+Building Whonix in Whonix is possible as well (if the Whonix version you are using as host is also based on Debian stable (currently: wheezy)). Unfortunately, apt-cacher-ng does not like Whonix's apt repository on sourceforge.net. Patrick already reported a bug. As long as this bug isn't fixed, you need to disable Whonix's apt repository while building Whonix. You can do this using the {{Code2|whonix_repository}} tool.
 
 <pre>
 sudo whonix_repository --disable
@@ -146,23 +193,23 @@ The build script (whonix_build) needs a parameter to know your build target. Cur
 <pre>
 --virtualbox
 --qcow2
---bare-metal
+--install-to-root
 </pre>
 
 Choose one. It has to be added to your whonix_build command.
 
-If you are interested in --bare-metal you should look into our [[Dev/Build_Documentation/Physical_Isolation|Physical Isolation Build Documentation]] instead. In context of build documentation for the current page you are reading, choose either --virtualbox if you are interested to build Virtual Box .ova's or --qcow2 if you are interested to build .qcow2 images (most likely for use with [[KVM]]). (These can be combined, most likely only useful for redistributable builds.) Note, that --virtualbox is currently the best supported and most tested option. --qcow2 builds are highly experimental, Whonix [[KVM]] support is still waiting for a dedicated maintainer.
+If you are interested in --install-to-root you should look into our [[Dev/Build_Documentation/Physical_Isolation|Physical Isolation Build Documentation]] instead. In context of build documentation for the current page you are reading, choose either --virtualbox if you are interested to build Virtual Box .ova's or --qcow2 if you are interested to build .qcow2 images (most likely for use with [[QEMU]] or [[KVM]]). (These can be combined, most likely only useful for redistributable builds.) Note, that --virtualbox is currently the most tested option.
 
 Delete eventually already existing Whonix-Gateway virtual machine. '''Warning''': This will delete a virtual machine named Whonix-Gateway from Virtual Box!
 
 <pre>
-sudo ~/Whonix/whonix_build --clean --tor-gateway
+sudo ~/Whonix/whonix_build --clean --virtualbox --tor-gateway
 </pre>
 
 Delete eventually already existing Whonix-Workstation virtual machine. '''Warning''': This will delete a virtual machine named Whonix-Workstation from Virtual Box!
 
 <pre>
-sudo ~/Whonix/whonix_build --clean --tor-workstation
+sudo ~/Whonix/whonix_build --clean --virtualbox --tor-workstation
 </pre>
 
 From now, you have two options. If you do not wish to use different build configurations for Whonix-Gateway and Whonix-Workstation (for example, if you do not wish to create a terminal-only Whonix-Gateway and a full Whonix-Workstation), you could use the {{Code|sudo ~/Whonix/whonix_build_both}} wrapper script to build both virtual machines at once. If you wish to use different build configurations, you must use the {{Code2|whonix_build}} script to build one after the other as described below.
@@ -170,7 +217,7 @@ From now, you have two options. If you do not wish to use different build config
 Build a Whonix-Gateway virtual machine image.
 
 <pre>
-sudo ~/Whonix/whonix_build --build --tor-gateway
+sudo ~/Whonix/whonix_build --build --virtualbox --tor-gateway
 </pre>
 
 Eventually, if you wish to use a different build configuration for Whonix-Workstation, change the contents in your {{Code2|/etc/whonix_buildconfig.d}} folder.
@@ -178,7 +225,7 @@ Eventually, if you wish to use a different build configuration for Whonix-Workst
 Build a Whonix-Workstation virtual machine image.
 
 <pre>
-sudo ~/Whonix/whonix_build --build --tor-workstation
+sudo ~/Whonix/whonix_build --build --virtualbox --tor-workstation
 </pre>
 
 The resulting {{Code2|.ova}} images can be found in {{Code|~/whonix_binary}} folder.
