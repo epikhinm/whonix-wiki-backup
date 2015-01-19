@@ -17,9 +17,10 @@ more text
 
 {{Footer}}
 
-
+<html>
 <script type="text/javascript">
 //testing the availability of javascript
 alert("this is a test.");
 </script>
 <button id="copy">
+</html>
