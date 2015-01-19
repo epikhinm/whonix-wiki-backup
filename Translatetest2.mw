@@ -19,8 +19,12 @@ more text
 
 <html>
 <script type="text/javascript">
-//testing the availability of javascript
-alert("this is a test.");
+//Initial test of Javascript seems ok. Adding a test for clipboard.
+$('#copy').click(function () {
+  var clipboardEvent = new ClipboardEvent('copy', { dataType: 'text/plain', data: 'this should be in clipboard' } );
+document.dispatchEvent(clipboardEvent);
+  console.log(clipboardEvent)
+});
 </script>
-<button id="copy">
+<button id="copy">Copy Me!</button>
 </html>
