@@ -10,9 +10,16 @@ test text box here
 html test:
 
 <html>
-<a href=something>something</href>
+<a href=something>something</a>
 </html>
 
 more text
 
 {{Footer}}
+
+
+<script type="text/javascript">
+//testing the availability of javascript
+alert("this is a test.");
+</script>
+<button id="copy">
