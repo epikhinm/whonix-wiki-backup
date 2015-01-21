@@ -4,7 +4,7 @@
 alert(0);
 function SelectText(element) {
     var range, selection;    
-alert(2);
+alert(window.location);
 }
 alert(1);
   var allCodeSelects = document.getElementsByClassName("codeSelectDiv");alert(2);
