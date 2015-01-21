@@ -2,7 +2,16 @@
 <div class="codeSelectDiv"></div>
 <script>
 alert(0);
-
+function SelectText(element) {
+    var range, selection;    
+    if (window.getSelection && document.createRange) { 
+      selection = window.getSelection();        
+      range = document.createRange();
+      range.selectNodeContents(element);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+}
 alert(1);
   var allCodeSelects = document.getElementsByClassName("codeSelectDiv");alert(2);
   var theDiv = allCodeSelects[allCodeSelects.length - 1]; // select the last div in case of 1+ divs
