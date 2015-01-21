@@ -1,0 +1,27 @@
+<html>
+<div class="codeSelectDiv"></div>
+<script>
+alert(0);
+  function SelectText(element) {
+    var range, selection;    
+    if (window.getSelection && document.createRange) { 
+      selection = window.getSelection();        
+      range = document.createRange();
+      range.selectNodeContents(element);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+    else if (document.body.createTextRange) {
+      // for IE version 8 and before
+      range = document.body.createTextRange();
+      range.moveToElementText(element);
+      range.select();
+    }
+  }
+alert(1);
+  var allCodeSelects = document.getElementsByClassName("codeSelectDiv");alert(2);
+  var theDiv = allCodeSelects[allCodeSelects.length - 1]; // select the last div in case of 1+ divs
+  theDiv.innerHTML = "<input type='button' value='Select code' onclick='SelectText(theDiv.children[1]);'>";alert(3);
+  theDiv.innerHTML += "<pre>{{{1}}}</pre>";alert(4);
+</script>
+</html>
