@@ -4,13 +4,7 @@
 alert(0);
 function SelectText(element) {
     var range, selection;    
-    if (window.getSelection && document.createRange) { 
-      selection = window.getSelection();        
-      range = document.createRange();
-      range.selectNodeContents(element);
-      selection.removeAllRanges();
-      selection.addRange(range);
-    }
+alert(2);
 }
 alert(1);
   var allCodeSelects = document.getElementsByClassName("codeSelectDiv");alert(2);
