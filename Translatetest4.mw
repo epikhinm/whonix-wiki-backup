@@ -3,3 +3,6 @@ line 2
 3
 4
 5}}
+
+Another code:
+{{CodeSelect|2|Small code here}}
