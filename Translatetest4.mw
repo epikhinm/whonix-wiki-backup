@@ -1,15 +1,14 @@
 <html>
 <div class="codeSelectDiv"></div>
 <script>
-alert(0);
 function SelectText(element) {
     var range, selection;    
-alert(window.location);
+alert(window.getSelection());
 }
-alert(1);
-  var allCodeSelects = document.getElementsByClassName("codeSelectDiv");alert(2);
+
+  var allCodeSelects = document.getElementsByClassName("codeSelectDiv");
   var theDiv = allCodeSelects[allCodeSelects.length - 1]; // select the last div in case of 1+ divs
-  theDiv.innerHTML = "<input type='button' value='Select code' onclick='SelectText(theDiv.children[1]);'>";alert(3);
-  theDiv.innerHTML += "<pre>{{{1}}}</pre>";alert(4);
+  theDiv.innerHTML = "<input type='button' value='Select code' onclick='SelectText(theDiv.children[1]);'>";
+  theDiv.innerHTML += "<pre>{{{1}}}</pre>";
 </script>
 </html>
