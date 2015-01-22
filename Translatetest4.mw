@@ -6,3 +6,9 @@ line 2
 
 Another code:
 {{CodeSelect|2|Small code here}}
+
+Special char test =:
+{{CodeSelect|2|= test}}
+
+Special char test ":
+{{CodeSelect|2|: test2}}
