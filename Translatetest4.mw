@@ -1,14 +1,14 @@
-{{CodeSelect|6|test code goes here
+{{CodeSelect|6|code=test code goes here
 line 2
 3
 4
 5}}
 
 Another code:
-{{CodeSelect|2|Small code here}}
+{{CodeSelect|2|code=Small code here}}
 
 Special char test =:
-{{CodeSelect|2|= test}}
+{{CodeSelect|2|code= test=1}}
 
 Special char test ":
-{{CodeSelect|2|: test2}}
+{{CodeSelect|2|code=: test2}}
