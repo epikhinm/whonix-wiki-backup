@@ -8,7 +8,7 @@ Another code:
 {{CodeSelect|2|code=Small code here}}
 
 Special char test =:
-{{CodeSelect|2|code= test=1}}
+{{CodeSelect|2|code== test1}}
 
 Special char test ":
 {{CodeSelect|2|code=: test2}}
