@@ -11,4 +11,4 @@ Special char test =:
 {{CodeSelect|2|code== test1}}
 
 Special char test ":
-{{CodeSelect|2|code=: test2}}
+{{CodeSelect|2|code=" test2:}}
