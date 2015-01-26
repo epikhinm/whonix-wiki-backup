@@ -15,7 +15,7 @@ Leaving multiple Whonix-Workstations running at the same time introduces also ne
 
 * An adversary could stress either/and CPU, HDD, RAM, network connection and other Whonix-Workstations and perhaps also the host would suffer.
 * There is no defense against DOSing other Whonix-Workstations or the Whonix-Gateway.
-* The adversary could try to exploit other Whonix-Workstations or the Whonix-Gateway. This risk can be reduced by hardening. Whonix-Workstation provides an optional (disabled by default, because it can get into the way for other tasks) firewall (under {{WhonixFirewall}}) to isolate different Whonix-Workstations from each other.
+* The adversary could try to exploit other Whonix-Workstations or the Whonix-Gateway. This risk can be reduced by hardening. Whonix-Workstation provides an optional, disabled by default (because it can get into the way for other tasks) firewall. (See [[Whonix-Workstation_Firewall|Whonix-Workstation Firewall]].)
 * A defense against impersonating (i.e. MITM or malicious gateway) other Whonix-Workstations or the Whonix-Gateway can be implemented using authentication, this is linked in the "More Security" section below.
 
 Identity correlation through circuit sharing <ref>See [[Stream Isolation]] page for definition.</ref> is not at risk as long as the Whonix-Workstation's aren't compromised. Multiple Whonix-Workstations using different internal IP's (as recommended in the instructions below) are automatically using [[Stream Isolation]].<ref>Because [https://www.torproject.org/docs/tor-manual.html.en IsolateClientAddr] is Tor's default.</ref>
@@ -45,7 +45,7 @@ sudo nano /etc/network/interfaces
 </pre>
 
 (3).
-In Whonix-Workstation's /etc/network/interfaces: And change the last octet. E.g. 192.168.0.'''11''' or 192.168.0.'''12'''.
+In Whonix-Workstation's /etc/network/interfaces: And change the last octet. E.g. 10.152.152.11 to 10.152.152.12.
 
 (4). Reboot or restart network using
 
@@ -62,7 +62,7 @@ See [[Connections between Whonix-Gateway and Whonix-Workstation]].
 === Multiple Whonix-Gateways ===
 '''Advanced users only.'''
 
-You could also use two or more Whonix-Gateways. This comes with both, advantages and disadvantages. It's more secure, in case one Whonix-Gateway got compromised, the other one is not necessarily compromised as well. A disadvantage is, that you end up with a different set of Tor entry guards - unless you take precautions<ref>Such as manually sharing your entry guards (no documentation ever written to my knowledge) or using the same [[Bridges]]</ref>. Your ISP could guess, that you are using two different Tor data folders, for whatever that's worth. (If you are using multiple TBB's, you end up with different sets of Tor entry guards as well.
+You could also use two or more Whonix-Gateways. This comes with both advantages and disadvantages. It's more secure in case one Whonix-Gateway got compromised, as the other one is not necessarily compromised as well. A disadvantage is that you end up with a different set of Tor entry guards - unless you take precautions<ref>Such as manually sharing your entry guards (no documentation ever written to my knowledge) or using the same [[Bridges]]</ref>. Your ISP could guess, that you are using two different Tor data folders, for whatever that's worth. (If you are using multiple TBB's, you end up with different sets of Tor entry guards as well.
 
 Using multiple Whonix-Gateways is more simple and more secure, when you are not using them at the same time.
 
