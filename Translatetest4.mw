@@ -1,3 +1,9 @@
+= New =
+
+{{#widget:CodeSelect}}
+
+= Old =
+
 {{CodeSelect|6|code=test code goes here
 line 2
 3
