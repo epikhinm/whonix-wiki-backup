@@ -1,6 +1,6 @@
 = New =
 
-{{#widget:CodeSelect}}
+{{#widget:CodeSelect|code=code is here}}
 
 = Old =
 
