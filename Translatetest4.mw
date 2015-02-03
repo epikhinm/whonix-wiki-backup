@@ -1,10 +1,10 @@
-= New =
-
 {{#widget:CodeSelect|code=code is here}}
 
 {{CodeSelect|code=
 sudo apt-get update
 }}
+
+{{CodeSelect|code=sudo apt-get update}}
 
 {{CodeSelect|code=
 test code goes here
