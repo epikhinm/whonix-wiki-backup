@@ -2,7 +2,9 @@
 
 {{#widget:CodeSelect|code=code is here}}
 
-= Old =
+{{CodeSelect|code=
+sudo apt-get update
+}}
 
 {{CodeSelect|code=
 test code goes here
