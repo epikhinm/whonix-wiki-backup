@@ -9,6 +9,7 @@ fdf
 11
 323}}
 
-{{CodeSelect|code=line 1
+{{CodeSelect|code=
+line 1
 line 2
-line 3}}
+}}
