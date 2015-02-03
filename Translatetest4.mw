@@ -13,7 +13,7 @@ line 2
 }}
 
 Another code:
-{{CodeSelect|2|code=Small code here}}
+{{CodeSelect|code=Small code here}}
 
 Special char test =:
 {{CodeSelect|code== test1}}
