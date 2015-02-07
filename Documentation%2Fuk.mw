@@ -188,19 +188,17 @@ __NOTITLE__
 '''Тоннельна підримка/Ланцюгова підтримка '''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[]]
-* [[]]
-* [[]]
-* [[]]
-* [[]]
-* [[]]
-* [[]]
-* [[]]
-* [[]]
-* [[]]
-* [[]]
-* [[]]
-* [[]]
+* [[Features#VPN_.2F_Tunnel_support| Підтримка Тунельного протоколу]]
+* [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Тунельний протокол Tor через proxy, VPN або SSH (proxy/VPN/SSH -> Tor)]]
+* [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Тунельний протокол Tor через proxy (proxy -> Tor)]]
+* [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Тунельний Tor через SSH (SSH -> Tor)]]
+* [[Tunnel_Tor_through_proxy_or_VPN_or_SSH| Тунельний Tor через VPN (VPN -> Tor)]]
+* [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Тунельгний proxy/proxychains/SSH/VPN через Tor (Tor -> Proxy/SSH/VPN)]]
+* [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Тунельний proxy/proxychains через Tor (Tor -> proxy)]]
+* [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Тунельний SSH через Tor (Tor -> SSH)]]
+* [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor| Тунельний VPN через Tor (Tor -> VPN)]]
+* [[TestVPN| Приклад VPNів працюючих з Whonix для тестування]]
+* [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways| Ланцюговання анонімних шлюзів]]
 </small> 
 </div>
 
