@@ -330,9 +330,9 @@ __NOTITLE__
 '''Додаток'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Introduction| Introduction into Whonix Documentation]] 
-* [https://metrics.torproject.org/exonerator.html  ExoneraTor: a website that tells you whether a given IP address was a Tor relay] 
-* [https://metrics.torproject.org/Tor_Metrics_Portal| Tor Metrics Portal] 
+* [[Introduction| Вступ до документації Whonix ]] 
+* [https://metrics.torproject.org/exonerator.html  ExoneraTor: сайт, який розповість вам, чи був даний адреса змінений Tor] 
+* [https://metrics.torproject.org/Tor_Metrics_Portal| Tor метричний портал] 
 * [https://compass.torproject.org/Tor_Compass| Tor Compass]</small> 
 </div>
 
