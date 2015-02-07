@@ -226,25 +226,25 @@ __NOTITLE__
 '''Додаткові теми'''
 <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
 <small>
-* [[Whonix Configuration Files| Whonix modular flexible .d style configuration folders]] 
-* [[Other Operating Systems| Other Operating Systems such as Windows, Ubuntu, etc. torified by Whonix-Gateway]] 
-* [[Other_Desktop_Environments| Other Desktop Environments (Gnome, LXDE, Xfce, etc.)]] 
-* [[Backup_Whonix_VMs| Backup Whonix VMs]] 
-* [[Manually Create Whonix VM Settings| Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]] 
-* [[Manually Updating Tor Browser| Manually updating Tor Browser, temporary workaround, in case the torbrowser updater ever gets broken]] 
-* [[Dev/Build Documentation| Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]] 
-* [[Download Security| Download Security]] 
-* [[Tuning#Replacing Desktop Environment| Replacing desktop environment]] 
-* [[AppArmor| Hardening using Whonix's AppArmor Profiles]] 
+* [[Whonix Configuration Files| Модульні папки конфігурації і гнучкий стиль ]] 
+* [[Other Operating Systems| Інші операційні системи такі як: Windows, Ubuntu, ітд. torified by Whonix-Gateway]] 
+* [[Other_Desktop_Environments| Інші робочі середовища (Gnome, LXDE, Xfce, etc.)]] 
+* [[Backup_Whonix_VMs| Резервна копія Whonix VM]] 
+* [[Manually Create Whonix VM Settings| Створення аручну Whonix VM Налаштування, у випадку якщо ви хочете відновити резервну копію vdi hard disk image files]] 
+* [[Manually Updating Tor Browser| Ручне оновлення Tor Browser, тимчасове рішення, в випадку якщо оновлювач torbrowser зіпсується]] 
+* [[Dev/Build Documentation| Створення документації, Як сворити  Whonix з Source Code, Як оновити Whonix з Source Code]] 
+* [[Download Security| Безпека скачування]] 
+* [[Tuning#Replacing Desktop Environment| Заміна робочого середивища]] 
+* [[AppArmor| Зміцнення використовуючи Whonix's AppArmor Profiles]] 
 ** [[AppArmor/VirtualBox| VirtualBox]] 
 ** [[AppArmor/Tor_Browser_Bundle| Tor Browser Bundle (TBB)]] 
-** [[AppArmor/Icedove| Icedove (with Enigmail)]] 
-** [[AppArmor/Pidgin| Pidgin (with OTR)]] 
+** [[AppArmor/Icedove| Icedove (з Enigmail)]] 
+** [[AppArmor/Pidgin| Pidgin (з OTR)]] 
 ** [[AppArmor/XChat| XChat]] 
 ** [[AppArmor/sdwdate| Whonix sdwdate]] 
 ** [[AppArmor/Timesync| Whonix timesync]] 
 ** [[AppArmor/Whonixcheck| Whonix whonixcheck]] 
-* [[Advanced Security Guide| Advanced Security Guide]]</small> 
+* [[Advanced Security Guide| Додатковий провідник по безпеці]]</small> 
 <small>
 * [[Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix| Using Multiple instances of Tor Browser]] 
 * [[Multiple Whonix-Workstations| Using Multiple Whonix-Workstations]] 
