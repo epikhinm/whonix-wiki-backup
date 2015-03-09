@@ -9,22 +9,22 @@ Do not edit without asking Patrick Schleizer beforehand!
 }}
 __NOINDEX__
 
-= Impressum =
-== Angaben (gemäß § 5 TMG) ==
+<h1><u>'''Impressum'''</u></h1>
+<h2>'''Angaben (gemäß § 5 TMG)'''</h2>
 Patrick Schleizer <br />
 Waldzieststr. 16 <br />
 04329 Leipzig
 
-== Kontakt ==
+<h2>'''Kontakt'''</h2>
 Telefon: 01626147958 <br />
 E-Mail: adrelanos@riseup.net
 
-== Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV) ==
+<h2>'''Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV)'''</h2>
 Patrick Schleizer <br />
 Waldzieststr. 16 <br />
 04329 Leipzig
 
-== Geltungsbereich ==
+<h2>'''Geltungsbereich'''</h2>
 Dieses Impressum gilt auch für:
 
 * Alle Artikel auf https://www.whonix.org / http://zo7fksnun4b4v4jv.onion / http://kkkkkkkkkk63ava6.onion / http://xxxxxxxxxxh5kyrx.onion, in denen dieses Impressum verlinkt ist.
@@ -325,10 +325,10 @@ Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 * [https://pod.orkz.net/u/whonix Diaspora] (wird von Sean betrieben)
 * ohloh.net: https://www.ohloh.net/p/Whonix/ Admin ist [https://www.facebook.com/jasonjayala Jason Ayala] (Jason@JasonAyala.com)
 
-= Datenschutz =
+<h2>'''Datenschutz'''</h2>
 Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 
-= Haftungsausschluss (Disclaimer) =
+<h2>'''Haftungsausschluss (Disclaimer)'''</h2>
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]
