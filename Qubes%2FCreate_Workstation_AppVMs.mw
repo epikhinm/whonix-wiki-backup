@@ -11,7 +11,7 @@ You can repeat this guide multiple times and create as many Whonix-Workstation A
 
 '''1. Create Whonix-Workstation AppVM'''
 
-If connecting this AppVM to the internet, you will need an existing Whonix-Gateway ProxyVM instance to connect to. You may need to '''[[Qubes/Create_Gateway_ProxyVMs|Create a Gateway ProxyVM]]''' before proceeding.
+If connecting this AppVM to the internet, you will need an existing Whonix-Gateway ProxyVM instance to connect to. You may need to '''[[Qubes/Create_Gateway_ProxyVMs|create a Whonix-Gateway ProxyVM]]''' before proceeding.
 
 In Dom0 &raquo; Qubes VM Manager:
 
