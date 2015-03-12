@@ -6,6 +6,8 @@
 <br />
 This guide will create a new instance of a Whonix-Gateway ProxyVM, which routes all internet traffic through Tor, that you can then connect your Whonix-Workstation AppVMs to.
 
+You can repeat this guide multiple times and create as many Whonix-Gateway ProxyVM instances as you need, for greater Tor isolation. Note that using multiple Whonix-Gateway ProxyVMs simultaneously will reveal a pattern of connecting to multiple sets of Tor guard nodes, which may or may not be a unique usage indicator.
+
 
 '''1. Create Whonix-Gateway ProxyVM'''
 
@@ -27,7 +29,7 @@ In Dom0 &raquo; Qubes VM Manager:
 In Dom0 &raquo; Qubes VM Manager:
 
 * Select Whonix-Gateway ProxyVM:
-** Edit VM firewall rules
+** Edit VM firewall rules:
 *** Enable: Allow network access except...
 *** Disable: Allow ICMP traffic
 *** Disable: Allow DNS queries
