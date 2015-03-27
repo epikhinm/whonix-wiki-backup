@@ -175,7 +175,7 @@ Sitio web oficial</td>
 Image:kde0_5_0.png|alt=Captura de pantalla del escritorio Whonix|Whonix con escritorio KDE
 Image:whonixcheck_gui.png|alt=captura de pantalla de whonixcheck|[[whonixcheck|whonixcheck]]
 Image:timesync_gui.png|alt=Whonix timesync gui screenshot|[[TimeSync|TimeSync]]
-Image:stream_isolation.1.0.jpg|alt=Gráfico de aislamiento de flujos en Whonix|[[$A Aislamiento de flujos]] 
+Image:stream_isolation.1.0.jpg|alt=Gráfico de aislamiento de flujos en Whonix|[[Stream Isolation| Aislamiento de flujos]] 
 Image:mat.png|alt=metadata anonymiziation toolkit screenshot|MAT - [[Metadata| Metadata]] Anonymisation Toolkit 
 Image:flash_leak_test.png|alt=Adobe Flash IP Leak Test in Whonix Screenshot|[[Browser Plugins| Flash]] Leak Test SocksPort and TransPort 
 Image:Thunderbird_17.0.png|alt=Captura de pantalla de Thunderbird, Icedove|Mozilla Thunderbird (llamado Icedove en Debian) con TorBirdy, véase  [[E-Mail]]
