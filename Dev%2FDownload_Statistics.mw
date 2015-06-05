@@ -3,14 +3,57 @@
 |description=Development Notes about Whonix's Download Statistics
 }}
 
-= TBB's Influence on Download Statistics =
+= Data Points =
+Last update: 2014|09|19
+
+[http://sourceforge.net/projects/whonixdevelopermetafiles/files/internal/ Whonix Developer Meta Files] ([https://github.com/Whonix/whonix-developer-meta-files/ on github]) may provide interesting data points.
+
+* sourceforge shows downloads per week.
+* sourceforge has allows showing download statistics in custom date ranges. Example: http://sourceforge.net/projects/whonixdevelopermetafiles/files/internal/news_v4/whonix_news.tar.xz/stats/timeline
+<br />
+* Whonix News File downloads.
+** The [http://sourceforge.net/projects/whonixdevelopermetafiles/files/internal/news/ internal/news] folder shows downloads for deprecated Whonix News Files.
+** The [http://sourceforge.net/projects/whonixdevelopermetafiles/files/internal/news_v3/ internal/news_v3] folder shows downloads for an intermediate, development only version of Whonix.
+** The [http://sourceforge.net/projects/whonixdevelopermetafiles/files/internal/news_v4/ internal/news_v4] folder shows downloads of Whonix News Files by users of Whonix 8 and 9.
+** No statistics for current versions of Whonix >= 10 available. <ref>Because those are downloaded from http://mirror.whonix.de, shared among various mirrors and we don't ask them to keep statistics nor go through the hassle of requesting/collecting these.</ref>
+** -> Each time a user runs [[whonixcheck]], a download counter will be increased.
+** -> whonixcheck, unless manually disabled by the user, runs automatically. See [[whonixcheck]] wiki page to find out how often.
+<br />
+* [[Whonix-APT-Repository|Whonix's APT repository]] (optional; disabled by default; users are asked to enable or leave it disabled on first boot by whonixsetup ([https://github.com/Whonix/whonixsetup on github]))
+** [http://sourceforge.net/projects/whonixdevelopermetafiles/files/internal/pool/ internal/pool] folder.
+** [http://sourceforge.net/projects/whonixdevelopermetafiles/files/internal/dists/ internal/dists] folder.
+*** stable folder = Whonix 8 stable repository
+*** wheezy folder = Whonix 9 stable repository
+*** testers folder (only used by users who choose Whonix testers-only APT repository]
+*** developers folder (only used by users who choose Whonix developers-only APT repository]
+*** --> Each time some users that opted in for Whonix's APT repository and executed "sudo apt-get update", a download counter will be increased.
+<br />
+Note, we [https://github.com/Whonix/Whonix/issues/178 plan] to move hosting of Whonix News as well as Whonix's APT repository to Whonix's mirror network (http://mirror.whonix.de). It is also [[Dev/ptt|planed to distribute Whonix News Files among multiple servers]]. These data points may be worth less by then.
+
+= 2014|09|16 =
+[https://www.whonix.org/forum/index.php?action=profile;u=1 fortasse] (whonix.org webmaster) wrote <ref>https://www.whonix.org/forum/index.php/topic,522.0.html</ref>:
+<blockquote>
+We don't have anything like that, but I agree it would be interesting to get some statistics.
+
+However, it is difficult to have statistics without being overly invasive. It is made doubly difficult because our downloads are served by mirrors provided by volunteers. I suppose we could have a simple counting script in front of those download links. Nothing as of yet, but I'll look into an easy / non-invasive way to get some basic statistics.
+</blockquote>
+
+= 2014|09|19 =
+At time of writing, there were 7 mirror IPs. <br />
+1 of Whonix's download mirrors is creating statistics.<br />
+The live url is:<br />
+http://tap.rlogin.net/cgi-bin/awstats.pl?config=whonix<br />
+The snapshotted url at time of writing is:<br />
+http://www.webcitation.org/6Sh06TUo8<br />
+
+= 2013|07 =
+== TBB's Influence on Download Statistics ==
 Windows might have fewer downloaders than any statistic says, because TBB for Linux and MacOS claims, that it's Windows, which muddles the statistic.
 
-= What does "Anonymous Proxy" in sourceforge.net statistics mean? =
+== What does "Anonymous Proxy" in sourceforge.net statistics mean? ==
 Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP for country detection and browser agent for operating system and browser. GeoIP, according to its website<ref>https://www.maxmind.com/en/ipauthentication</ref>, detects Anonymizer (they probably mean Tor and such), VPN and Open Proxies, so they everything into the same category of "Anonymous Proxy" - this is what sourceforge logs.
 
-= webcited on 2013|07|11 =
-
+== webcited on 2013|07|11 ==
 * Before announcing migration to whonix.org.
 * [http://www.webcitation.org/6IWk5h4E9 Old design of download page] (Please ignore the "Moved to https://www.whonix.org" part. That snapshot has been forgotten and made later. Nevertheless it gives an impression how the old download page looked like.)
 * Before using the new colored download table, which indicates, that http downloads without OpenPGP verification is the least secure method.
@@ -36,7 +79,7 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
 * 965 Whonix-Gateway.ova downloads | 34 Whonix-Gateway.ova.sig downloads -> '''1 in ~29 used OpenPGP verification'''
 * 1173 Whonix-Workstation.ova downloads | 37 Whonix-Workstation.ova.sig downloads -> '''1 in ~32 used OpenPGP verification'''
 
-= webcited on 2013|07|31 =
+== webcited on 2013|07|31 ==
 * After migration to whonix.org.
 * Using a colored download table, which indicates, that http downloads without OpenPGP verification is the least secure method, see [http://www.webcitation.org/6IX5bl92D download page].
 
@@ -56,6 +99,9 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
 
 * 1015 Whonix-Gateway.ova downloads | 100 Whonix-Gateway.ova.sig downloads -> '''1 in ~10 used OpenPGP verification'''
 * 972 Whonix-Workstation.ova downloads | 85 Whonix-Workstation.ova.sig downloads -> '''1 in ~12 used OpenPGP verification'''
+
+= Discussion =
+[https://www.whonix.org/forum/index.php/topic,522.0.html Whonix Forum: download stats]
 
 = Footnotes / References =
 <references />
