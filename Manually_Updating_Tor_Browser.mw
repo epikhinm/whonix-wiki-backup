@@ -6,7 +6,7 @@
 = Introduction =
 The Pre Install Advice page contains a chapter [[Pre_Install_Advice#Tor_Browser_Bundle|recommending]] to learn the basics about torproject.org's TBB before starting with Whonix.
 
-For example at time of writing the recommended way by The Tor Project to update TBB is still to rename your old folder (for example /home/user/tor-browser_en-US to something else) (or delete it) and to extract the newly downloaded version. You won't know about such glitches, if you don't know the basics, namely how to TBB on the host.
+For example at time of writing the recommended way by The Tor Project to update TBB is still to rename your old folder (for example /home/user/tor-browser_en-US to something else) (or delete it) and to extract the newly downloaded version. You won't know about such glitches, if you don't know the basics, namely how to use TBB on the host.
 
 General questions like how verification of TBB works, what that's good for etc. are off topic here, since we have to unfortunately regard this as basic knowledge. Whonix isn't a standalone package in that sense and just has a small team while torproject.org has a much wider community and dedicated support staff. Again, you need to imagine you know nothing about Whonix and need to learn basics about TBB in the first place.
 
@@ -23,11 +23,11 @@ Check https://blog.torproject.org.
 See [[Tor Browser]].
 
 = Manually updating Tor Browser =
-(1) Go to https://www.torproject.org/ and/or http://idnxcnkne4qt76tg.onion/ and download the Tor Browser Bundle for Linux 32 bit. Store it in ''/home/user/''.
+(1) Go to https://www.torproject.org/ and download the Tor Browser Bundle for Linux 32 bit. Store it in ''/home/user/''.
 
-(2) Read https://www.torproject.org/docs/verifying-signatures.html.en and/or http://idnxcnkne4qt76tg.onion/docs/verifying-signatures.html.en and learn about gpg verification.
+(2) Read https://www.torproject.org/docs/verifying-signatures.html.en and learn about gpg verification.
 
-(3) Go to https://www.torproject.org/docs/signing-keys.html.en and/or http://idnxcnkne4qt76tg.onion/docs/signing-keys.html.en to get the gpg keys.
+(3) Go to https://www.torproject.org/docs/signing-keys.html.en to get the gpg keys.
 
 (4) Verify the Tor Browser Bundle download.
 
