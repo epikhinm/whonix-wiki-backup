@@ -141,7 +141,7 @@ __NOTITLE__
 * [[Money| Анонімні гроші, анонімна оплата і отримання грошей, Bitcoin, BTC (Проект!)]]
 * [[VoIP| Голосові дзвінки, Voice over IP, VoIP (експериментальнийl!)]]
 * [[Other Anonymizing Networks| Доступ до інших анонімних сервісів за допомогою Tor]]
-* [[i2p| i2p]]
+* [[I2P| I2P]]
 * [[Freenet| Freenet(взламування, тільки для досвідчених користувачів)]]
 * [[JonDonym| JonDonym]]
 * [[Chat#RetroShare| Retroshare(експериментальний в Whonix)]]
@@ -259,7 +259,7 @@ __NOTITLE__
 * [[Secondary DNS Resolver| Вторинний розпізнавач DNS]] 
 * [[Secondary DNS Resolver| Провірка достовірності DNS через Tor, DNSSEC через Tor]] 
 * [[Secondary DNS Resolver| Зашифрований DNS через Tor, DNSCrypt by OpenDNS, httpsdnsd by JonDos]] 
-* [[OnionCat| OnionCat, GarliCat: Tunnel TCP, UDP, ICMP або будь-який інший протокол через Tor або i2p; IPv6, VPN-like, TAP/TUN прилад тунелювання]] 
+* [[OnionCat| OnionCat, GarliCat: Tunnel TCP, UDP, ICMP або будь-який інший протокол через Tor або I2P; IPv6, VPN-like, TAP/TUN прилад тунелювання]] 
 * [[$ Зміна хостингу з (приватного) (затемненого) мосту або (виходу)]] 
 * Використання Tor SocksProxy в Whonix-Workstation (Дивитися [[Stream Isolation| Ізоляція потоку]].) 
 * Ймовірно найкращий захист проти Ідентифікації козв'язку шляхом обміну ланцюга(Дивитися [[Stream Isolation| Ізоляція потоку]].) 
