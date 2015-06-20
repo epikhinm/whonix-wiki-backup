@@ -29,7 +29,7 @@ Many protocol leaks are documented [[Documentation]] and [https://trac.torprojec
 
 These are also important identifiers, because they can be used for fingerprinting, narrow down the list of suspects (for example, the time zone) or even lead to directly to deanonymization (for example, if username were set to John Doe).
 
-* Desktop resolution is 1024x768 for all Whonix users. (Virtual) refresh rate is set to 60. <ref>
+* <s>Desktop resolution is 1024x768 for all Whonix users. (Virtual) refresh rate is set to 60.</s> <ref>
 You can check the desktop resolution and refresh rate by running in console: 
 
 <pre>xrandr</pre>
@@ -135,7 +135,7 @@ This is due to the design of virtualization platforms (VirtualBox, VMware, etc.)
 
 <pre>cat /proc/cpuinfo</pre>
 
-If that is a still problem for you another workaround could be to use an emulator, such as [http://bochs.sourceforge.net/ bochs] or qemu. Unfortunately such emulators are slow and there might be other limitations. (Does Bochs support internal networking?)
+If that is a still problem for you another workaround could be to use an emulator, such as QEMU (port available, documented, see [[QEMU]]) or [http://bochs.sourceforge.net/ bochs] (no one has created a port yet, undocumented). Unfortunately such emulators are slow and there might be other limitations. (Does Bochs support internal networking?)
 </ref>
 * RAM is set to 768 MB.
 * Sensor information (cpu temperature, hdd temperature, [https://en.wikipedia.org/wiki/S.M.A.R.T. S.M.A.R.T.]) are hidden. <ref>
@@ -201,6 +201,7 @@ udisks --show-info /dev/cdrom
 </ref>
 * All Whonix users have by default the same set of software packages installed. - If you install software packages yourself, you give up that advantage. See also [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO#Softwareupdaters Software updaters].
 * Disk uuids of the real hardware are hidden through VirtualBox.
+* [https://en.wikipedia.org/wiki/Extended_display_identification_data EDID] is hidden by virtualizer, see [[Higher Screen Resolution#Technical_Stuff]].
 * Related VirtualBox tickets:
 ** [https://www.virtualbox.org/ticket/10976 document all virtual hardware serial numbers implemented by VirtualBox]
 ** [https://www.virtualbox.org/ticket/10975 document which information from the host are visible to VMs]
